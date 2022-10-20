@@ -1,5 +1,5 @@
 # AAE2004_t1_GP8
-![Group Baner!](/Users/shc_k/Downloads/AAE GitHub Project (1).png "Group 8 Baner")
+![Group 8 banner](https://www.canva.com/design/DAFPlMGIiyY/WieLa2jqWX6rX_6JdLy6jw/view?utm_content=DAFPlMGIiyY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 <!--  TABLE OF CONTACT -->
 ## Table of Contact
 some function still need to try 
