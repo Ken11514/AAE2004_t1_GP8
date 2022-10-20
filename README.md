@@ -11,16 +11,16 @@ This is normal text size
 This [Link](https://github.com/IPNL-POLYU/PolyU_AAE2004_Github_Project/blob/main/readme.md) is the main page of PolyU_AAE_GitHub_Porject.
 
 ### some code display
-''''bash
+```bash
 print(''Hello PolyU')
-''''
+```
 
 And this on is python code display
-''''python
+```python
 #AAE is da best !!!!!!!!!
 for I in 'Polyu' :
     print(I , end='')
-''''
+```
 -Bullet point 1
 -cowwet point 2
 -cattet point 3
