@@ -1,5 +1,5 @@
 # AAE2004_t1_GP8
-![Group 8 banner][image/GitHub_Banner.png]
+![Group 8 banner](image/GitHub_Banner.png)
 <!--  TABLE OF CONTACT -->
 ## Table of Contact
 some function still need to try 
