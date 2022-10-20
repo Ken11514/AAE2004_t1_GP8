@@ -1,5 +1,5 @@
 # AAE2004_t1_GP8
-[![Group Baner](/Users/shc_k/Downloads/AAE GitHub Project (1).png "Group 8 Baner")
+![Group Baner!](/Users/shc_k/Downloads/AAE GitHub Project (1).png "Group 8 Baner")
 <!--  TABLE OF CONTACT -->
 ## Table of Contact
 some function still need to try 
