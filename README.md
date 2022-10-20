@@ -21,9 +21,9 @@ And this on is python code display
 for I in 'Polyu' :
     print(I , end='')
 ```
--Bullet point 1
--cowwet point 2
--cattet point 3
+- Bullet point 1
+- cowwet point 2
+- cattet point 3
 
 # Reference sourse
 ### YouTube video:
