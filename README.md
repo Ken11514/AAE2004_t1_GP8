@@ -1,5 +1,5 @@
 # AAE2004_t1_GP8
-![Group 8 banner](https://www.canva.com/design/DAFPlMGIiyY/WieLa2jqWX6rX_6JdLy6jw/view?utm_content=DAFPlMGIiyY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+![Group 8 banner][image/GitHub_Banner.png]
 <!--  TABLE OF CONTACT -->
 ## Table of Contact
 some function still need to try 
@@ -31,3 +31,6 @@ for I in 'Polyu' :
 
 ### Web Site
 [basic syntax](https://www.markdownguide.org/basic-syntax)
+
+
+[def]: image/AAE%20GitHub%20Project.png
