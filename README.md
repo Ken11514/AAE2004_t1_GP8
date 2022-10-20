@@ -1,6 +1,12 @@
 # AAE2004_t1_GP8
 ![Group 8 banner](image/GitHub_Banner.png)
 <!--  TABLE OF CONTACT -->
+
+# Week Tarket 
+###week 8
+- Familiar with GitHub , VScode 
+
+
 ## Table of Contact
 some function still need to try 
 
@@ -18,8 +24,10 @@ print(''Hello PolyU')
 And this on is python code display
 ```python
 #AAE is da best !!!!!!!!!
-for I in 'Polyu' :
-    print(I , end='')
+Group_8 = ['Wilbert','Ray','Narmira','Mimi','Leon','Ken','Tomas']
+for I in Group_8 :
+    print( I +' is one of the group member of Group 8')
+    print('We all aggre that AAE is da best !!!!!!!!!!!!')
 ```
 - Bullet point 1
 - cowwet point 2
