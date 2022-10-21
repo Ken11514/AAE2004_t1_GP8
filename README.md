@@ -1,5 +1,5 @@
 # AAE2004_t1_GP8
-![Group 8 banner](image/GitHub_Banner.png)
+![Group 8 banner](image/GitHub_8_Banner.gif)
 <!--  TABLE OF CONTACT -->
 
 # Week Target 
