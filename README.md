@@ -4,7 +4,14 @@
 
 <details open='open'>
   <summary><h2 style='display: inline-block'>Table of Content</h2></summary>
-     hi
+  <ol>
+    <li>
+      <a href='#task-for-week-8'>Task for week 8</a>
+    </li>
+    <li>
+      <a href='#reference-source'>Reference source</a>
+    </li>
+  </ol>
 </details>
 
 
