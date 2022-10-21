@@ -2,8 +2,8 @@
 ![Group 8 banner](image/GitHub_Banner.png)
 <!--  TABLE OF CONTACT -->
 
-# Week Tarket 
-###week 8
+# Week Target 
+### week 8
 - Familiar with GitHub , VScode 
 
 
