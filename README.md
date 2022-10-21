@@ -6,10 +6,10 @@
   <summary><h2 style='display: inline-block'>Table of Content</h2></summary>
   <ol>
     <li>
-      <a herf="main#task-for-week-8">Task for week 8</a>
+      <a herf="#task-for-week-8">Task for week 8</a>
     </li>
     <li>
-      <a herf='reference-source'>Reference source</a>
+      <a herf="reference-source">Reference source</a>
     </li>
   </ol>
 </details>
