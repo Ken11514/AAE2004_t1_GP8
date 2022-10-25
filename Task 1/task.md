@@ -2,7 +2,7 @@
  Find an appropriate aircraft model that acheve minimun cost for each scenario for the challenge assigned 
 
 ## Our Map
-![Map](Task1/map)
+![Map](Task%201/map)
 ## Objective
 - Find the **shortest route**
 - Determine which aircraft type for each scenario to **achive minimun cost** while **satisfying passenger needs**
