@@ -14,10 +14,17 @@
   </ol>
 </details>
 
-
+<!-- updates -->
+## Latest Updates
+- A folder for Task 1 was created
+#### Remarks 
+Remember to things in correct folder
 <!-- TASK -->
-## Task for week 8
+## Task to do
+### Task for week 8
 - familiarize with GitHub and VScode
+### Task for week 9
+- finish task 1 by week 11
 
 <!-- REFERCE -->
 ## Reference source
