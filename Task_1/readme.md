@@ -16,3 +16,17 @@
 |Time cost (Medium)($/min)|15|21|27|
 |Time cost (High)($/min)|20|27|34|
 |Fixed Cost($)|1800|2000|2500|
+### Scenario 1
+1. 3000 Passengers  with in this week
+2. 12 flights maximum per week
+3. Time cost = medium and Fuel cost = 0.76$/kg
+
+### Scenario 2 
+1. 125 Passengers  with in this month
+2. 5 flights maximum per week
+3. Time cost = high and Fuel cost = 0.88$/kg
+
+### Scenario 3
+1. 2500 Passengers  with in this week
+2. 25 flights maximum per week
+3. Time cost = low and Fuel cost = 0.95$/kg
