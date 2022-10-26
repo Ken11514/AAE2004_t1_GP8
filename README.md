@@ -22,9 +22,9 @@ Remember to things in correct folder
 <!-- TASK -->
 ## Task to do
 ### Task for week 8
-- familiarize with GitHub and VScode
+- [x] familiarize with GitHub and VScode
 ### Task for week 9
-- finish task 1 by week 11
+- [ ] finish task 1 by week 11
 
 <!-- REFERCE -->
 ## Reference source
