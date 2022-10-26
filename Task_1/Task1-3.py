@@ -47,8 +47,8 @@ class AStarPlanner:
         self.tc_y = tc_y
         
 
-        self.Delta_C1 = 1.2 # cost intensive area 1(time) modifier |yellow in colour
-        self.Delta_C2 = 1.4 # cost intensive area 2(fule) modifier |red in colour
+        self.Delta_C1 = 0.2 # cost intensive area 1(time) modifier |yellow in colour
+        self.Delta_C2 = 0.4 # cost intensive area 2(fule) modifier |red in colour
 
         self.costPerGrid = 1 #Cost
 
@@ -113,6 +113,9 @@ class AStarPlanner:
             # reaching goal
             if current.x == goal_node.x and current.y == goal_node.y:
                 print("Total Trip time required -> ",current.cost )
+                print("Trip Cost for A321neo ->",(0.95*54*(current.cost)+10*(current.cost)+1800)*13)
+                print("Trip Cost for A330-900neo ->",(0.95*84*(current.cost)+15*(current.cost)+2000)*9)
+                print("Trip Cost for A350-900 ->",(0.95*90*(current.cost)+20*(current.cost)+2500)*8)
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
                 break
@@ -358,7 +361,7 @@ def main():
         plt.plot(gx, gy, "*g") # plot the end position
         
         plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 2(fule) yellow
-        plt.plot(tc_x, tc_y, "-r") # plot the cost intensive area 1(time) red
+        plt.plot(tc_x, tc_y, "or") # plot the cost intensive area 1(time) red
 
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
