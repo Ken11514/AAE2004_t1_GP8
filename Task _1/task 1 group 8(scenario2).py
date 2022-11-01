@@ -116,11 +116,11 @@ class AStarPlanner:
 
                 print("Total Trip time required -> ",current.cost )
                 if formula=="A321neo":
-                    print("Trip Cost for A321neo ->",(0.95*54*(current.cost)+10*(current.cost)+1800)*7)
+                    print("Trip Cost for A321neo ->",(0.88*54*(current.cost)+10*(current.cost)+1800)*7)
                 if formula=="A330-900neo":
-                    print("Trip Cost for A330-900neo ->",(0.95*84*(current.cost)+15*(current.cost)+2000)*5)
+                    print("Trip Cost for A330-900neo ->",(0.88*84*(current.cost)+15*(current.cost)+2000)*5)
                 if formula=="A350-900 ":
-                    print("Trip Cost for A350-900 ->",(0.95*90*(current.cost)+20*(current.cost)+2500)*4)
+                    print("Trip Cost for A350-900 ->",(0.88*90*(current.cost)+20*(current.cost)+2500)*4)
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
                 break
