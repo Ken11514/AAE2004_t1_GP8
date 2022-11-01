@@ -12,7 +12,13 @@
       <a href='#background'>Background</a>
     </li>
     <li>
-      <a href='#contact'>Contact</a>
+      <a href='#task-1'>Task 1</a>
+    </li>
+    <li>
+      <a href='#task-2'>Task 2</a>
+    </li>
+    <li>
+      <a href='#task-3'>Task 3</a>
     </li>
     <li>
       <a href='#reference-source'>Reference source</a>
