@@ -45,8 +45,8 @@ According to the Rules of ResTrictions of TASK 3,
 
 the Value to find out the best fit model aircraft could be shown as this able:
 
-| Airplane Capacity& Model |    ∆𝐹    |∆𝑇        | Cc         |𝐶𝑇          |𝐶f         | number of trip required  |   total cost  |
+| Airplane Capacity& Model |    ∆𝐹    |∆𝑇        | Cc         |𝐶𝑇          |𝐶f         | Number of trip required  |   Total cost  |
 | :--------         | :------- | :------- |:---------  | :--------- |:--------   | :--------| :--------|
 | (Model 1) 250 | 40kg/min        | 77.1837664107356           | 2000          |  22  $/min        | 0.8823           | 12   | $77064 |
 | (Model 2) 300|  80kg/min        | 77.1837664107356           | 2500          |  24  $/min        | 0.8823           | 10   | $98003 |                
-| (Model 3) 400|  80kg/min        | 77.1837664107356           | 2500          |  30  $/min        | 0.8823           | 7    | $71844 |              
+| (Model 3) 450|  80kg/min        | 77.1837664107356           | 2500          |  30  $/min        | 0.8823           | 7    | $71844 |              
