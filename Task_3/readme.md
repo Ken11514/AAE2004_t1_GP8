@@ -34,10 +34,12 @@ engine aircrafts
 ∆𝑇=trip time
 
 ## AIRCRAFT MODEL DESIGN (task3)
-Introduction
+#  Introduction
 To find out the best fit the situation.  We designed three models with diffenert Capacity: 
 
 Model 1: 250,  Model 2: 300 & Model 3: 450.
+
+# Table of value
 
 According to the Rules of ResTrictions of TASK 3, 
 
