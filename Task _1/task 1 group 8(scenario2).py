@@ -1,14 +1,9 @@
 """
-
 A* grid planning
-
 author: Atsushi Sakai(@Atsushi_twi)
         Nikos Kanargias (nkana@tee.gr)
-
 See Wikipedia article (https://en.wikipedia.org/wiki/A*_search_algorithm)
-
 This is the simple code for path planning class
-
 """
 
 
@@ -25,7 +20,6 @@ class AStarPlanner:
     def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y):
         """
         Initialize grid map for a star planning
-
         ox: x position list of Obstacles [m]
         oy: y position list of Obstacles [m]
         resolution: grid resolution [m]
@@ -67,13 +61,11 @@ class AStarPlanner:
     def planning(self, sx, sy, gx, gy):
         """
         A star path search
-
         input:
             s_x: start x position [m]
             s_y: start y position [m]
             gx: goal x position [m]
             gy: goal y position [m]
-
         output:
             rx: x position list of the final path
             ry: y position list of the final path
@@ -112,15 +104,14 @@ class AStarPlanner:
 
             # reaching goal
             if current.x == goal_node.x and current.y == goal_node.y:
-                formula=input('Please enter the plane model')
 
                 print("Total Trip time required -> ",current.cost )
-                if formula=="A321neo":
-                    print("Trip Cost for A321neo ->",(0.95*54*(current.cost)+10*(current.cost)+1800)*7)
-                if formula=="A330-900neo":
-                    print("Trip Cost for A330-900neo ->",(0.95*84*(current.cost)+15*(current.cost)+2000)*5)
-                if formula=="A350-900 ":
-                    print("Trip Cost for A350-900 ->",(0.95*90*(current.cost)+20*(current.cost)+2500)*4)
+                
+                print("Trip Cost for A321neo ->",(0.88*54*(current.cost)+10*(current.cost)+1800)*7)
+               
+                print("Trip Cost for A330-900neo ->",(0.88*84*(current.cost)+15*(current.cost)+2000)*5)
+               
+                print("Trip Cost for A350-900 ->",(0.88*90*(current.cost)+20*(current.cost)+2500)*4)
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
                 break
@@ -203,7 +194,6 @@ class AStarPlanner:
     def calc_grid_position(self, index, min_position):
         """
         calc grid position
-
         :param index:
         :param min_position:
         :return:
