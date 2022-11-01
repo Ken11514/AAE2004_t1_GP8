@@ -2,7 +2,7 @@
  Find an appropriate aircraft model that acheve minimun cost for each scenario for the challenge assigned 
 
 ## Our Map
-![Task%201/map.png](https://github.com/Ken11514/AAE2004_t1_GP8/blob/Branch-for-MAIN/image/map.png))
+![Task%201/map.png](images/map.png)
 ## Things To Do
 - Find the **shortest route**
 - Determine which aircraft type for each scenario to **achive minimun cost** while **satisfying passenger needs**
@@ -16,6 +16,9 @@
 |Time cost (Medium)($/min)|15|21|27|
 |Time cost (High)($/min)|20|27|34|
 |Fixed Cost($)|1800|2000|2500|
+
+$Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
+
 ### Scenario 1
 1. 3000 Passengers  with in this week
 2. 12 flights maximum per week
