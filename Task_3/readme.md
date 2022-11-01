@@ -25,7 +25,7 @@ engine aircrafts
 ![Second Week - Project tasks (updated) (2)](https://user-images.githubusercontent.com/115149687/199167780-406fd27b-c9f5-4db3-a158-67522affaef7.jpg)
 𝐶f=cost of fuel per kg
 
-𝐶t=time related cost per minute of flight
+𝐶𝑇=time related cost per minute of flight
 
 𝐶𝑐=fixed cost independent of time
 
@@ -37,13 +37,7 @@ engine aircrafts
 ###  Introduction
 To find out the best fit the situation.  We designed three models with diffenert Capacity: 
 
-Model 1: 250 (each plane has the capacity to carry 250 persons)
-
-
-Model 2: 300 (each plane has the capacity to carry 300 persons)
-
-
-Model 3: 450 (each plane has the capacity to carry 450 persons)
+Model 1: 250,  Model 2: 300 & Model 3: 450.
 
 ### Table of value
 
@@ -51,8 +45,8 @@ According to the Rules of ResTrictions of TASK 3,
 
 the Value to find out the best fit model aircraft could be shown as this able:
 
-| Airplane Capacity& Model |    ∆𝐹    |∆𝑇        | Cc         |𝐶t         |𝐶f         | 
+| Airplane Capacity& Model |    ∆𝐹    |∆𝑇        | Cc         |𝐶𝑇          |𝐶f         | number of trip required  |   total cost  |
 | :--------         | :------- | :------- |:---------  | :--------- |:--------   |
-| (Model 1) 250 |          |          |            |            |            |                       
-| (Model 2) 300|          |          |            |            |            |                       
-| (Model 3) 400|          |          |            |            |            |                       
+| (Model 1) 250 | 40kg/min        | 77.1837664107356           | 2000          |  22  $/min        | 0.8823           | 12   | $77064 |
+| (Model 2) 300|  80kg/min        | 77.1837664107356           | 2500          |  24  $/min        | 0.8823           | 10   | $98003 |                
+| (Model 3) 400|  80kg/min        | 77.1837664107356           | 2500          |  30  $/min        | 0.8823           | 7    | $71844 |              
