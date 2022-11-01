@@ -2,7 +2,7 @@
 Recreate a jet-steam area in the map that could most benefit our flight route. 
 
 ## Our Map
-![map](images/map.png)
+![images/map.png](https://github.com/Ken11514/AAE2004_t1_GP8/blob/main/images/map.png)
 
 ## How to achive
 - Base on the scenario 1 in Task 1
@@ -10,8 +10,8 @@ Recreate a jet-steam area in the map that could most benefit our flight route.
 - Finding the lowest Trip Cost in pothntial.
 
 ## Caution
-**all variable must be specified**
-In Task2.py some new variabl were created for jet stream area
+**All variable must be specified**
+.In Task2.py some new variabl were created for jet stream area
 1. jc_x    : "j"stand fof jet-steam , "c"stand for cost-intesive-area,"x"stand for x-coordinate
 2. jc_y    :similar to 1, "y"stand for y-coordinate
 
@@ -26,7 +26,7 @@ In Task2.py some new variabl were created for jet stream area
             jc_x.append(i)
             jc_y.append(j)
 ```
-### Modified place
+### Modified area
 ```python
 # Line 25
     def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y, jc_x, jc_y):
