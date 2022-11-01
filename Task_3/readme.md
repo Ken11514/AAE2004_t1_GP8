@@ -35,7 +35,7 @@ $T_{best}$ = trip time
 
 ## AIRCRAFT MODEL DESIGN (task3)
 ###  Introduction
-To find out the best fit the situation.  We designed three models with diffenert Capacity: 
+To find out the best fit the situation.  We designed three models with diffenert Capacity (capacity per aircraft): 
 
 Model 1: 250  
 
