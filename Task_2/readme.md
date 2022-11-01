@@ -2,7 +2,7 @@
 Recreate a jet-steam area in the map that could most benefit our flight route. 
 
 ## Our Map
-![Task%201/map.png](images/map.png)
+![map](images/map.png)
 
 ## How to achive
 - Base on the scenario 1 in Task 1
