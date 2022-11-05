@@ -267,9 +267,13 @@ def get_goal_coordinate(sx,sy) :
     final_coordinate = random.choice(possable_location)
     return final_coordinate
 def no_overlap(i, j, sx, sy, gx, gy):
-    for px in [sx-2,sx-1,sx,sx+1,sx+2,gx-2,gx-1,gx,gx+1,gx+2]:
-        for py in [sy-2,sy-1,sy,sy+1,sy+2,gy-2,gy-1,gy,gy+1,gy+2]:
+    for px in [sx-2,sx-1,sx,sx+1,sx+2]:
+        for py in [sy-2,sy-1,sy,sy+1,sy+2]:
             if (i==px and j==py ):
+                return False
+    for px in [gx-2,gx-1,gx,gx+1,gx+2]:
+        for py in [gy-2,gy-1,gy,gy+1,gy+2]:
+            if i==px and j==py :
                 return False
     return True
 
@@ -279,8 +283,8 @@ def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
     
     # start and goal position
-    sx = random.randint(-8,58)  # [m]
-    sy = random.randint(-8,58)  # [m]
+    sx = random.randint(-8,59)  # [m]
+    sy = random.randint(-8,59)  # [m]
     gx = get_goal_coordinate(sx,sy)[0]  # [m]
     gy = get_goal_coordinate(sx,sy)[1]  # [m]
     grid_size = 1  # [m]
