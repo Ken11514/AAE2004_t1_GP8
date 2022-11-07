@@ -57,8 +57,10 @@ the Value to find out the best fit model aircraft could be shown as this able:
 
 ### Trip cost calculations for each model
 
-Model 1 (250) :
+Model 1 (250) :77.183766410736*0.8823*40 + 2000*77.1837664107356 + 2000 = 77064
 
-Model 2 (300) :
+Model 2 (300) :77.183766410736*0.8823*80 + 2500*77.1837664107356 + 2500 = 98033
 
-Model 3 (450) :
+Model 3 (450) :77.183766410736*0.8823*80 + 2500*77.1837664107356 + 2500 = 71844
+
+
