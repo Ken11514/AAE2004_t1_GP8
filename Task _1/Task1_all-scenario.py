@@ -401,7 +401,7 @@ def main(scenario):
         print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
         print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
         print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A3500-900 has the lowest Trip Cost among them.")
+        print("A350-900 has the lowest Trip Cost among them.")
 
     else :
         print("There are no scenario {}, plz enter a correct one. Thank You".format(scenario))
