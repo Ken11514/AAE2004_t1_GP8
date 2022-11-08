@@ -63,4 +63,6 @@ Model 2 (300) :77.183766410736*0.8823*80 + 2500*77.1837664107356 + 2500 = 98033
 
 Model 3 (450) :77.183766410736*0.8823*80 + 2500*77.1837664107356 + 2500 = 71844
 
+Name of the aircraft
 
+The name of this aircraft will be P801,P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)
