@@ -310,7 +310,7 @@ def main(scenario):
     #     oy.append(60.0 - i)
 
 
-    # set obstacle positions for group 9
+    # set obstacle positions for group 8
     ox, oy = [], []
     for i in range(-10, 60): # draw the buttom border 
         ox.append(i)
@@ -377,7 +377,7 @@ def main(scenario):
         Cost_A321 = (0.76*54*Tbest+15*Tbest+1800)*15
         Cost_A330 = (0.76*84*Tbest+21*Tbest+2000)*10
         Cost_A350 = (0.76*90*Tbest+27*Tbest+2500)*9
-
+        print("A321neo shoule not be taken in count as it takes 15 flights")
         print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
         print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
         print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
@@ -387,7 +387,7 @@ def main(scenario):
         Cost_A321 = (0.88*54*Tbest+20*Tbest+1800)*7
         Cost_A330 = (0.88*84*Tbest+27*Tbest+2000)*5
         Cost_A350 = (0.88*90*Tbest+34*Tbest+2500)*4
-
+        print("A321neo should not be taken in count as it takes 7 flights")
         print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
         print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
         print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
@@ -397,7 +397,7 @@ def main(scenario):
         Cost_A321 = (0.95*54*Tbest+10*Tbest+1800)*13
         Cost_A330 = (0.95*84*Tbest+15*Tbest+2000)*9
         Cost_A350 = (0.95*90*Tbest+20*Tbest+2500)*7
-
+        print("All of them can be taken in count!")
         print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
         print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
         print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
