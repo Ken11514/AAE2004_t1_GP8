@@ -36,7 +36,7 @@ Tbest: time-best
 “AStarPlanner” is a set of function which contains 3 parts (1.variable defining)(2.”Node”defining )(3.”planning( )”function)
 
 
-### Scenario 
+### Scenario 1
 1. 3000 Passengers  with in this week
 2. 12 flights maximum per week
 3. Time cost = medium and Fuel cost = 0.76$/kg
