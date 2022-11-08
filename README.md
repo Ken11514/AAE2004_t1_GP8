@@ -40,7 +40,7 @@ paragraph1:
 paragraph2: 
 - [ ] Telling people *How* we finding path with purpose
      
-      1 Python(Computer language) -> 
+      1 Python(Computer language)
       2 A-Star(Path finding algorithm) -> find the shortest path from a specified source to a specified goal
       3 VS code(Platform)
       
