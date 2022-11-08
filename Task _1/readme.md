@@ -1,5 +1,5 @@
 ## Introduction
-In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind. 
+Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost. In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind. 
 
 ## Our Map
 ![Task%201/map.png](https://github.com/Ken11514/AAE2004_t1_GP8/blob/main/images/map.png)
