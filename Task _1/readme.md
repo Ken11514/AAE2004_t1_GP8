@@ -3,11 +3,8 @@ In this task, we are going to find the best aircraft models with minimum cost fo
 
 ## Our Map
 ![Task%201/map.png](https://github.com/Ken11514/AAE2004_t1_GP8/blob/main/images/map.png)
-## Things To Do
-- Find the **shortest route**
-- Determine which aircraft type for each scenario to **achive minimun cost** while **satisfying passenger needs**
 
-### Cost Speciffication
+## Cost Speciffication
 | key | A321neo | A330-900neo | A350-900|
 | :---: | :---: | :---: | :---: |
 |Fuel Consumption rate(kg/min)|54|84|90|
@@ -19,10 +16,14 @@ In this task, we are going to find the best aircraft models with minimum cost fo
 
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 
+## Breakdown of codes
+
 ### Scenario 1
 1. 3000 Passengers  with in this week
 2. 12 flights maximum per week
 3. Time cost = medium and Fuel cost = 0.76$/kg
+
+According to the results of coding,
 
 ### Scenario 2 
 1. 125 Passengers  with in this month
