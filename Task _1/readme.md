@@ -33,7 +33,16 @@ gy: goal point y-coordinate
 
 Tbest: time-best
 
-“AStarPlanner” is a set of function which contains 3 parts (1.variable defining)(2.”Node”defining )(3.”planning( )”function)
+### **“AStarPlanner”**
+A set of function which contains 3 parts
+
+1.variable defining
+![Screenshot T1 2](https://user-images.githubusercontent.com/116112237/200494106-d15c57e9-ce3c-45de-b830-8ac56436ccd3.png)
+
+2.Node defining
+![Screenshot T1 3](https://user-images.githubusercontent.com/116112237/200494316-9f31426c-3235-4f3b-8bfe-e6f6ee063a7e.png)
+
+3.planning( )
 
 
 ### Scenario 1
