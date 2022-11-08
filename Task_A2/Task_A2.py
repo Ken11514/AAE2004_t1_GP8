@@ -266,10 +266,18 @@ class AStarPlanner:
                   [0, 1, 1],
                   [-1, 0, 1],
                   [0, -1, 1]]
-     
-
         return motion
 
+def no_overlap(i, j, sx, sy, gx, gy):
+    for px in [sx-2, sx-1, sx, sx+1, sx+2]:
+        for py in [sy-2, sy-1, sy, sy+1, sy+2]:
+            if (i==px and j==py):
+                return False
+    for px in [gx-2, gx-1, gx, gx+1, gx+2]:
+        for py in [gy-2, gy-1, gy, gy+1, gy+2]:
+            if (i==px and j==py):
+                return False
+    return True 
 
 def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
@@ -291,7 +299,6 @@ def main():
 
 
 
-
     # set obstacle positions 
     ox, oy = [], []
     for i in range(-10, 61): # draw the buttom border 
@@ -306,6 +313,12 @@ def main():
     for i in range(-10, 61): # draw the left border
         ox.append(-10.0)
         oy.append(i)
+    for i in range(-10, 61):
+        for j in range(-10, 61):
+            if rd.randint(0,100)>=90 and no_overlap(i, j, sx, sy, gx, gy):
+                ox.append(i)
+                oy.append(j)
+    
 
 
     # set cost intesive area 1
@@ -327,12 +340,12 @@ def main():
 
 
     if show_animation:  # pragma: no cover
+        plt.plot(fc_x, fc_y, "oy") # plot the fuel consuming area 
+        
         plt.plot(ox, oy, ".k") # plot the obstacle
         plt.plot(sx, sy, "og") # plot the start position 
         plt.plot(gx, gy, "xb") # plot the end position
         
-        plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 1
-
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
 
