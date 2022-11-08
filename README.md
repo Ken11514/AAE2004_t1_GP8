@@ -67,7 +67,7 @@ paragraph3:
 ## Introduction
 - [x] : How the task related to daily aviation
 
-        The area designed in task 2 represents jet-stream area which aircrafts could consume relatively less fuel
+        The area designed in task 2 represents jet-stream area where aircrafts could consume relatively less fuel
         -> reduce the cost of flights
         
 - [x] : Task objective
