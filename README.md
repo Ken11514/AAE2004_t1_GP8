@@ -95,7 +95,7 @@ paragraph3:
 - [x] finish task 1 by week 11
 ### Week 10
 - [ ] report for Task_1 & Task_2
-- [ ] [PowerPoint slide](https://connectpolyu-my.sharepoint.com/:p:/g/personal/22075211d_connect_polyu_hk/Ecv7NPHGFGtBt5Jk1Ql2RFoBm0bVGT2gs1geupGUz1pM1g?e=Vutrld) for video
+- [ ] [PowerPoint slide](https://connectpolyu-my.sharepoint.com/:p:/g/personal/22075211d_connect_polyu_hk/Ecv7NPHGFGtBt5Jk1Ql2RFoBYP0CGmmuKWjzxvsIqG_WnA?e=OU8kzx) for video
 
 <!-- REFERCE -->
 ------
