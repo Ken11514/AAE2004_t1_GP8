@@ -31,14 +31,26 @@
 
 # Backgroung
 paragraph1:
-- [ ] Imform people *Why* **Path Finding** is important
+- [x] Imform people *Why* **Path Finding** is important
+     
+      1 Find the shortest and the most obstacle-free path from a start to goal state
+      2 Can be widely applied in partially and unknown structured environment
+      3 Save cost and increase efficiency
 
 paragraph2: 
 - [ ] Telling people *How* we finding path with purpose
-
+     
+      1 Python(Computer language) -> 
+      2 A-Star(Path finding algorithm) -> find the shortest path from a specified source to a specified goal
+      3 VS code(Platform)
+      
 paragraph3: 
-- [ ] Introduce people *What* we are going to do in this porject 
-
+- [x] Introduce people *What* we are going to do in this porject 
+  
+      1 Find the shortest and most cost-efficient route and aircraft for a flight in 3 different scenarios
+      2 Design a new cost area -> reduce the cost of the route
+      3 Design a new aircraft model -> achive minimum cost
+      
 <!-- TASK 1 -->
 # Task 1
 ## Introduction
