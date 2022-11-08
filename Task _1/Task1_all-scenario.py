@@ -310,7 +310,7 @@ def main(scenario):
     #     oy.append(60.0 - i)
 
 
-    # set obstacle positions for group 9
+    # set obstacle positions for group 8
     ox, oy = [], []
     for i in range(-10, 60): # draw the buttom border 
         ox.append(i)
