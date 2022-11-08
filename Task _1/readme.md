@@ -8,7 +8,8 @@ Although most of the fights do not always follow the same route, it is important
 | key | A321neo | A330-900neo | A350-900|
 | :---: | :---: | :---: | :---: |
 |Fuel Consumption rate(kg/min)|54|84|90|
-|Passenger Capacity|200|300|350|
+|Passenger Capacity|200|300|350|![Screenshot T1 2](https://user-images.githubusercontent.com/116112237/200491442-e117a05f-a5b2-470b-a705-dfc6e9e5bf76.png)
+
 |Time cost (Low)($/min)|10|15|20|
 |Time cost (Medium)($/min)|15|21|27|
 |Time cost (High)($/min)|20|27|34|
@@ -17,8 +18,25 @@ Although most of the fights do not always follow the same route, it is important
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 
 ## Breakdown of codes
+![ScreenshotT1 1](https://user-images.githubusercontent.com/116112237/200486556-fa67a1bf-db18-45af-89ea-85db1bedc027.png)
 
-### Scenario 1
+It is the definition of **“main()”**. It require user to input a variable during the usage, in later part the input was use as a indicator to direct and run the corresponding code for different task and scenario.
+Both the starting point and the goal point are set as variables.
+
+sx: starting point x-coordinate
+
+sy: starting point y-coordinate
+
+gx: goal point x-coordinate
+
+gy: goal point y-coordinate
+
+Tbest: time-best
+
+“AStarPlanner” is a set of function which contains 3 parts (1.variable defining)(2.”Node”defining )(3.”planning( )”function)
+
+
+### Scenario 
 1. 3000 Passengers  with in this week
 2. 12 flights maximum per week
 3. Time cost = medium and Fuel cost = 0.76$/kg
