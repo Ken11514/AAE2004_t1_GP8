@@ -14,15 +14,17 @@ This is the simple code for path planning class
 
 
 import math
-import random
+
 import matplotlib.pyplot as plt
+
+import random as rd
 
 show_animation = True
 
 
 class AStarPlanner:
 
-    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y):
+    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y):
         """
         Initialize grid map for a star planning
 
@@ -43,11 +45,12 @@ class AStarPlanner:
 
         self.fc_x = fc_x
         self.fc_y = fc_y
-
+        self.tc_x = tc_x
+        self.tc_y = tc_y
         
 
-        self.Delta_C1 = 0.2 # cost intensive area 1(time) modifier |yellow in colour
-        self.Delta_C2 = 0.4 # cost intensive area 2(fule) modifier |red in colour
+        self.Delta_C1 = 0.2 # cost intensive area 1 modifier
+        self.Delta_C2 = 1 # cost intensive area 2 modifier
 
         self.costPerGrid = 1 #Cost
 
@@ -112,9 +115,6 @@ class AStarPlanner:
             # reaching goal
             if current.x == goal_node.x and current.y == goal_node.y:
                 print("Total Trip time required -> ",current.cost )
-                #print("Trip Cost for A321neo ->",(0.95*54*(current.cost)+10*(current.cost)+1800)*13)
-                #print("Trip Cost for A330-900neo ->",(0.95*84*(current.cost)+15*(current.cost)+2000)*9)
-                #print("Trip Cost for A350-900 ->",(0.95*90*(current.cost)+20*(current.cost)+2500)*8)
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
                 break
@@ -132,6 +132,12 @@ class AStarPlanner:
                 node = self.Node(current.x + self.motion[i][0],
                                  current.y + self.motion[i][1],
                                  current.cost + self.motion[i][2] * self.costPerGrid, c_id)
+                
+                ## add more cost in cost intensive area 1
+                if self.calc_grid_position(node.x, self.min_x) in self.tc_x:
+                    if self.calc_grid_position(node.y, self.min_y) in self.tc_y:
+                        # print("cost intensive area!!")
+                        node.cost = node.cost + self.Delta_C1 * self.motion[i][2]
                 
                 # add more cost in cost intensive area 2
                 if self.calc_grid_position(node.x, self.min_x) in self.fc_x:
@@ -160,7 +166,7 @@ class AStarPlanner:
         # print(len(closed_set))
         # print(len(open_set))
 
-        return rx, ry, goal_node.cost
+        return rx, ry
 
     def calc_final_path(self, goal_node, closed_set):
         # generate final course
@@ -260,84 +266,78 @@ class AStarPlanner:
                   [0, 1, 1],
                   [-1, 0, 1],
                   [0, -1, 1]]
+     
+
         return motion
 
-def get_goal_coordinate(sx,sy) :
-    possable_location = [(i, j)for i in range(-8,58) for j in range(-8,58) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
-    final_coordinate = random.choice(possable_location)
-    return final_coordinate
-def no_overlap(i, j, sx, sy, gx, gy):
-    for px in [sx-2,sx-1,sx,sx+1,sx+2]:
-        for py in [sy-2,sy-1,sy,sy+1,sy+2]:
-            if (i==px and j==py ):
-                return False
-    for px in [gx-2,gx-1,gx,gx+1,gx+2]:
-        for py in [gy-2,gy-1,gy,gy+1,gy+2]:
-            if i==px and j==py :
-                return False
-    return True
 
-
-    
 def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
-    
-    # start and goal position
-    sx = random.randint(-8,59)  # [m]
-    sy = random.randint(-8,59)  # [m]
-    gx = get_goal_coordinate(sx,sy)[0]  # [m]
-    gy = get_goal_coordinate(sx,sy)[1]  # [m]
+
+    # random start and goal position
+    sx = rd.randint(-8, 59)  # [m]
+    sy = rd.randint(-8, 59)  # [m]
+    possible_gx = []  # [m]
+    possible_gy = [] # [m] 
+    for i in range(-8, 59):
+        for j in range(-8, 59):
+            if math.sqrt((i-sx)**2+(j-sy)**2) >= 50:
+                possible_gx.append(i)
+                possible_gy.append(j)
+    gx = rd.choice(possible_gx)
+    gy = rd.choice(possible_gy)
     grid_size = 1  # [m]
     robot_radius = 1.0  # [m]
-    Tbest = 0
-    print("The starting coordinates are: ({}, {})".format(sx,sy))
-    print("The goal coordinates are:",get_goal_coordinate(sx,sy))
 
-    # set obstacle positions for group 
+
+
+
+    # set obstacle positions 
     ox, oy = [], []
-    for i in range(-10, 60): # draw the buttom border 
+    for i in range(-10, 61): # draw the buttom border 
         ox.append(i)
         oy.append(-10.0)
     for i in range(-10, 61): # draw the right border
         ox.append(60.0)
         oy.append(i)
-    for i in range(-10, 60): # draw the top border
+    for i in range(-10, 61): # draw the top border
         ox.append(i)
         oy.append(60.0)
-    for i in range(-10, 60): # draw the left border
+    for i in range(-10, 61): # draw the left border
         ox.append(-10.0)
         oy.append(i)
-    for i in range(-10,60):
-        for j in range(-10,60):
-            if random.randint(0,100)>= 92 and no_overlap(i,j,sx,sy,gx,gy) :
-                ox.append(i)
-                oy.append(j)
+
+
+    # set cost intesive area 1
+    tc_x, tc_y = [], []
+    for i in range(0, 0):
+        for j in range(0, 0):
+            tc_x.append(i)
+            tc_y.append(j)
     
-    # set cost intesive area 2 yellow in colour
+    # set fuel consuming area 
+
     fc_x, fc_y = [], []
-    x_coordinate = random.randint(-10,30)
-    y_coordinate = random.randint(-10,30)
-    for i in range(x_coordinate, x_coordinate+30):
-        for j in range(y_coordinate, y_coordinate+30):
+    a = rd.randint(-8, 29)
+    b = rd.randint(-8, 29)
+    for i in range(a, a+30):
+        for j in range(b, b+30):
             fc_x.append(i)
             fc_y.append(j)
 
 
     if show_animation:  # pragma: no cover
-        plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 2(fule) yellow
-
-        plt.plot(ox, oy, "sk") # plot the obstacle
-        plt.plot(sx, sy, "*b") # plot the start position 
-        plt.plot(gx, gy, "*g") # plot the end position
+        plt.plot(ox, oy, ".k") # plot the obstacle
+        plt.plot(sx, sy, "og") # plot the start position 
+        plt.plot(gx, gy, "xb") # plot the end position
+        
+        plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 1
 
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
 
-    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y)
-    rx, ry, Tbest = a_star.planning(sx, sy, gx, gy)
-    #print(Tbest)
-    
-
+    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y)
+    rx, ry = a_star.planning(sx, sy, gx, gy)
 
     if show_animation:  # pragma: no cover
         plt.plot(rx, ry, "-r") # show the route 
@@ -345,7 +345,5 @@ def main():
         plt.show() # show the plot
 
 
-
 if __name__ == '__main__':
-
     main()
