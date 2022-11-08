@@ -52,7 +52,7 @@ A set of function which contains 3 parts
 According to the results of coding,
 
 ### Scenario 2 
-1. 125 Passengers  with in this month
+1. 1250 Passengers  with in this month
 2. 5 flights maximum per week
 3. Time cost = high and Fuel cost = 0.88$/kg
 
