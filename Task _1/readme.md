@@ -36,14 +36,14 @@ Tbest: time-best
 ### **“AStarPlanner”**
 A set of function which contains 3 parts
 
-1.variable defining
+1. Variable defining
 ![Screenshot T1 2](https://user-images.githubusercontent.com/116112237/200494106-d15c57e9-ce3c-45de-b830-8ac56436ccd3.png)
 
-2.Node defining
+2. "Node" defining
 ![Screenshot T1 3](https://user-images.githubusercontent.com/116112237/200494316-9f31426c-3235-4f3b-8bfe-e6f6ee063a7e.png)
 
-3.planning( )
-
+3. planning( )
+![Screenshot T1 4](https://user-images.githubusercontent.com/116112237/200495618-6ab49a42-966b-488c-8a60-0e7dfa93abaa.png)
 
 ### Scenario 1
 1. 3000 Passengers  with in this week
