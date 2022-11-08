@@ -55,22 +55,36 @@ paragraph3:
 # Task 1
 ## Introduction
 - [ ] : How the task related to daily aviation
-- [ ] : Task objective
+- [ ] : Task objective      
 ## Content
 - [ ] : Thhings to do
 - [ ] : How and What we have done (explain with result)
-
 ## Conclusion
 - [ ] : result (1 line to cover it)
 - [ ] : How to improve
 <!-- Task 2 -->
 # Task 2
 ## Introduction
-- [ ] : How the task related to daily aviation
-- [ ] : Task objective
+- [x] : How the task related to daily aviation
+
+        The area designed in task 2 represents jet-stream area which aircrafts could consume relatively less fuel
+        -> reduce the cost of flights
+        
+- [x] : Task objective
+
+        Recreate a jet-steam area in the map that could most benefit our flight route. 
+        
 ## Content
-- [ ] : Thhings to do
-- [ ] : How and what we have done (explain with result)
+- [x] : Thhings to do
+
+        Design a new cost area -> reduce the cost of the route of scenario 1 in task 1
+         
+- [x] : How and what we have done (explain with result)
+
+        1 Base on the scenario 1 in Task 1
+        2 Create a reduce-cost area in the map (size: vertical lengths:5 , horizontal length:infinity [cyan in colour])
+        3 Finding the lowest Trip Cost in pothntial.
+
 
 ## Conclusion
 - [ ] : result (1 line to cover it)
