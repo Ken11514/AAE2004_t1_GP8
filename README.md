@@ -1,14 +1,13 @@
 # AAE2004_t1_GP8 Look gooood
 ![Group 8 Banner](images/Group_8_Banner.gif)
 <!-- TABLE OF CONTenT-->
-
-<iframe width="420" height="315" 
-src="https://www.youtube.com/embed/_sfXMg4N2-k?autoplay=1">
-</iframe>
-
-[Video in YouTube]("https://www.youtube.com/watch?v=_sfXMg4N2-k") 
+<p align="center">
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/_sfXMg4N2-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipbord-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 <input type="button" onclick="alert('Why you touch me')" value="Don't touch me">
+
 <details open='open'>
   <summary><h2 style='display: inline-block'>Table of Content</h2></summary>
   <ul>
