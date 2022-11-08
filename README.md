@@ -31,34 +31,60 @@
 
 # Backgroung
 paragraph1:
-- [ ] Imform people *Why* **Path Finding** is important
+- [x] Imform people *Why* **Path Finding** is important
+     
+      1 Find the shortest and the most obstacle-free path from a start to goal state
+      2 Can be widely applied in partially and unknown structured environment
+      3 Save cost and increase efficiency
 
 paragraph2: 
 - [ ] Telling people *How* we finding path with purpose
-
+     
+      1 Python(Computer language)
+      2 A-Star(Path finding algorithm) -> find the shortest path from a specified source to a specified goal
+      3 VS code(Platform)
+      
 paragraph3: 
-- [ ] Introduce people *What* we are going to do in this porject 
-
+- [x] Introduce people *What* we are going to do in this porject 
+  
+      1 Find the shortest and most cost-efficient route and aircraft for a flight in 3 different scenarios
+      2 Design a new cost area -> reduce the cost of the route
+      3 Design a new aircraft model -> achive minimum cost
+      
 <!-- TASK 1 -->
 # Task 1
 ## Introduction
 - [ ] : How the task related to daily aviation
-- [ ] : Task objective
+- [ ] : Task objective      
 ## Content
 - [ ] : Thhings to do
 - [ ] : How and What we have done (explain with result)
-
 ## Conclusion
 - [ ] : result (1 line to cover it)
 - [ ] : How to improve
 <!-- Task 2 -->
 # Task 2
 ## Introduction
-- [ ] : How the task related to daily aviation
-- [ ] : Task objective
+- [x] : How the task related to daily aviation
+
+        The area designed in task 2 represents jet-stream area where aircrafts could consume relatively less fuel
+        -> reduce the cost of flights
+        
+- [x] : Task objective
+
+        Recreate a jet-steam area in the map that could most benefit our flight route. 
+        
 ## Content
-- [ ] : Thhings to do
-- [ ] : How and what we have done (explain with result)
+- [x] : Thhings to do
+
+        Design a new cost area -> reduce the cost of the route of scenario 1 in task 1
+         
+- [x] : How and what we have done (explain with result)
+
+        1 Base on the scenario 1 in Task 1
+        2 Create a reduce-cost area in the map (size: vertical lengths:5 , horizontal length:infinity [cyan in colour])
+        3 Finding the lowest Trip Cost in pothntial.
+
 
 ## Conclusion
 - [ ] : result (1 line to cover it)
