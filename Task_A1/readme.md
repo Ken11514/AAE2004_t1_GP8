@@ -21,7 +21,7 @@ Assume the aircraft is a supply craft that must rech 2 drop-off points to drop s
 - Step1: Randomly find 2 checkpoints inside each cost intensive area by coding
 
 ```python
-vergerg
+
 ```
 - Step2: Devide the whole path into 3 routes(start point - f point, f point - t point, t point - goal point)
 
