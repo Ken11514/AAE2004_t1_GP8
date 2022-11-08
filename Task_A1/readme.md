@@ -18,7 +18,7 @@ Assume the aircraft is a supply craft that must rech 2 drop-off points to drop s
 - plot the checkpoints together with toyr planned plath with appropriate visulization
 
 # Finding the route with checkpoints
-Step1: Randomly find 2 checkpoints inside each cost intensive area by coding
-Step2: cut the whole path into 3 different route
-Step3: Plot all of 3 routes 
-Step4: combine 3 routes into the whole path 
+-Step1: Randomly find 2 checkpoints inside each cost intensive area by coding
+-Step2: cut the whole path into 3 different route
+-Step3: Plot all of 3 routes 
+-Step4: combine 3 routes into the whole path 
