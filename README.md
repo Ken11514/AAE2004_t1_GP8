@@ -3,7 +3,7 @@
 <!-- TABLE OF CONTenT-->
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lsXuk-UKMJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lsXuk-UKMJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 <input type="button" onclick="alert('Why you touch me')" value="Don't touch me">
@@ -15,17 +15,30 @@
       <a href='#to-do-list'>Task on progess</a>
     </li>
     <li>
-      <a href='#Background-of-Path-Planing-to-Aviation-Engineering'>Background</a>
+      <a href='#1--background-of-path-planing-to-aviation-engineering'>Background of Path Planning to Aviation Engeering</a>
+    </li>
+    <li><a href='#2--theory-of-path-planning-algorithm'>Theory of Path Planning Algorithm</a>
+    </li>
+    <li><a href='#3--introduction-of-the-engineering-tools'>Introduction of the Engeering Tools</a>
     </li>
     <li>
-      <a href='#task-1'>Task 1</a>
+      <a href='#4--task-1'>Task 1</a>
     </li>
     <li>
-      <a href='#task-2'>Task 2</a>
+      <a href='#5--task-2'>Task 2</a>
     </li>
     <li>
-      <a href='#task-3'>Task 3</a>
+      <a href='#6--task-3'>Task 3</a>
     </li>
+    <li><a href='#7--additional-task-1'>Additional Task 1</a>
+    </li>
+    <li><a href='#8--additional-task-2'>Additional Task 2</a>
+    </li>
+    <li><a href='#9--additional-task-3'>Additional Task 3</a>
+    </li>
+    <li><a href='#10--reflective-essay'>Reflective Essay</a>
+    </li>
+    <li><a href='#11--references'>References</a></li>
     <li>
       <a href='#reference-source'>Reference source</a>
     </li>
@@ -36,6 +49,7 @@
 
 
 # 1 | Background of Path Planing to Aviation Engineering
+<p align='center'>
 paragraph1:
 - [x] Imform people *Whatis* **Path Finding** 
  ```    
@@ -43,6 +57,8 @@ paragraph1:
 2 Can be widely applied in partially and unknown structured environment
 3 Save cost and increase efficiency
 ```
+</p>
+<p align='center'>
 paragraph2: 
 - [ ] Telling people *How* we finding path with purpose
 ```     
@@ -50,6 +66,8 @@ paragraph2:
 2 A-Star(Path finding algorithm) -> find the shortest path from a specified source to a specified goal
 3 VS code(Platform)
 ```
+</p>
+<p align='center'>
 paragraph3: 
 - [x] Introduce people *What* we are going to do in this porject 
 ```
@@ -57,6 +75,7 @@ paragraph3:
 2 Design a new cost area -> reduce the cost of the route
 3 Design a new aircraft model -> achive minimum cost
 ```
+</p>
 # 2 | Theory of Path Planning Algorithm
 - [ ] empty
 
@@ -67,22 +86,44 @@ paragraph3:
 <!-- TASK 1 -->
 # 4 | Task 1
 ## a. Methodology
+
+<p align='center'>
+explain how to achive and what skills we used
+</p>
+
 ## b. Results
+
+<p align='center'>
+show our result and explain what does the result repersent
+</p>
+
 ## c. Descussion
-## Introduction
-- [ ] : How the task related to daily aviation
-- [ ] : Task objective      
-## Content
-- [ ] : Thhings to do
-- [ ] : How and What we have done (explain with result)
-## Conclusion
-- [ ] : result (1 line to cover it)
-- [ ] : How to improve
+
+<p align='center'>
+Talk about how the task related to aviation
+</p>
+
+
 <!-- Task 2 -->
 # 5 | Task 2
 ## a. Methodology
+
+<p align='center'>
+explain how to achive and what skills we used
+</p>
+
 ## b. Results
+
+<p align='center'>
+show our result and explain what does the result repersent
+</p>
+
 ## c. Descussion
+
+<p align='center'>
+Talk about how the task related to aviation
+</p>
+
 ## Introduction
 - [x] : How the task related to daily aviation
 
@@ -112,8 +153,23 @@ paragraph3:
 
 # 6 | Task 3
 ## a. Methodology
+
+<p align='center'>
+explain how to achive and what skills we used
+</p>
+
 ## b. Results
+
+<p align='center'>
+show our result and explain what does the result repersent
+</p>
+
 ## c. Descussion
+
+<p align='center'>
+Talk about how the task related to aviation
+</p>
+
 ## Introduction
 - [ ] : How the task related to daily aviation
 - [ ] : Task objective
@@ -128,18 +184,61 @@ paragraph3:
 
 # 7 | Additional Task 1
 ## a. Methodology
+
+<p align='center'>
+explain how to achive and what skills we used
+</p>
+
 ## b. Results
+
+<p align='center'>
+show our result and explain what does the result repersent
+</p>
+
 ## c. Descussion
+
+<p align='center'>
+Talk about how the task related to aviation
+</p>
 
 # 8 | Additional Task 2
 ## a. Methodology
+
+<p align='center'>
+explain how to achive and what skills we used
+</p>
+
 ## b. Results
+
+<p align='center'>
+show our result and explain what does the result repersent
+</p>
+
 ## c. Descussion
+
+<p align='center'>
+Talk about how the task related to aviation
+</p>
 
 # 9 | Additional task 3
 ## a. Methodology
+
+<p align='center'>
+explain how to achive and what skills we used
+</p>
+
 ## b. Results
+
+<p align='center'>
+show our result and explain what does the result repersent
+</p>
+
 ## c. Descussion
+
+<p align='center'>
+Talk about how the task related to aviation
+</p>
+
 
 # 10 | Reflective Essay 
 ## Shek Ho Ching Ken (22075211D)
@@ -151,17 +250,12 @@ paragraph3:
   Type your essay Here!!!
 ```
 
-# 11 | Refweences
+# 11 | References
 -  hi
-----
-## Latest Updates
-- Task 1,2,3 report section
-  
 
-## To do list
-1. Additional Task A1,A2,A3
-2. Task report**s**
-3. PowerPoint slide
+
+
+
 <!-- TASK -->
 
 ## Progess  
@@ -173,7 +267,7 @@ paragraph3:
 - [ ] report for Task_1 & Task_2
 - [ ] [PowerPoint slide](https://connectpolyu-my.sharepoint.com/:p:/g/personal/22075211d_connect_polyu_hk/Ecv7NPHGFGtBt5Jk1Ql2RFoBYP0CGmmuKWjzxvsIqG_WnA?e=OU8kzx) for video
 ### week 11
-- [ ] MSWord report 
+- [ ] [MSWord]("https://connectpolyu-my.sharepoint.com/:w:/g/personal/22075211d_connect_polyu_hk/ESFi3BeMMBBJv2-l2V8ch4wBDD6baR5c8cD08VUSOuKRZA?e=avXK26") report 
 - [ ] GitHub report
 <!-- REFERCE -->
 ------
