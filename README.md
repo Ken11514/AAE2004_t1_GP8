@@ -85,32 +85,32 @@ Example for a maze problem is fitted into a grid format.
 In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
 <br>
 
-Assume all traveling cost adjacently and diagonally are 1 and $\sqrt{2}$ respectively.
-<br>
-Step 1, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.<br>
-Step 2, select the lowest weight node as the position of the **first** step apporaching to the End Point. Then append them to a list which recorded evey step it moved to.<br>
-Step 3, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.<br>
+(Assume all traveling cost adjacently and diagonally are 1 and $\sqrt{2}$ respectively.)
+<br><br>
+Step 1, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.<br><br>
+Step 2, select the lowest weight node as the position of the **first** step apporaching to the End Point. Then append them to a list which recorded evey step it moved to.
+<br><br>
+Step 3, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
+<br><br>
 Step 4, Track back from the list of movement, a route of shortest path can be viewed.
 <table align='center'>
   <tr>
-    <th>Example</th>
-  </tr>
-  <tr>
-    <td></td>
+    <td><image src='images/2_step1.png'><td>
+    <td><image src='images/2_step2.png'><td>
+    <td><image src='images/2_step_3&4.png'></td>
   </tr>
 </table>
 
-
-
-
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowgraph LR;
+    A([Star Path Planning])-->B{Is curren node reach End point};
+    B-->|Yes|F([End and Show the list of movement])
+    B-->|No|C[Serch node near by]
+    C-->D[Calculate weight]
+    D-->E[Select and Move to the lowest weighted node]
+    E-->B
+    
 ```
-
 
 # **3 | Introduction of the Engineering Tools**
 ## a. Python
