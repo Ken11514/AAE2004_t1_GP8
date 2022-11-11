@@ -35,7 +35,7 @@
     </li>
     <li><a href='#11--references'>References</a></li>
     <li>
-      <a href='#reference-source'>Reference source</a>
+      <a href='#useful-source'>Useful source</a>
     </li>
     <li>
       <a href='#progess'>Task on progess</a>
@@ -87,20 +87,21 @@ In grid format, all possabale path position are recognized as node, and can be a
 
 (Assume all traveling cost adjacently and diagonally are 1 and $\sqrt{2}$ respectively.)
 <br><br>
-Step 1, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.<br><br>
-Step 2, select the lowest weight node as the position of the **first** step apporaching to the End Point. Then append them to a list which recorded evey step it moved to.
+**Step 1**, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.<br><br>
+**Step 2**, select the lowest weight node as the position of the **first** step apporaching to the End Point. Then append them to a list which recorded evey step it moved to.
 <br><br>
-Step 3, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
+**Step 3**, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
 <br><br>
-Step 4, Track back from the list of movement, a route of shortest path can be viewed.
+**Step 4**, Track back from the list of movement, a route of shortest path can be viewed.
 <table align='center'>
+  <tr>Diagram of above steps:</tr>
   <tr>
     <td><image src='images/2_step1.png'><td>
     <td><image src='images/2_step2.png'><td>
     <td><image src='images/2_step_3&4.png'></td>
   </tr>
 </table>
-
+Flowchart for A-Star algorithm:<br> 
 ```mermaid
 flowchart LR;
     A([Star Path Planning])-->B{Is curren node reach End point};
@@ -109,13 +110,16 @@ flowchart LR;
     C-->D[Calculate weight]
     D-->E[Select and Move to the lowest weighted node]
     E-->B
-    
 ```
 
 # **3 | Introduction of the Engineering Tools**
-## a. Python
 
-## b. GitHub
+## **A. Python & Html**
+Both Python and Html are computer langue which is easy to learn and having a large flexibility. Moreover, Python has diverse of modpack, In this project we uesd Matplotlib and Imageio for graphing and photo operating. 
+## **B. Visual Studio Code**
+Visual Studio Code(VS Code), is a platform fo source code editing, it covers many useful features, such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Ferthermore, estension can be install for  additional functionality
+## **C. GitHub**
+GitHub is a free online platform, for programmer hosting and cooperatiing softwre developmentd. It is not only used to host open source software development projects, but also hold variety of event for instan Game Off.
 <!-- TASK 1 -->
 # **4 | Task 1**
 ## a. Methodology
@@ -304,7 +308,7 @@ Talk about how the task related to aviation
 - [ ] GitHub report
 <!-- REFERCE -->
 ------
-## Reference source
+## Useful source
 
 ### YouTube video:
 [How To Create Beautiful and Useful ReadMe Documents For GitHub](https://youtu.be/a8CwpGARAsQ)
@@ -314,3 +318,4 @@ Talk about how the task related to aviation
 
 [basic syntax](https://www.markdownguide.org/basic-syntax)
 
+[How to write Methodology](https://www.scribbr.com/dissertation/methodology/)
