@@ -12,10 +12,9 @@ This is the simple code for path planning class
 """
 
 
-import os 
-import imageio
+
 import math
-import random
+
 import matplotlib.pyplot as plt
 
 show_animation = True
@@ -23,7 +22,7 @@ show_animation = True
 
 class AStarPlanner:
 
-    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y):
+    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y):
         """
         Initialize grid map for a star planning
 
@@ -44,13 +43,14 @@ class AStarPlanner:
 
         self.fc_x = fc_x
         self.fc_y = fc_y
-
+        self.tc_x = tc_x
+        self.tc_y = tc_y
         
 
-        self.Delta_C1 = 0.2 # cost intensive area 1(time) modifier |yellow in colour
-        self.Delta_C2 = 0.4 # cost intensive area 2(fule) modifier |red in colour
+        self.Delta_C1 = 0.2 # cost intensive area 1 modifier
+        self.Delta_C2 = 1 # cost intensive area 2 modifier
 
-        self.costPerGrid = 1 #Cost
+        self.costPerGrid = 1 
 
 
     class Node: # definition of a sinle node
@@ -78,8 +78,7 @@ class AStarPlanner:
             rx: x position list of the final path
             ry: y position list of the final path
         """
-        frame = 0
-        frameName = []
+
         start_node = self.Node(self.calc_xy_index(sx, self.min_x), # calculate the index based on given position
                                self.calc_xy_index(sy, self.min_y), 0.0, -1) # set cost zero, set parent index -1
         goal_node = self.Node(self.calc_xy_index(gx, self.min_x), # calculate the index based on given position
@@ -102,25 +101,18 @@ class AStarPlanner:
 
             # show graph
             if show_animation:  # pragma: no cover
-                plt.plot(self.calc_grid_position(current.x, self.min_x),
-                         self.calc_grid_position(current.y, self.min_y), "xc")
+                #plt.plot(self.calc_grid_position(current.x, self.min_x),
+                 #        self.calc_grid_position(current.y, self.min_y), ".w",mfc='b',label='serch nodes')
                 # for stopping simulation with the esc key.
                 plt.gcf().canvas.mpl_connect('key_release_event',
                                              lambda event: [exit(
                                                  0) if event.key == 'escape' else None])
-                if len(closed_set.keys()) % 100 == 0:
-                    frame += 1
-                    path_name = 'images/f{}.png'.format(frame)
-                    frameName.append(path_name)
-                    plt.savefig(path_name)
+                if len(closed_set.keys()) % 10 == 0:
                     plt.pause(0.001)
 
             # reaching goal
             if current.x == goal_node.x and current.y == goal_node.y:
                 print("Total Trip time required -> ",current.cost )
-                #print("Trip Cost for A321neo ->",(0.95*54*(current.cost)+10*(current.cost)+1800)*13)
-                #print("Trip Cost for A330-900neo ->",(0.95*84*(current.cost)+15*(current.cost)+2000)*9)
-                #print("Trip Cost for A350-900 ->",(0.95*90*(current.cost)+20*(current.cost)+2500)*8)
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
                 break
@@ -138,6 +130,12 @@ class AStarPlanner:
                 node = self.Node(current.x + self.motion[i][0],
                                  current.y + self.motion[i][1],
                                  current.cost + self.motion[i][2] * self.costPerGrid, c_id)
+                
+                ## add more cost in cost intensive area 1
+                if self.calc_grid_position(node.x, self.min_x) in self.tc_x:
+                    if self.calc_grid_position(node.y, self.min_y) in self.tc_y:
+                        # print("cost intensive area!!")
+                        node.cost = node.cost + self.Delta_C1 * self.motion[i][2]
                 
                 # add more cost in cost intensive area 2
                 if self.calc_grid_position(node.x, self.min_x) in self.fc_x:
@@ -166,7 +164,7 @@ class AStarPlanner:
         # print(len(closed_set))
         # print(len(open_set))
 
-        return rx, ry, goal_node.cost, frame, frameName
+        return rx, ry
 
     def calc_final_path(self, goal_node, closed_set):
         # generate final course
@@ -265,46 +263,54 @@ class AStarPlanner:
         motion = [[1, 0, 1],
                   [0, 1, 1],
                   [-1, 0, 1],
-                  [0, -1, 1]]
+                  [0, -1, 1],
+                  [-1, -1, math.sqrt(2)],
+                  [-1, 1, math.sqrt(2)],
+                  [1, -1, math.sqrt(2)],
+                  [1, 1, math.sqrt(2)]]
+
         return motion
 
-def get_goal_coordinate(sx,sy) :
-    possable_location = [(i, j)for i in range(-8,58) for j in range(-8,58) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
-    final_coordinate = random.choice(possable_location)
-    return final_coordinate
-def no_overlap(i, j, sx, sy, gx, gy):
-    for px in [sx-2,sx-1,sx,sx+1,sx+2]:
-        for py in [sy-2,sy-1,sy,sy+1,sy+2]:
-            if (i==px and j==py ):
-                return False
-    for px in [gx-2,gx-1,gx,gx+1,gx+2]:
-        for py in [gy-2,gy-1,gy,gy+1,gy+2]:
-            if i==px and j==py :
-                return False
-    return True
 
-
-    
 def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
-    
+
     # start and goal position
-    sx = random.randint(-8,59)  # [m]
-    sy = random.randint(-8,59)  # [m]
-    gx = get_goal_coordinate(sx,sy)[0]  # [m]
-    gy = get_goal_coordinate(sx,sy)[1]  # [m]
+    sx = 0.0  # [m]
+    sy = 0.0  # [m]
+    gx = 50.0  # [m]
+    gy = 50.0  # [m]
     grid_size = 1  # [m]
     robot_radius = 1.0  # [m]
-    Tbest = 0
-    print("The starting coordinates are: ({}, {})".format(sx,sy))
-    print("The goal coordinates are:",get_goal_coordinate(sx,sy))
 
-    # set obstacle positions for group 
+    # set obstacle positions for group 8
+    # ox, oy = [], []
+    # for i in range(-10, 60): # draw the button border 
+    #     ox.append(i)
+    #     oy.append(-10.0)
+    # for i in range(-10, 60):
+    #     ox.append(60.0)
+    #     oy.append(i)
+    # for i in range(-10, 61):
+    #     ox.append(i)
+    #     oy.append(60.0)
+    # for i in range(-10, 61):
+    #     ox.append(-10.0)
+    #     oy.append(i)
+    # for i in range(-10, 40):
+    #     ox.append(20.0)
+    #     oy.append(i)
+    # for i in range(0, 40):
+    #     ox.append(40.0)
+    #     oy.append(60.0 - i)
+
+
+    # set obstacle positions for group 9
     ox, oy = [], []
-    for i in range(-10, 60): # draw the buttom border 
+    for i in range(-10, 60): # draw the button border 
         ox.append(i)
         oy.append(-10.0)
-    for i in range(-10, 61): # draw the right border
+    for i in range(-10, 60): # draw the right border
         ox.append(60.0)
         oy.append(i)
     for i in range(-10, 60): # draw the top border
@@ -313,57 +319,68 @@ def main():
     for i in range(-10, 60): # draw the left border
         ox.append(-10.0)
         oy.append(i)
-    for i in range(-10,60):
-        for j in range(-10,60):
-            if random.randint(0,100)>= 94 and no_overlap(i,j,sx,sy,gx,gy) :
-                ox.append(i)
-                oy.append(j)
+
+    for i in range(-10, 30): # draw the free border
+        ox.append(20.0)
+        oy.append(i)
+
+    for i in range(20, 60):
+        ox.append(40)
+        oy.append(i)
     
-    # set cost intesive area 2 yellow in colour
+    # for i in range(40, 45): # draw the button border 
+    #     ox.append(i)
+    #     oy.append(30.0)
+
+
+    # set cost intesive area 1
+    tc_x, tc_y = [], []
+    '''
+    for i in range(10, 20):
+        for j in range(20, 50):
+            tc_x.append(i)
+            tc_y.append(j)
+    '''
+    # set cost intesive area 2
     fc_x, fc_y = [], []
-    x_coordinate = random.randint(-10,30)
-    y_coordinate = random.randint(-10,30)
-    for i in range(x_coordinate, x_coordinate+30):
-        for j in range(y_coordinate, y_coordinate+30):
+    '''
+    for i in range(30, 40):
+        for j in range(0, 20):
             fc_x.append(i)
             fc_y.append(j)
-
+'''
 
     if show_animation:  # pragma: no cover
-        plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 2(fule) yellow
+        rx=0
+        ry=0
 
-        plt.plot(ox, oy, "sk") # plot the obstacle
-        plt.plot(sx, sy, "*b") # plot the start position 
-        plt.plot(gx, gy, "*g") # plot the end position
+        plt.plot(rx, ry, ".w",mfc='r',label='seleted point') # show the route 
+        plt.plot(ox, oy, ".k", label='obstacle') # plot the obstacle
+        plt.plot(sx, sy, "og", label='start point') # plot the start position 
+        plt.plot(gx, gy, "xb", label='end point') # plot the end position
+        plt.plot([-1,0,1,-1,1,-1,0,1],[1,1,1,0,0,-1,-1,-1],'.w',mfc='b', label='first step')
+
+
+        #plt.legend(loc=("upper left"))
+        plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 1
+        plt.plot(tc_x, tc_y, "or") # plot the cost intensive area 2
 
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
 
-    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y)
-    rx, ry, Tbest, frame, frameName= a_star.planning(sx, sy, gx, gy)
-    #print(Tbest)
-    
-
+    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y)
+    rx, ry = a_star.planning(sx, sy, gx, gy)
 
     if show_animation:  # pragma: no cover
-        for pic in range(1,30):
-            frame += 1
-            path_name = 'images/f{}.png'.format(frame)
-            frameName.append(path_name)
-            plt.savefig(path_name)
-            plt.plot(rx, ry, "-r") # show the route 
+        rx=1
+        ry=1
+        plt.plot((1,50),(1,50),'-y',label='heuristic estimated distance')
+        plt.plot(rx, ry, ".w",mfc='r') # show the route 
+        plt.legend(loc=("upper left"))
         plt.pause(0.001) # pause 0.001 seconds
+        plt.savefig('images/2_step2')
         plt.show() # show the plot
-
-        with imageio.get_writer('images/Task_A2(2).gif', mode='I') as writer:
-            for filename in frameName:
-                image = imageio.imread(filename)
-                writer.append_data(image)
-        for filename in set(frameName):
-            os.remove(filename)
-
 
 
 if __name__ == '__main__':
-
     main()
