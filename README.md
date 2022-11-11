@@ -102,7 +102,7 @@ Step 4, Track back from the list of movement, a route of shortest path can be vi
 </table>
 
 ```mermaid
-flowgraph LR;
+flowchart LR;
     A([Star Path Planning])-->B{Is curren node reach End point};
     B-->|Yes|F([End and Show the list of movement])
     B-->|No|C[Serch node near by]
