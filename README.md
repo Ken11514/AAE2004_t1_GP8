@@ -64,14 +64,14 @@
 # **2 | Theory of Path Planning Algorithm**
 - [ ] show how its work
 
-Converting a maze problem into a grid, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
+Converting a maze problem into a grid format, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
 <br>
 Example for a maze problem is fitted into a grid format.
 
 <table align='center'>
   <tr>
     <th>Maze Problem</th>
-    <th>Grid Gormat</th>
+    <th>Grid Format</th>
   </tr>
   <tr>
     <td>
@@ -87,8 +87,8 @@ In grid format, all possabale path position are recognized as node, and can be a
 
 (Assume all traveling cost adjacently and diagonally are 1 and $\sqrt{2}$ respectively.)
 <br><br>
-**Step 1**, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.<br><br>
-**Step 2**, select the lowest weight node as the position of the **first** step apporaching to the End Point. Then append them to a list which recorded evey step it moved to.
+**Step 1**, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.The data are stored in a list of possable step.<br><br>
+**Step 2**, select the lowest weight node from the list as repersenting the position of the **first** step apporaching to the End Point. Then append it to a list which recorded evey step it moved to.
 <br><br>
 **Step 3**, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
 <br><br>
@@ -99,6 +99,9 @@ In grid format, all possabale path position are recognized as node, and can be a
     <td><image src='images/2_step1.png'><td>
     <td><image src='images/2_step2.png'><td>
     <td><image src='images/2_step_3&4.png'></td>
+  </tr>
+  <tr>
+    <td><image scr='images/Theory_example.gif'></td>
   </tr>
 </table>
 Flowchart for A-Star algorithm:<br> 
@@ -319,3 +322,5 @@ Talk about how the task related to aviation
 [basic syntax](https://www.markdownguide.org/basic-syntax)
 
 [How to write Methodology](https://www.scribbr.com/dissertation/methodology/)
+
+[A-Star Breakdown](AStar%20Breakdown.docx)
