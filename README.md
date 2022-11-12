@@ -1,5 +1,8 @@
 # AAE2004_t1_GP8 Look gooood
-
+<style>
+  Ken {color:crimson;
+       border:2px solid crimson;}
+</style>
 <p align='center'>
 <image src=images/Group_8_Banner.gif alt="Group 8 Banner">
 </p>
@@ -49,14 +52,14 @@
 # **1 | Background of Path Planing to Aviation Engineering**
 
 
-<p align='center'>
-  In Aviation Industry, Path Planning has a importance place in Air Traffic Control, Airline Companies and Airports. ...
-
-  <br>For Air Traffic Control,by calculating obstical and danger zone, Path Planning help operater adjust the flight route of aircrafts, in order to provide a safety flying experience. ...
-  
-  <br>For Airline Companies, by calculating the shortest route for airlines, Path Planning help companies reduce filght cost, in order to enhance their profit. ...
-
-  <br>For Airports, by planning the take off and landing timing, Path Planning help Airports maximize the aircraft flow, in order to increase passenger flow. ...
+<p>
+  &nbsp;&nbsp;&nbsp;&nbsp;In Aviation Industry, Path Planning has a importance place in Air Traffic Control, Airline Companies and Airports. ...
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;For Air Traffic Control,by calculating obstical and danger zone, Path Planning help operater adjust the flight route of aircrafts, in order to provide a safety flying experience. ...
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;For Airline Companies, by calculating the shortest route for airlines, Path Planning help companies reduce filght cost, in order to enhance their profit. ...
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;For Airports, by planning the take off and landing timing, Path Planning help Airports maximize the aircraft flow, in order to increase passenger flow. ...
 
   <br>
 </p>
@@ -64,7 +67,7 @@
 # **2 | Theory of Path Planning Algorithm**
 - [ ] show how its work
 
-Converting a maze problem into a grid format, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
+&nbsp;&nbsp;&nbsp;&nbsp;Converting a maze problem into a grid format, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
 <br>
 Example for a maze problem is fitted into a grid format.
 
@@ -78,11 +81,11 @@ Example for a maze problem is fitted into a grid format.
     <image src='images/Raw_sample.png'>
     </td>
     <td>
-      <image src='images/Sample.png'>
+      <image src='images/Sample.png' alt='how is work'>
     </td>
   </tr>
 </table>
-In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
+&nbsp;&nbsp;&nbsp;&nbsp;In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
 <br>
 
 (Assume all traveling cost adjacently and diagonally are 1 and $\sqrt{2}$ respectively.)
@@ -99,11 +102,10 @@ In grid format, all possabale path position are recognized as node, and can be a
     <td><image src='images/2_step1.png'><td>
     <td><image src='images/2_step2.png'><td>
     <td><image src='images/2_step_3&4.png'></td>
-  </tr>
-  <tr>
-    <td><image scr='images/Theory_example.gif'></td>
+    <td><image src='images/Theory_example.gif'></td>
   </tr>
 </table>
+
 Flowchart for A-Star algorithm:<br> 
 ```mermaid
 flowchart LR;
@@ -118,28 +120,29 @@ flowchart LR;
 # **3 | Introduction of the Engineering Tools**
 
 ## **A. Python & Html**
-Both Python and Html are computer langue which is easy to learn and having a large flexibility. Moreover, Python has diverse of modpack, In this project we uesd Matplotlib and Imageio for graphing and photo operating. 
+&nbsp;&nbsp;&nbsp;&nbsp;Both Python and Html are computer langue which is easy to learn and having a large flexibility. Moreover, Python has diverse of modpack, In this project we uesd Matplotlib and Imageio for graphing and photo operating. 
 ## **B. Visual Studio Code**
-Visual Studio Code(VS Code), is a platform fo source code editing, it covers many useful features, such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Ferthermore, estension can be install for  additional functionality
+&nbsp;&nbsp;&nbsp;&nbsp;Visual Studio Code(VS Code), is a platform fo source code editing, it covers many useful features, such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Ferthermore, estension can be install for  additional functionality
 ## **C. GitHub**
-GitHub is a free online platform, for programmer hosting and cooperatiing softwre developmentd. It is not only used to host open source software development projects, but also hold variety of event for instan Game Off.
+&nbsp;&nbsp;&nbsp;&nbsp;GitHub is a free online platform, for programmer hosting and cooperatiing softwre developmentd. It is not only used to host open source software development projects, but also hold variety of event for instan Game Off.
 <!-- TASK 1 -->
 # **4 | Task 1**
 ## a. Methodology
 
-<p align='center'>
-explain how to achive and what skills we used
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.<br>
+
 </p>
 
 ## b. Results
 
-<p align='center'>
+<p >
 show our result and explain what does the result repersent
 </p>
 
 ## c. Descussion
 
-<p align='center'>
+<p >
 Talk about how the task related to aviation
 </p>
 
@@ -281,7 +284,7 @@ Talk about how the task related to aviation
 
 
 # **10 | Reflective Essay**
-## Shek Ho Ching Ken (22075211D)
+<h2><ken>Shek Ho Ching Ken (22075211D)</ken></h2>
 ```
   This project is my first GitHub project in my life ,also ......
 ```
