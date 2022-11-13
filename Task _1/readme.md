@@ -8,7 +8,7 @@ Although most of the fights do not always follow the same route, it is important
 | key | A321neo | A330-900neo | A350-900|
 | :---: | :---: | :---: | :---: |
 |Fuel Consumption rate(kg/min)|54|84|90|
-|Passenger Capacity|200|300|350|![Screenshot T1 2](https://user-images.githubusercontent.com/116112237/200491442-e117a05f-a5b2-470b-a705-dfc6e9e5bf76.png)
+|Passenger Capacity|200|300|350|
 |Time cost (Low)($/min)|10|15|20|
 |Time cost (Medium)($/min)|15|21|27|
 |Time cost (High)($/min)|20|27|34|
