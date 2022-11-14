@@ -186,7 +186,7 @@ Talk about how the task related to aviation
 
 # **6 | Task 3**
 ## a. Methodology
-
+     
 <p align='center'>
 explain how to achive and what skills we used
 </p>
@@ -195,12 +195,16 @@ explain how to achive and what skills we used
 
 <p align='center'>
 show our result and explain what does the result repersent
+
+As you can see from the table,The model with 450 passengers as the maximum capacity require $71064 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98044 and $78064.The model 3 has the lowest total in 3 model.This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Therefore,the nember of total trips are the most important element to lower the total cost instead of the cost each flight.    
 </p>
 
 ## c. Descussion
 
 <p align='center'>
 Talk about how the task related to aviation
+
+Compare to another type of transportation method,the manufacture and the operating cost of an aircraft are in a extremely high level.Besides gaining the profit from the commerical flight,airlines are required to surver the gigantic operating cost from different areas.The operating cost of aircraft in each flight are the biggest outcome of the airlines besides owning a aircraft. There is a significant differences of operating cost to fulfill the requirement between in different mode of maximum passengers capacity to meet the requirement of senerio 1.If the airlines doesn't choose the most efficency mode,there will be planty of unnesscary economic resources are wasted. Therefore,finding the best model to fulfill the requirment in the lowest operating cost to prevent the unnesscary waste are extremely important to the aviation.
 </p>
 
 ## Introduction
