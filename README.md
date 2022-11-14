@@ -88,7 +88,7 @@ Example for a maze problem is fitted into a grid format.
 <br><br>
 <b>Step 3</b>, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
 <br><br>
-<b>Step 4</b>, Track back from the list of movement, a route of shortest path can be viewed.
+<b>Step 4</b>, Track back from the list of movement, a route of shortest path can be viewed.<br><br>
 <table align='center'>
   <tr>Diagram of above steps:</tr>
   <tr>
@@ -405,6 +405,7 @@ Talk about how the task related to aviation
 
 # **10 | Reflective Essay**
 <h2>Shek Ho Ching Ken (22075211D)</h2>
+
 ```
   This project is my first GitHub project in my life ,also ......
 ```
