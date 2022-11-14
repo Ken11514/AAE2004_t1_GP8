@@ -83,17 +83,17 @@ Example for a maze problem is fitted into a grid format.
 </table>
 &nbsp;&nbsp;&nbsp;&nbsp;In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
 <br><br>
-**Step 1**, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.The data are stored in a list of possable step.<br><br>
-**Step 2**, select the lowest weight node from the list as repersenting the position of the **first** step apporaching to the End Point. Then append it to a list which recorded evey step it moved to.
+<b>Step 1</b>, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.The data are stored in a list of possable step.<br><br>
+<b>Step 2</b>, select the lowest weight node from the list as repersenting the position of the <b>first</b> step apporaching to the End Point. Then append it to a list which recorded evey step it moved to.
 <br><br>
-**Step 3**, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
+<b>Step 3</b>, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
 <br><br>
-**Step 4**, Track back from the list of movement, a route of shortest path can be viewed.
+<b>Step 4</b>, Track back from the list of movement, a route of shortest path can be viewed.
 <table align='center'>
   <tr>Diagram of above steps:</tr>
   <tr>
-    <td><image src='images/2_step1.png'><td>
-    <td><image src='images/2_step2.png'><td>
+    <td><image src='images/2_step1.png'></td>
+    <td><image src='images/2_step2.png'></td>
     <td><image src='images/2_step_3&4.png'></td>
     <td><image src='images/Theory_example.gif'></td>
   </tr>
@@ -123,10 +123,10 @@ flowchart LR;
 
 ## a. Methodology
 <ol type='I'>
-<li>Information and Data</li>
+<h3><li>Information</li></h3>
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost.In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
-<br>
-<br>Data for task 1:
+<br><br></li>
+<h3><li>Data for task 1</h3>
 <table align='center'>
   <tr><th>Our map</th><th>Our map in grid format</th></tr>
   <tr>
@@ -173,13 +173,14 @@ $C_{Fixed}$: fixed cost <br>
 2. 25 flights maximum per week
 3. Time cost = low and Fuel cost = 0.95$/kg
 
-</dd></li>
-<li><h3>Procedure</h3><dd>
-&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircrafts in our **Map**. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
+</dd>&nbsp;</li>
+<h3><li>Procedure</h3><dd>
+&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircrafts in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstical and cost intensive area map in grid format.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest trivaling cost is collected.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriaos, claculate the total cost for 3 different aircraft.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select a aircraft modo that has the lowest trivaling cost while satisfying the scenriao.
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select a aircraft modo that has the lowest trivaling cost while satisfying the scenriao.<br>
+</dd></li>
 
 ## b. Results
 
@@ -197,10 +198,35 @@ Talk about how the task related to aviation
 <!-- Task 2 -->
 # **5 | Task 2**
 ## a. Methodology
+<ol type='I'>
+<h3><li>Information</h3>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;During path planing, we need to take many variables in count, not only aircraft mode, but also the environment. In reallife there are certain area called Jet Steam Area, where aircrafts could consume reltively less fuel and redust traveling cost. In this task, we are going to recreate a Jet Steam area with a situation that could benefit our flight route the most.
+</dd>&nbsp;</li>
 
-<p align='center'>
-explain how to achive and what skills we used
-</p>
+<h3><li>Data for Task 2</h3>
+<ul>
+  The situation:
+  <li>Use Task 1 of scenario 1 as the background</li>
+  <li>Find a best place for seting the Jet Steam Area</li>
+  <li>Cost along the Jet Steam Area is reduced by 5%</li>
+  <li>The area of the Jet Steam must span across the map laterally and span 5-unit length vertically
+</ul>
+<table align='center'>
+  <tr><th>Our map</th><th>Our map in grid format</th></tr>
+  <tr>
+    <td><image src='images/map.png' width=100%></td>
+    <td><image src='images/Map_in_grid.png' width=1500></td>
+  </tr>
+</table>
+</li>
+<h3><li>Procedure</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;There are 2 major part in our apporach, 'Finding the best place of jet steam area' and 'Cost calculation' .
+<h3>1. Finding the best place of jet steam area
+</h3>&nbsp;&nbsp;&nbsp;&nbsp;To maximize the effect of jet steam area, we need to find a section(5 continuous y-coordinates) that covered by most of the flight route.
+<h3>2. Cost calculation</h3>&nbsp;&nbsp;&nbsp;&nbsp;A new cost intensive area which decrease 5% cost should be added in the input data. As this task shar the same background of task 1 scenario 1, the calculation for trivaling cost can refre to task 1 scenario 1.
+
+</li>
+</ol>
 
 ## b. Results
 
@@ -345,7 +371,7 @@ Talk about how the task related to aviation
 
 
 
-
+----
 <!-- TASK -->
 
 ## Progess  
