@@ -396,8 +396,8 @@ As shown in the examples above, the locations for both checkpoints of both examp
 ```mermaid
 flowchart LR;
 A((Start point))-->B((checkpoint of yellow zone))-->C((checkpoint of red zone));
-A((Start point))-->C((checkpoint of red zone))-->B((checkpoint of yellow zone));
-B((checkpoint of yellow zone))&C((checkpoint of red zone))-->D((Destination));
+A((Start point))-->E((checkpoint of red zone))-->F((checkpoint of yellow zone));
+C((checkpoint of yellow zone)) & F((checkpoint of red zone))-->D((Destination));
 ```
 
 </ol>
