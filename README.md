@@ -357,25 +357,50 @@ Compare to another type of transportation method,the manufacture and the operati
 ## a. Methodology
 <ol type='I'>
 <h3><li>Information</h3>
-<dd>&nbsp;&nbsp;&nbsp;&nbsp;Pratically, some aircrafts are responsible for delivering airdrops, e.g. <em><strong>military aircraft</strong><em> ,which also requires certain pathplaning. In this task, we are going to find the most cost-effective path with two checkpoints(airdrop spots) for each cost intensive area.</dd>&nbsp;</li>
-<h3><li>Data for task 3</h3>
-<ul> Ruel and Restrictions:
-<li></li>
-<li>Onlr consider cruise time of flight </li>
-<li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
-<li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
-<li>C<sub>c</sub> = 2000 for twin-engine, 2500 for 4-engine aircrafts</li>
-<li>Each engine consumes fuel at 20 kg/min</li>
-<li>Follow the trip cost equation and material cost list</li>
+<dd>Pratically, some aircrafts are responsible for delivering airdrops, e.g. <em><strong>military aircraft
+</strong></em> ,which also requires certain path-planing. In this task, we are going to find the most cost-effective path with two checkpoints(airdrop spots) for each cost intensive area.</dd>&nbsp;</li>
+<h3><li>Requirements for task A1</h3>
+<ul> 
+<li>Adding two checkpoints inside each cost intensive area</li>  
+<li>The aircraft must reach both checkpoints before arriving the destination</li>
 </ul>
-
-
+<h3><li>Procedure</h3><dd>
+&nbsp;&nbsp;&nbsp;&nbsp;As the task objectives are creating a checkpoint for each cost intensive areas and make sure both checkpoints are reached before arriving the destination. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;First, we added one more scenario, A1, into the original code for task 1, with checkpoint created in each cost intensive area, which have a random location within the cost intensive area everytime when we run the test <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Afterwards, certain modifications are made to ensure the resulting path passes through both checkpoints. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, execute the program and visualise the final path.</dd>
+</ol>
 
 ## b. Results
 
+<table align='center'>
+  <tr><th>Example 1</th><th>Example 2</th></tr>
+  <tr>
+    <td><image src='images/Task_A1.gif'></td>
+    <td><image src='images/Task_A1(2).gif'></td>
+  </tr>
+</table>
+As shown in the examples above, the locations for both checkpoints of both examples are totally different since we made it generate randomly within the cost intensive zone. Also it is clear that both checkpoints are reached before heading to the destination. <br><br>
 
 
-## c. Descussion
+
+
+## c. Discussion
+<ol type='I'>
+<h3><li> Limitation</h3>
+<dd>The calculated path by our program might not be the shortest in certain scenario. Our approach tends to fix the path into three parts, from the start to the first checkpoint located in the yellow zone, from the checkpoint in the yellow zone to the one in the red zone, and from the checkpoint in the red zone to the destination. Therefore our program will still go for the longer path from start to the checkpoint in the yellow zone eventhough the distance between the start and checkpoint in red zone is much shorter, creating certain errors. </dd>
+<h3><li>Improvement</h3>
+<dd>Instead of fixing the direction of the path, for some extreme situation where the distance between the start and the yellow zone checkpoint is further than the distance between the start and the red zone checkpoint, furthur modifications can be done so that the program can calculate the cost and distance for both route and choose the best one without being fixed with certain route (e.g. from start to yellow zone checkpoint), hence reducing error in those situations.</dd>
+
+
+```mermaid
+flowchart LR;
+A((Start point))-->B((checkpoint of yellow zone))-->C((checkpoint of red zone));
+A((Start point))-->C((checkpoint of red zone))-->B((checkpoint of yellow zone));
+B((checkpoint of yellow zone))&C((checkpoint of red zone))-->D((Destination));
+```
+
+</ol>
 
 
 # **8 | Additional Task 2**
