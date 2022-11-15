@@ -186,7 +186,53 @@ Talk about how the task related to aviation
 
 # **6 | Task 3**
 ## a. Methodology
-     
+ 
+<ol type='I'>
+<h3><li>Information</h3>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Humain invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
+<h3><li>Data for task 3</h3>
+<ul> Ruel and Restrictions:
+<li>design a new aircraft to best fit Task 1 Scenario 1</li>
+<li>Onlr consider cruise time of flight </li>
+<li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
+<li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
+<li>C<sub>c</sub> = 2000 for twin-engine, 2500 for 4-engine aircrafts</li>
+<li>Each engine consumes fuel at 20 kg/min</li>
+<li>Follow the trip cost equation and material cost list</li>
+</ul>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
+
+$Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
+<br>
+
+$C_{fuel}$: fuel cost<br>
+$\Delta F$: consumed fuel<br>
+$T_{best}$: traveling time (mins)<br>
+$C_{Time}$: time cost<br>
+$C_{Fixed}$: fixed cost <br><br>
+
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Fuel cost </h3>
+
+<table>
+<tr>
+  <td>Fuel Price Analisis<sup>[1]</sup></td>
+</tr>
+<tr>
+  <th>4 Feb 2022</th>
+  <th>...</th>
+  <th>&nbsp;&nbsp;&nbsp;&nbsp;$/mt&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <th>...</th>
+</tr>
+<tr>
+<td>Jet Fuel Price</td><td>...</td><td>882.30</td><td>...</td>
+</tr>
+<tr>
+<td>...</td><td>...</td><td>...</td><td>...</td>
+</tr>
+</table>
+[1]:<a href='https;//www.iata.org/en/publications/economics/fuel-monitor'>https;//www.iata.org/en/publications/economics/fuel-monitor</a>
+
+<h3><li>Procedure</h3><dd>    
 <p align='center'>
 explain how to achive and what skills we used
 
