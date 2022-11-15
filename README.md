@@ -187,11 +187,7 @@ $C_{Fixed}$: fixed cost <br>
 ## b. Results
 
 <p >
-
-By using the given formula, the cost of the trip can be calculated without any difficulty and according to it, A330-900neo has the lowest trip cost for scenario 1. Additionally, for both scenario 2 and 3, the aircraft model with the lowest trip cost is A350-900.
-
-The blue star represents the start node while the green star represents the end node or the goal node. An aircraft travelling from the start node to the goal node might follow a more convenient route keeping the fuel and time-consuming area in mind to lower the total trip cost. And this route for the given challenge is presented by the red line starting from the start node and ending at the goal node.
-
+show our result and explain what does the result represent
 </p>
 
 ## c. Descussion
@@ -281,8 +277,15 @@ Talk about how the task related to aviation
 <h3><li>Information</h3>
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Humain invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
 <h3><li>Data for task 3</h3>
+
 <ul> Ruel and Restrictions:
-<li>design a new aircraft to best fit Task 1 Scenario 1</li>
+
+  <li>design a new aircraft to best fit Task 1 Scenario 1</li>
+
+                                    The route in the Task 1 Scenario 1
+![Theory_example](https://user-images.githubusercontent.com/115149687/201837650-4bfa42dc-00ee-41cd-9c7c-11403b5c7d8a.gif)
+  
+
 <li>Onlr consider cruise time of flight </li>
 <li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
 <li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
