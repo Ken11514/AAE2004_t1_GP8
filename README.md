@@ -168,7 +168,7 @@ Talk about how the task related to aviation
         Recreate a jet-steam area in the map that could most benefit our flight route. 
         
 ## Content
-- [x] : Thhings to do
+- [x] : Things to do
 
         Design a new cost area -> reduce the cost of the route of scenario 1 in task 1
          
