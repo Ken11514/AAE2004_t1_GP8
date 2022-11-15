@@ -11,14 +11,14 @@ This is the simple code for path planning class
 
 """
 
-import os 
-import imageio
+# This file is combined Task 1 all scenraio and Taask 2
+
 
 import math
-import random
+import numpy as np
 import matplotlib.pyplot as plt
 
-show_animation = True
+show_animation = False
 
 
 class AStarPlanner:
@@ -67,7 +67,7 @@ class AStarPlanner:
             return str(self.x) + "," + str(self.y) + "," + str(
                 self.cost) + "," + str(self.parent_index)
 
-    def planning(self, sx, sy, gx, gy,frame , frameName):
+    def planning(self, sx, sy, gx, gy):
         """
         A star path search
 
@@ -111,10 +111,6 @@ class AStarPlanner:
                                              lambda event: [exit(
                                                  0) if event.key == 'escape' else None])
                 if len(closed_set.keys()) % 10 == 0:
-                    frame += 1
-                    path_name = 'images/f{}.png'.format(frame)
-                    frameName.append(path_name)
-                    plt.savefig(path_name)
                     plt.pause(0.001)
 
             # reaching goal
@@ -178,7 +174,7 @@ class AStarPlanner:
         # print(len(closed_set))
         # print(len(open_set))
 
-        return rx, ry, goal_node.cost, frame ,frameName
+        return rx, ry, goal_node.cost
 
     def calc_final_path(self, goal_node, closed_set):
         # generate final course
@@ -286,7 +282,7 @@ class AStarPlanner:
         return motion
 
 
-def main(scenario):
+def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
 
     # start and goal position
@@ -294,15 +290,9 @@ def main(scenario):
     sy = 32.0  # [m]
     gx = -5.0  # [m]
     gy = 0.0  # [m]
-    cptx = random.randint(10,30)
-    cpty = random.randint(10,40)
-    cpfx = random.randint(35,50)
-    cpfy = random.randint(0,10)
     grid_size = 1  # [m]
     robot_radius = 1.0  # [m]
     Tbest = 0
-    frame = 0
-    frameName = []
 
 
     # set obstacle positions for group 8
@@ -352,12 +342,12 @@ def main(scenario):
             fc_y.append(j)
 
     jc_x, jc_y = [], []
-    if scenario == "4" :
+
         # set cost intesive area 3(jet-steam) cyan in colour(i:horizontal , j:vertical)magenta        
-        for i in range(-10, 60):
-            for j in range(9, 14):
-                jc_x.append(i)
-                jc_y.append(j)
+    for i in range(-10, 60):
+        for j in range(9, 14):
+            jc_x.append(i)
+            jc_y.append(j)
 
 
     if show_animation:  # pragma: no cover
@@ -368,93 +358,28 @@ def main(scenario):
         plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 2(fule) yellow
         plt.plot(tc_x, tc_y, "or") # plot the cost intensive area 1(time) red
         plt.plot(jc_x, jc_y, "_m") # plot the cost intensive area 3(jet-stream) magenta
-        
-        if scenario == "A1":
-            plt.plot(cptx, cpty, ".b")
-            plt.plot(cpfx, cpfy, ".b")
-        
+
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
-    if scenario == "A1":
-        a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y, jc_x, jc_y)
-        rx1, ry1, Tbest1, frame, frameName = a_star.planning(sx, sy, cpfx, cpfy, frame, frameName)
-        rx2, ry2, Tbest2,frame, frameName = a_star.planning(cpfx, cpfy, cptx, cpty, frame, frameName)
-        rx3, ry3, Tbest3,frame, frameName = a_star.planning(cptx, cpty, gx, gy, frame, frameName)
-    else :
-        a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y, jc_x, jc_y)
-        rx1, ry1, Tbest, frame , frameName = a_star.planning(sx, sy, gx, gy)
+
+    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y, jc_x, jc_y)
+    rx, ry, Tbest = a_star.planning(sx, sy, gx, gy)
     #print(Tbest)
-    
+    plt.hist(ry,range(-10,61), rwidth= 1, align='mid')#'range(-10,61)' as 61 is excluded
+    plt.title("The route in terms of y-coordinate")
+    plt.xlabel('y-coordinate')
+    plt.ylabel('The amount of x-coordinate')
+    #plt.savefig('images/Prove_jetSteam_area.png')
+    plt.show()
     #calc for the input scenario
-
-    if scenario == '1' :
-        Cost_A321 = (0.76*54*Tbest+15*Tbest+1800)*15
-        Cost_A330 = (0.76*84*Tbest+21*Tbest+2000)*10
-        Cost_A350 = (0.76*90*Tbest+27*Tbest+2500)*9
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A330-900neo has the lowest Trip Cost among them.")
-
-    elif scenario == '2' :
-        Cost_A321 = (0.88*54*Tbest+20*Tbest+1800)*7
-        Cost_A330 = (0.88*84*Tbest+27*Tbest+2000)*5
-        Cost_A350 = (0.88*90*Tbest+34*Tbest+2500)*4
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A350-900 has the lowest Trip Cost among them.")
-
-    elif scenario == '3' :
-        Cost_A321 = (0.95*54*Tbest+10*Tbest+1800)*13
-        Cost_A330 = (0.95*84*Tbest+15*Tbest+2000)*9
-        Cost_A350 = (0.95*90*Tbest+20*Tbest+2500)*7
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A3500-900 has the lowest Trip Cost among them.")
-
-    elif scenario == '4' :
-        Cost_A321 = (0.76*54*Tbest+15*Tbest+1800)*15
-        Cost_A330 = (0.76*84*Tbest+21*Tbest+2000)*10
-        Cost_A350 = (0.76*90*Tbest+27*Tbest+2500)*9
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A330-900neo has the lowest Trip Cost among them.")
-    elif scenario == "A1":
-        print("The trip cost from Start point to Checkpoint1 is:{}".format(round(Tbest1)))
-        print("The trip cost from Checkpoint1 to Checkpoint2 is:{}".format(round(Tbest2)))
-        print("The trip cost from Chekpoint2 to Goal point is:{}".format(round(Tbest3)))
-        print("The total trip cost is:{}".format(round(Tbest1+Tbest2+Tbest3)))
-    else :
-        print("There are no scenario {}, plz enter a correct one. Thank You".format(scenario))
+    
 
     if show_animation:  # pragma: no cover
-        for pic in range(1,30):
-            frame += 1
-            path_name = 'images/f{}.png'.format(frame)
-            frameName.append(path_name)
-            plt.plot(rx1, ry1, "-r") # show the route 
-            if scenario == "A1":
-                plt.plot(rx2, ry2, "-r") # show the route 
-                plt.plot(rx3, ry3, "-r") # show the route 
-            plt.savefig(path_name)
+        plt.plot(rx, ry, "-r") # show the route 
         plt.pause(0.001) # pause 0.001 seconds
         plt.show() # show the plot
 
-        with imageio.get_writer('images/Task_A1(1).gif',mode='I') as writer:
-            for filename in frameName:
-                image = imageio.imread(filename)
-                writer.append_data(image)
-        for filename in set(frameName):
-            os.remove(filename)
 
 
 if __name__ == '__main__':
-    scenario = input("Enter 1/2/3/4/A1 for scenario1/2/3/task2/taskA1 respectivelly:")
-    main(scenario)
+    main()

@@ -355,7 +355,7 @@ def main():
         plt.pause(0.001) # pause 0.001 seconds
         plt.show() # show the plot
 
-        with imageio.get_writer('images/Task_A2.gif', mode='I') as writer:
+        with imageio.get_writer('images/Task_A2(2).gif', mode='I') as writer:
             for filename in frameName:
                 image = imageio.imread(filename)
                 writer.append_data(image)

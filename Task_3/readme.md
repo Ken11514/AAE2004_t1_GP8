@@ -63,4 +63,16 @@ Model 2 (300) :77.183766410736*0.8823*80 + 2500*77.1837664107356 + 2500 = 98033
 
 Model 3 (450) :77.183766410736*0.8823*80 + 2500*77.1837664107356 + 2500 = 71844
 
+### About our aircraft:
+#### The name of our aircraft
+The name of this aircraft will be P801, P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)
+#### Passengers capacity
+As you can see,the table has shown that the most important element of lower the operating cost is the total number of trips required for transporting all the passengers.The aircraft in model 3 require the lowest operating cost and number of trips is the lowest one in 3 model. Therefore,the maxmium passengers capacity of our aircraft will be 450 to reach the possible lowest operating cost.
+#### Enginee count
+There will be 4 enginees on our aircraft. 
+#### Route
+Since our table used the 0.8823 $/kg as the fuel cost, our aircrafft can fly globally.
+
+
+
 
