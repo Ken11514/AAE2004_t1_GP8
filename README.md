@@ -355,22 +355,28 @@ Compare to another type of transportation method,the manufacture and the operati
 
 # **7 | Additional Task 1**
 ## a. Methodology
+<ol type='I'>
+<h3><li>Information</h3>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Pratically, some aircrafts are responsible for delivering airdrops, e.g. <em><strong>military aircraft</strong><em> ,which also requires certain pathplaning. In this task, we are going to find the most cost-effective path with two checkpoints(airdrop spots) for each cost intensive area.</dd>&nbsp;</li>
+<h3><li>Data for task 3</h3>
+<ul> Ruel and Restrictions:
+<li></li>
+<li>Onlr consider cruise time of flight </li>
+<li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
+<li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
+<li>C<sub>c</sub> = 2000 for twin-engine, 2500 for 4-engine aircrafts</li>
+<li>Each engine consumes fuel at 20 kg/min</li>
+<li>Follow the trip cost equation and material cost list</li>
+</ul>
 
-<p align='center'>
-explain how to achive and what skills we used
-</p>
+
 
 ## b. Results
 
-<p align='center'>
-show our result and explain what does the result repersent
-</p>
+
 
 ## c. Descussion
 
-<p align='center'>
-Talk about how the task related to aviation
-</p>
 
 # **8 | Additional Task 2**
 ## a. Methodology
