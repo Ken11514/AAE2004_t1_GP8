@@ -17,6 +17,32 @@ Although most of the fights do not always follow the same route, it is important
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 
 ## Breakdown of codes
+![ScreenshotT1 1](https://user-images.githubusercontent.com/116112237/200486556-fa67a1bf-db18-45af-89ea-85db1bedc027.png)
+
+It is the definition of **“main()”**. It require user to input a variable during the usage, in later part the input was use as a indicator to direct and run the corresponding code for different task and scenario.
+Both the starting point and the goal point are set as variables.
+
+sx: starting point x-coordinate
+
+sy: starting point y-coordinate
+
+gx: goal point x-coordinate
+
+gy: goal point y-coordinate
+
+Tbest: time-best
+
+### **“AStarPlanner”**
+A set of function which contains 3 parts
+
+1. Variable defining
+![Screenshot T1 2](https://user-images.githubusercontent.com/116112237/200494106-d15c57e9-ce3c-45de-b830-8ac56436ccd3.png)
+
+2. "Node" defining
+![Screenshot T1 3](https://user-images.githubusercontent.com/116112237/200494316-9f31426c-3235-4f3b-8bfe-e6f6ee063a7e.png)
+
+3. planning( )
+![Screenshot T1 4](https://user-images.githubusercontent.com/116112237/200495618-6ab49a42-966b-488c-8a60-0e7dfa93abaa.png)
 
 ### Scenario 1
 1. 3000 Passengers  with in this week
@@ -26,7 +52,7 @@ $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 According to the results of coding,
 
 ### Scenario 2 
-1. 125 Passengers  with in this month
+1. 1250 Passengers  with in this month
 2. 5 flights maximum per week
 3. Time cost = high and Fuel cost = 0.88$/kg
 
