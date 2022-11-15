@@ -136,7 +136,7 @@ flowchart LR;
 </table>
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Cost Speciffication</h3>
-&nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when trivaling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
+&nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when travelling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
 
 | key | A321neo | A330-900neo | A350-900|
 | :---: | :---: | :---: | :---: |
@@ -177,17 +177,17 @@ $C_{Fixed}$: fixed cost <br>
 
 </dd>&nbsp;</li>
 <h3><li>Procedure</h3><dd>
-&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircrafts in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstical and cost intensive area map in grid format.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest trivaling cost is collected.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriaos, claculate the total cost for 3 different aircraft.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select a aircraft modo that has the lowest trivaling cost while satisfying the scenriao.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircraft in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest travelling cost is collected.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriao, claculate the total cost for 3 different aircrafts.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travalling cost while satisfying the scenriao.<br>
 </dd></li>
 
 ## b. Results
 
 <p >
-show our result and explain what does the result repersent
+show our result and explain what does the result represent
 </p>
 
 ## c. Descussion
