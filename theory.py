@@ -14,7 +14,8 @@ This is the simple code for path planning class
 
 
 import math
-
+import os
+import imageio
 import matplotlib.pyplot as plt
 
 show_animation = True
@@ -78,7 +79,8 @@ class AStarPlanner:
             rx: x position list of the final path
             ry: y position list of the final path
         """
-
+        frame = 0
+        frameName = []
         start_node = self.Node(self.calc_xy_index(sx, self.min_x), # calculate the index based on given position
                                self.calc_xy_index(sy, self.min_y), 0.0, -1) # set cost zero, set parent index -1
         goal_node = self.Node(self.calc_xy_index(gx, self.min_x), # calculate the index based on given position
@@ -101,13 +103,18 @@ class AStarPlanner:
 
             # show graph
             if show_animation:  # pragma: no cover
-                #plt.plot(self.calc_grid_position(current.x, self.min_x),
-                 #        self.calc_grid_position(current.y, self.min_y), ".w",mfc='b',label='serch nodes')
+                plt.plot(self.calc_grid_position(current.x, self.min_x),
+                         self.calc_grid_position(current.y, self.min_y), ".w",mfc='b')
+                plt.plot(sx, sy, "og")
                 # for stopping simulation with the esc key.
                 plt.gcf().canvas.mpl_connect('key_release_event',
                                              lambda event: [exit(
                                                  0) if event.key == 'escape' else None])
-                if len(closed_set.keys()) % 10 == 0:
+                if len(closed_set.keys()) % 500 == 0:
+                    frame += 1
+                    path_name = 'images/f{}.png'.format(frame)
+                    frameName.append(path_name)
+                    plt.savefig(path_name)
                     plt.pause(0.001)
 
             # reaching goal
@@ -164,7 +171,7 @@ class AStarPlanner:
         # print(len(closed_set))
         # print(len(open_set))
 
-        return rx, ry
+        return rx, ry, frame, frameName
 
     def calc_final_path(self, goal_node, closed_set):
         # generate final course
@@ -351,14 +358,14 @@ def main():
 '''
 
     if show_animation:  # pragma: no cover
-        rx=0
-        ry=0
+        #rx=0
+        #ry=0
 
-        plt.plot(rx, ry, ".w",mfc='r',label='seleted point') # show the route 
+        #plt.plot(rx, ry, ".w",mfc='r',label='seleted point') # show the route 
         plt.plot(ox, oy, ".k", label='obstacle') # plot the obstacle
         plt.plot(sx, sy, "og", label='start point') # plot the start position 
         plt.plot(gx, gy, "xb", label='end point') # plot the end position
-        plt.plot([-1,0,1,-1,1,-1,0,1],[1,1,1,0,0,-1,-1,-1],'.w',mfc='b', label='first step')
+        #plt.plot([-1,0,1,-1,1,-1,0,1],[1,1,1,0,0,-1,-1,-1],'.w',mfc='b', label='first step')
 
 
         #plt.legend(loc=("upper left"))
@@ -369,18 +376,31 @@ def main():
         plt.axis("equal") # set the same resolution for x and y axis 
 
     a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y)
-    rx, ry = a_star.planning(sx, sy, gx, gy)
+    rx, ry, frame, frameName = a_star.planning(sx, sy, gx, gy)
 
     if show_animation:  # pragma: no cover
-        rx=1
-        ry=1
-        plt.plot((1,50),(1,50),'-y',label='heuristic estimated distance')
-        plt.plot(rx, ry, ".w",mfc='r') # show the route 
-        plt.legend(loc=("upper left"))
+        for pic in range(1,30):
+            frame += 1
+            path_name = 'images/f{}.png'.format(frame)
+            frameName.append(path_name)
+
+            #rx=1
+            #ry=1
+            #plt.plot((1,50),(1,50),'-y',label='heuristic estimated distance')
+            if pic ==1:
+                plt.plot(rx, ry, ".w",mfc='r',label='selected node') # show the route 
+            plt.legend(loc=("upper left"))
+            plt.savefig(path_name)
         plt.pause(0.001) # pause 0.001 seconds
-        plt.savefig('images/2_step2')
+        #plt.savefig('images/2_step2')
         plt.show() # show the plot
 
+        with imageio.get_writer('images/Theory_example.gif', mode='I') as writer:
+            for filename in frameName:
+                image = imageio.imread(filename)
+                writer.append_data(image)
+        for filename in set(frameName):
+            os.remove(filename)
 
 if __name__ == '__main__':
     main()

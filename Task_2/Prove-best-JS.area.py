@@ -15,10 +15,10 @@ This is the simple code for path planning class
 
 
 import math
-
+import numpy as np
 import matplotlib.pyplot as plt
 
-show_animation = True
+show_animation = False
 
 
 class AStarPlanner:
@@ -282,7 +282,7 @@ class AStarPlanner:
         return motion
 
 
-def main(scenario):
+def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
 
     # start and goal position
@@ -342,12 +342,12 @@ def main(scenario):
             fc_y.append(j)
 
     jc_x, jc_y = [], []
-    if scenario == "4" :
+
         # set cost intesive area 3(jet-steam) cyan in colour(i:horizontal , j:vertical)magenta        
-        for i in range(-10, 60):
-            for j in range(9, 14):
-                jc_x.append(i)
-                jc_y.append(j)
+    for i in range(-10, 60):
+        for j in range(9, 14):
+            jc_x.append(i)
+            jc_y.append(j)
 
 
     if show_animation:  # pragma: no cover
@@ -365,50 +365,14 @@ def main(scenario):
     a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y, jc_x, jc_y)
     rx, ry, Tbest = a_star.planning(sx, sy, gx, gy)
     #print(Tbest)
-    
+    plt.hist(ry,range(-10,61), rwidth= 1, align='mid')#'range(-10,61)' as 61 is excluded
+    plt.title("The route in terms of y-coordinate")
+    plt.xlabel('y-coordinate')
+    plt.ylabel('The amount of x-coordinate')
+    #plt.savefig('images/Prove_jetSteam_area.png')
+    plt.show()
     #calc for the input scenario
-    if scenario == '1' :
-        Cost_A321 = (0.76*54*Tbest+15*Tbest+1800)*15
-        Cost_A330 = (0.76*84*Tbest+21*Tbest+2000)*10
-        Cost_A350 = (0.76*90*Tbest+27*Tbest+2500)*9
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A330-900neo has the lowest Trip Cost among them.")
-
-    elif scenario == '2' :
-        Cost_A321 = (0.88*54*Tbest+20*Tbest+1800)*7
-        Cost_A330 = (0.88*84*Tbest+27*Tbest+2000)*5
-        Cost_A350 = (0.88*90*Tbest+34*Tbest+2500)*4
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A350-900 has the lowest Trip Cost among them.")
-
-    elif scenario == '3' :
-        Cost_A321 = (0.95*54*Tbest+10*Tbest+1800)*13
-        Cost_A330 = (0.95*84*Tbest+15*Tbest+2000)*9
-        Cost_A350 = (0.95*90*Tbest+20*Tbest+2500)*7
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A3500-900 has the lowest Trip Cost among them.")
-
-    elif scenario == '4' :
-        Cost_A321 = (0.76*54*Tbest+15*Tbest+1800)*15
-        Cost_A330 = (0.76*84*Tbest+21*Tbest+2000)*10
-        Cost_A350 = (0.76*90*Tbest+27*Tbest+2500)*9
-
-        print("The Trip Cost for A321neo is ${}".format(round(Cost_A321)))
-        print("The Trip Cost for A330-900neo is ${}".format(round(Cost_A330)))
-        print("The Trip Cost for A350-900 is ${}".format(round(Cost_A350)))
-        print("A330-900neo has the lowest Trip Cost among them.")
-
-    else :
-        print("There are no scenario {}, plz enter a correct one. Thank You".format(scenario))
+    
 
     if show_animation:  # pragma: no cover
         plt.plot(rx, ry, "-r") # show the route 
@@ -418,5 +382,4 @@ def main(scenario):
 
 
 if __name__ == '__main__':
-    scenario = input("Enter 1/2/3/4 for scenario1/2/3/task2 respectivelly:")
-    main(scenario)
+    main()

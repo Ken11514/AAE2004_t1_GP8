@@ -1,5 +1,4 @@
 # AAE2004_t1_GP8 Look gooood
-
 <p align='center'>
 <image src=images/Group_8_Banner.gif alt="Group 8 Banner">
 </p>
@@ -35,7 +34,7 @@
     </li>
     <li><a href='#11--references'>References</a></li>
     <li>
-      <a href='#reference-source'>Reference source</a>
+      <a href='#useful-source'>Useful source</a>
     </li>
     <li>
       <a href='#progess'>Task on progess</a>
@@ -49,14 +48,14 @@
 # **1 | Background of Path Planing to Aviation Engineering**
 
 
-<p align='center'>
-  In Aviation Industry, Path Planning has a importance place in Air Traffic Control, Airline Companies and Airports. ...
-
-  <br>For Air Traffic Control,by calculating obstical and danger zone, Path Planning help operater adjust the flight route of aircrafts, in order to provide a safety flying experience. ...
-  
-  <br>For Airline Companies, by calculating the shortest route for airlines, Path Planning help companies reduce filght cost, in order to enhance their profit. ...
-
-  <br>For Airports, by planning the take off and landing timing, Path Planning help Airports maximize the aircraft flow, in order to increase passenger flow. ...
+<p>
+  &nbsp;&nbsp;&nbsp;&nbsp;In Aviation Industry, Path Planning has a importance place in Air Traffic Control, Airline Companies and Airports. ...
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;For Air Traffic Control,by calculating obstical and danger zone, Path Planning help operater adjust the flight route of aircrafts, in order to provide a safety flying experience. ...
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;For Airline Companies, by calculating the shortest route for airlines, Path Planning help companies reduce filght cost, in order to enhance their profit. ...
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;For Airports, by planning the take off and landing timing, Path Planning help Airports maximize the aircraft flow, in order to increase passenger flow. ...
 
   <br>
 </p>
@@ -64,43 +63,43 @@
 # **2 | Theory of Path Planning Algorithm**
 - [ ] show how its work
 
-Converting a maze problem into a grid, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
+&nbsp;&nbsp;&nbsp;&nbsp;Converting a maze problem into a grid format, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
 <br>
 Example for a maze problem is fitted into a grid format.
 
 <table align='center'>
   <tr>
     <th>Maze Problem</th>
-    <th>Grid Gormat</th>
+    <th>Grid Format</th>
   </tr>
   <tr>
     <td>
     <image src='images/Raw_sample.png'>
     </td>
     <td>
-      <image src='images/Sample.png'>
+      <image src='images/Sample.png' alt='how is work'>
     </td>
   </tr>
 </table>
-In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
-<br>
-
-(Assume all traveling cost adjacently and diagonally are 1 and $\sqrt{2}$ respectively.)
+&nbsp;&nbsp;&nbsp;&nbsp;In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
 <br><br>
-Step 1, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.<br><br>
-Step 2, select the lowest weight node as the position of the **first** step apporaching to the End Point. Then append them to a list which recorded evey step it moved to.
+<b>Step 1</b>, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.The data are stored in a list of possable step.<br><br>
+<b>Step 2</b>, select the lowest weight node from the list as repersenting the position of the <b>first</b> step apporaching to the End Point. Then append it to a list which recorded evey step it moved to.
 <br><br>
-Step 3, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
+<b>Step 3</b>, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
 <br><br>
-Step 4, Track back from the list of movement, a route of shortest path can be viewed.
+<b>Step 4</b>, Track back from the list of movement, a route of shortest path can be viewed.<br><br>
 <table align='center'>
+  <tr>Diagram of above steps:</tr>
   <tr>
-    <td><image src='images/2_step1.png'><td>
-    <td><image src='images/2_step2.png'><td>
+    <td><image src='images/2_step1.png'></td>
+    <td><image src='images/2_step2.png'></td>
     <td><image src='images/2_step_3&4.png'></td>
+    <td><image src='images/Theory_example.gif'></td>
   </tr>
 </table>
 
+Flowchart for A-Star algorithm:<br> 
 ```mermaid
 flowchart LR;
     A([Star Path Planning])-->B{Is curren node reach End point};
@@ -109,30 +108,91 @@ flowchart LR;
     C-->D[Calculate weight]
     D-->E[Select and Move to the lowest weighted node]
     E-->B
-    
 ```
 
 # **3 | Introduction of the Engineering Tools**
-## a. Python
 
-## b. GitHub
+## **A. Python & Html**
+&nbsp;&nbsp;&nbsp;&nbsp;Both Python and Html are computer langue which is easy to learn and having a large flexibility. Moreover, Python has diverse of modpack, In this project we uesd Matplotlib and Imageio for graphing and photo operating. 
+## **B. Visual Studio Code**
+&nbsp;&nbsp;&nbsp;&nbsp;Visual Studio Code(VS Code), is a platform fo source code editing, it covers many useful features, such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Ferthermore, estension can be install for  additional functionality
+## **C. GitHub**
+&nbsp;&nbsp;&nbsp;&nbsp;GitHub is a free online platform, for programmer hosting and cooperatiing softwre developmentd. It is not only used to host open source software development projects, but also hold variety of event for instan Game Off.
 <!-- TASK 1 -->
 # **4 | Task 1**
-## a. Methodology
 
-<p align='center'>
-explain how to achive and what skills we used
-</p>
+## a. Methodology
+<ol type='I'>
+<h3><li>Information</li></h3>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost.In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
+<br><br></li>
+<h3><li>Data for task 1</h3>
+<table align='center'>
+  <tr><th>Our map</th><th>Our map in grid format</th></tr>
+  <tr>
+    <td><image src='images/map.png' width=100%></td>
+    <td><image src='images/Map_in_grid.png' width=1500></td>
+  </tr>
+</table>
+
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Cost Speciffication</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when trivaling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
+
+| key | A321neo | A330-900neo | A350-900|
+| :---: | :---: | :---: | :---: |
+|Fuel Consumption rate(kg/min)|54|84|90|
+|Passenger Capacity|200|300|350|
+|Time cost (Low)($/min)|10|15|20|
+|Time cost (Medium)($/min)|15|21|27|
+|Time cost (High)($/min)|20|27|34|
+|Fixed Cost($)|1800|2000|2500|
+
+<br><h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
+
+$Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
+
+<br>
+$C_{fuel}$: fuel cost<br>
+$\Delta F$: consumed fuel<br>
+$T_{best}$: traveling time (mins)<br>
+$C_{Time}$: time cost<br>
+$C_{Fixed}$: fixed cost <br>
+
+<h3>Detail of each scenarios</h3>
+
+### &nbsp;&nbsp;&nbsp;&nbsp;Scenario 1
+1. 3000 Passengers  with in this week
+2. 12 flights maximum per week
+3. Time cost = medium and Fuel cost = 0.76$/kg
+
+### &nbsp;&nbsp;&nbsp;&nbsp;Scenario 2 
+1. 1250 Passengers  with in this month
+2. 5 flights maximum per week
+3. Time cost = high and Fuel cost = 0.88$/kg
+
+### &nbsp;&nbsp;&nbsp;&nbsp;Scenario 3
+1. 2500 Passengers  with in this week
+2. 25 flights maximum per week
+3. Time cost = low and Fuel cost = 0.95$/kg
+
+</dd>&nbsp;</li>
+<h3><li>Procedure</h3><dd>
+&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircrafts in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstical and cost intensive area map in grid format.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest trivaling cost is collected.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriaos, claculate the total cost for 3 different aircraft.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select a aircraft modo that has the lowest trivaling cost while satisfying the scenriao.<br>
+</dd></li>
 
 ## b. Results
 
-<p align='center'>
+<p >
 show our result and explain what does the result repersent
 </p>
 
 ## c. Descussion
 
-<p align='center'>
+<p >
 Talk about how the task related to aviation
 </p>
 
@@ -140,10 +200,35 @@ Talk about how the task related to aviation
 <!-- Task 2 -->
 # **5 | Task 2**
 ## a. Methodology
+<ol type='I'>
+<h3><li>Information</h3>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;During path planing, we need to take many variables in count, not only aircraft mode, but also the environment. In reallife there are certain area called Jet Steam Area, where aircrafts could consume reltively less fuel and redust traveling cost. In this task, we are going to recreate a Jet Steam area with a situation that could benefit our flight route the most.
+</dd>&nbsp;</li>
 
-<p align='center'>
-explain how to achive and what skills we used
-</p>
+<h3><li>Data for Task 2</h3>
+<ul>
+  The situation:
+  <li>Use Task 1 of scenario 1 as the background</li>
+  <li>Find a best place for seting the Jet Steam Area</li>
+  <li>Cost along the Jet Steam Area is reduced by 5%</li>
+  <li>The area of the Jet Steam must span across the map laterally and span 5-unit length vertically
+</ul>
+<table align='center'>
+  <tr><th>Our original map</th><th>Our map with Jet Steam area</th></tr>
+  <tr>
+    <td><image src='images/map.png' width=100%></td>
+    <td><image src='images/Task_2_map.png' width=100%></td>
+  </tr>
+</table>
+</li>
+<h3><li>Procedure</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;There are 2 major part in our apporach, 'Finding the best place of jet steam area' and 'Cost calculation' .
+<h3>1. Finding the best place of jet steam area
+</h3>&nbsp;&nbsp;&nbsp;&nbsp;To maximize the effect of jet steam area, we need to find a section(5 continuous y-coordinates) that covered by most of the flight route. 
+<h3>2. Cost calculation</h3>&nbsp;&nbsp;&nbsp;&nbsp;A new cost intensive area which decrease 5% cost should be added in the input data. As this task shar the same background of task 1 scenario 1, the calculation for trivaling cost can refre to task 1 scenario 1.
+
+</li>
+</ol>
 
 ## b. Results
 
@@ -238,7 +323,7 @@ explain how to achive and what skills we used
 
 For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacity for comparison.250,300 and 450.Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.
 </p>
-
+</ol>
 ## b. Results
 
 <p align='center'>
@@ -326,7 +411,8 @@ Talk about how the task related to aviation
 
 
 # **10 | Reflective Essay**
-## Shek Ho Ching Ken (22075211D)
+<h2>Shek Ho Ching Ken (22075211D)</h2>
+
 ```
   This project is my first GitHub project in my life ,also ......
 ```
@@ -340,7 +426,7 @@ Talk about how the task related to aviation
 
 
 
-
+----
 <!-- TASK -->
 
 ## Progess  
@@ -356,7 +442,7 @@ Talk about how the task related to aviation
 - [ ] GitHub report
 <!-- REFERCE -->
 ------
-## Reference source
+## Useful source
 
 ### YouTube video:
 [How To Create Beautiful and Useful ReadMe Documents For GitHub](https://youtu.be/a8CwpGARAsQ)
@@ -366,3 +452,6 @@ Talk about how the task related to aviation
 
 [basic syntax](https://www.markdownguide.org/basic-syntax)
 
+[How to write Methodology](https://www.scribbr.com/dissertation/methodology/)
+
+[A-Star Breakdown](AStar%20Breakdown.docx)
