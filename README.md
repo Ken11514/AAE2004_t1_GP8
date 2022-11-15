@@ -306,7 +306,12 @@ Talk about how the task related to aviation
 </ul>
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
 
-![table of the cost for each model](https://user-images.githubusercontent.com/115149687/201834930-509e67f8-50af-4f77-b0ce-969f6ff77303.JPG)
+| Airplane Capacity& Model |    $\Delta F$  |$T_{best}$ |  $C_{C}$ |  $C_{T}$   |  $C_{F}$ | Number of trip required  |   Total cost  |
+| :--------         | :------- | :------- |:---------  | :--------- |:--------   | :--------| :--------|
+| (Model 1) 250 | 40kg/min        | 77.1837664107356 /min  | 2000  $/flight   |  22  $/min        | 0.8823  $/kg         | 12   | $77064 |
+| (Model 2) 300|  80kg/min        | 77.1837664107356    min| 2500   $/flight       |  24  $/min        | 0.8823 $/kg          | 10   | $98003 |                
+| (Model 3) 450|  80kg/min        | 77.1837664107356   min  | 2500  $/flight    |  30  $/min        | 0.8823  $/kg | 7    | $71844 |              
+
 
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 <br>
