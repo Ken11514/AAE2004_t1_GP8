@@ -287,6 +287,8 @@ Talk about how the task related to aviation
 </ul>
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
 
+![table of the cost for each model](https://user-images.githubusercontent.com/115149687/201834930-509e67f8-50af-4f77-b0ce-969f6ff77303.JPG)
+
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 <br>
 
@@ -295,6 +297,8 @@ $\Delta F$: consumed fuel<br>
 $T_{best}$: traveling time (mins)<br>
 $C_{Time}$: time cost<br>
 $C_{Fixed}$: fixed cost <br><br>
+
+
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Fuel cost </h3>
 
@@ -321,7 +325,7 @@ $C_{Fixed}$: fixed cost <br><br>
 <p align='center'>
 explain how to achive and what skills we used
 
-For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacity for comparison.250,300 and 450.Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.
+For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacities for comparison.250,300 and 450. Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.
 </p>
 </ol>
 ## b. Results
