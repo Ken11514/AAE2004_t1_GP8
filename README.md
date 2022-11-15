@@ -304,7 +304,7 @@ Talk about how the task related to aviation
 <li>Each engine consumes fuel at 20 kg/min</li>
 <li>Follow the trip cost equation and material cost list</li>
 </ul>
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
+
 
 | Airplane Capacity& Model |    $\Delta F$  |$T_{best}$ |  $C_{C}$ |  $C_{T}$   |  $C_{F}$ | Number of trip required  |   Total cost  |
 | :--------         | :------- | :------- |:---------  | :--------- |:--------   | :--------| :--------|
@@ -312,7 +312,7 @@ Talk about how the task related to aviation
 | (Model 2) 300|  80kg/min        | 77.1837664107356    min| 2500   $/flight       |  24  $/min        | 0.8823 $/kg          | 10   | $98003 |                
 | (Model 3) 450|  80kg/min        | 77.1837664107356   min  | 2500  $/flight    |  30  $/min        | 0.8823  $/kg | 7    | $71844 |              
 
-
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 <br>
 
