@@ -181,13 +181,17 @@ $C_{Fixed}$: fixed cost <br>
 &nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest travelling cost is collected.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriao, claculate the total cost for 3 different aircrafts.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travalling cost while satisfying the scenriao.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travelling cost while satisfying the scenariao.<br>
 </dd></li>
 
 ## b. Results
 
 <p >
-show our result and explain what does the result represent
+
+&nbsp;&nbsp;&nbsp;&nbsp;By using the given formula, the cost of the trip can be calculated without any difficulty and according to it, A330-900neo has the lowest trip cost for scenario 1. Additionally, for both scenario 2 and 3, the aircraft model with the lowest trip cost is A350-900.
+
+The blue star represents the start node while the green star represents the end node or the goal node. An aircraft travelling from the start node to the goal node might follow a more convenient route keeping the fuel and time-consuming area in mind to lower the total trip cost. And this route for the given challenge is presented by the red line starting from the start node and ending at the goal node.
+
 </p>
 
 ## c. Descussion
@@ -270,6 +274,7 @@ Talk about how the task related to aviation
 <!-- Task 3 -->
 
 # **6 | Task 3**
+
 ## a. Methodology
  
 <ol type='I'>
@@ -278,6 +283,11 @@ Talk about how the task related to aviation
 <h3><li>Data for task 3</h3>
 <ul> Ruel and Restrictions:
 <li>design a new aircraft to best fit Task 1 Scenario 1</li>
+                                               
+                                      Task 1 Scenario 1 map:
+  
+  <img width="500" alt="map" src="https://user-images.githubusercontent.com/115149687/201839129-ac796f76-1689-4ba3-bd33-29a1a714b811.png">
+
 <li>Onlr consider cruise time of flight </li>
 <li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
 <li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
@@ -287,15 +297,18 @@ Talk about how the task related to aviation
 </ul>
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
 
-![table of the cost for each model](https://user-images.githubusercontent.com/115149687/201834930-509e67f8-50af-4f77-b0ce-969f6ff77303.JPG)
 
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 <br>
 
 $C_{fuel}$: fuel cost<br>
+
 $\Delta F$: consumed fuel<br>
+
 $T_{best}$: traveling time (mins)<br>
+
 $C_{Time}$: time cost<br>
+
 $C_{Fixed}$: fixed cost <br><br>
 
 
@@ -325,15 +338,18 @@ $C_{Fixed}$: fixed cost <br><br>
 <p align='center'>
 explain how to achive and what skills we used
 
-For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacities for comparison.250,300 and 450. Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.
+For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacities for comparison.250,300 and 450. Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes .For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes(based on the result in the Scenario 1 in task 1) as the time in all different models.
 </p>
 </ol>
+
 ## b. Results
 
 <p align='center'>
 show our result and explain what does the result repersent
 
-As you can see from the table,The model with 450 passengers as the maximum capacity require $71844 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98003 and $78064.The model 3 has the lowest total in 3 model.This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Because the model 2 is also a 4 enginee aircraft,the cost of it's each flight is significantly higher than the model 1.Moreover it's number of total cost is not significantly close to the model 3.Therefore,the number of total trips are the most important element to lower the total cost instead of the cost each flight.For further informations,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)    
+  ![table of the cost for each model](https://user-images.githubusercontent.com/115149687/201834930-509e67f8-50af-4f77-b0ce-969f6ff77303.JPG)
+  
+As you can see from the table,The model with 450 passengers as the maximum capacity require $71064 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98044 and $78064.The model 3 has the lowest total in 3 model.This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Therefore,the nember of total trips are the most important element to lower the total cost instead of the cost each flight.For further informations,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)    
 </p>
 
 ## c. Descussion
