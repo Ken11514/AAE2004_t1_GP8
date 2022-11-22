@@ -102,7 +102,7 @@ Example for a maze problem is fitted into a grid format.
 Flowchart for A-Star algorithm:<br> 
 ```mermaid
 flowchart LR;
-    A([Star Path Planning])-->B{Is curren node reach End point};
+    A([Star Path Planning])-->B{If curren node reach End point};
     B-->|Yes|F([End and Show the list of movement])
     B-->|No|C[Serch node near by]
     C-->D[Calculate weight]
@@ -124,7 +124,7 @@ flowchart LR;
 ## a. Methodology
 <ol type='I'>
 <h3><li>Information</li></h3>
-<dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost.In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost. In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
 <br><br></li>
 <h3><li>Data for task 1</h3>
 <table align='center'>
@@ -136,7 +136,7 @@ flowchart LR;
 </table>
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Cost Speciffication</h3>
-&nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when trivaling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
+&nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when travelling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
 
 | key | A321neo | A330-900neo | A350-900|
 | :---: | :---: | :---: | :---: |
@@ -177,23 +177,36 @@ $C_{Fixed}$: fixed cost <br>
 
 </dd>&nbsp;</li>
 <h3><li>Procedure</h3><dd>
-&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircrafts in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstical and cost intensive area map in grid format.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest trivaling cost is collected.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriaos, claculate the total cost for 3 different aircraft.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select a aircraft modo that has the lowest trivaling cost while satisfying the scenriao.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircraft in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest travelling cost is collected.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriao, calculate the total cost for 3 different aircrafts.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travelling cost while satisfying the scenriao.<br>
 </dd></li>
 
 ## b. Results
 
 <p >
-show our result and explain what does the result repersent
+
+
+![gif 1](https://user-images.githubusercontent.com/116112237/201840666-8766631c-eff7-4abc-b0d4-581570b0b910.gif)
+
+&nbsp;&nbsp;&nbsp;&nbsp;By using the given formula, the cost of the trip can be calculated without any difficulty and according to it, A330-900neo has the lowest trip cost for scenario 1. Additionally, for both scenario 2 and 3, the aircraft model with the lowest trip cost is A350-900.
+
+The blue star represents the start node while the green star represents the end node or the goal node. An aircraft travelling from the start node to the goal node might follow a more convenient route keeping the fuel and time-consuming area in mind to lower the total trip cost. And this route for the given challenge is presented by the red line starting from the start node and ending at the goal node.
+
 </p>
 
-## c. Descussion
+## c. Discussion
 
 <p >
 Talk about how the task related to aviation
+ 
+  As mentioned above,one of the main goal of finding the shortest route for the aircraft is saving the travel time.Aircraft has a uncompetitive speed advantage to the another kind of transportation method.This is the reason why do the aviation activity are so important to the transportation system of the world.Besides improving the convience and the efficency of the aviation activity,finding the shorest route has the meaning on fulfilling the special requirements of the passengers Expectally for the passengers or cargo which need to travel internationally as fast as possible,it include animals like horse,rhino and other kind of big animals.As you can see,this is one of the related point between this task and the aviation. 
+  
+  For another,taking the shorest route means it take the shorest travel time.It means the aircraft will provide lesser pollutant to the environment.Because taking the aircraft is the most carbon emission activity in the world,the offical and private aviation organisations like ICAO and IATA always demand the airline to lower the amount of carbon emission.And this is the way to acheive that goal.As you can see,this is the another related point between the task and aviation.
+  
+  In conclusion, task 1 is able to achieve both passengers’ needs and environment protection. For passengers, they will have different kinds of requirements while choosing air flight for travelling such as price, duration and coziness etc. Besides, passengers will be more likely to choose airline with a higher reputation. Therefore, task 1 can help passengers of selecting the most suitable travelling route as well as meet their needs. Moreover, fuels which are use in aviation industry cause harm to our environment. Since carbon dioxide emitted in the aircrafts may enhance the greenhouse effect. However, different type of aircraft have their unique design while the consumption of fuel and time in the same route will be different too. As a result, the results of task 1 are needed to maintain a high quality level of environment.
 </p>
 
 
@@ -231,12 +244,24 @@ Talk about how the task related to aviation
 </ol>
 
 ## b. Results
+<ol type='1'>
+<h3><li>Jet Stream Area</h3><dd>
+&nbsp;&nbsp;&nbsp;&nbsp;We have discovered that the flight route passes most in the region between y&nbsp;=&nbsp;9 to y&nbsp;=&nbsp;14. As a result, we decided to set the jet stream area this region and therefore the flight route is the most cost-effective.
+<br><image src='images/Prove_jetSteam_area.png' align='centre' width=70%>
+</dd>
 
-<p align='center'>
-show our result and explain what does the result repersent
-</p>
+<h3><li>Cost Calcution</h3><dd>
+&nbsp;&nbsp;&nbsp;&nbsp;A330-900neo has the lowest Trip Cost among the 3 airplanes. Base on Trip Cost Equation, data is collected as follows.
+<br>
 
-## c. Descussion
+| Airplane Model |    $\Delta F$  |$T_{best}$ |  $C_{C}$ |  $C_{T}$   |  $C_{F}$ | Number of trip required  |   Total Trip Cost  |
+| :--------         | :------- | :------- |:---------  | :--------- |:--------   | :--------| :--------|
+| A321neo | 54kg/min        | 75.0059487247684 /min  | 1800  $/flight   |  15  $/min        | 0.76  $/kg         | 15   | $90050 |
+| A330-900neo |  84kg/min        | 75.0059487247684    min| 2000   $/flight       |  21  $/min        | 0.88 $/kg          | 10   | $83635 |                
+| A350-900 |  90kg/min        | 75.0059487247684   min  | 2500  $/flight    |  27  $/min        | 0.95  $/kg | 9   | $86900 |              
+
+
+## c. Discussion
 
 <p align='center'>
 Talk about how the task related to aviation
@@ -274,7 +299,7 @@ Talk about how the task related to aviation
  
 <ol type='I'>
 <h3><li>Information</h3>
-<dd>&nbsp;&nbsp;&nbsp;&nbsp;Humain invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Humun invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
 <h3><li>Data for task 3</h3>
 <ul> Ruel and Restrictions:
 <li>design a new aircraft to best fit Task 1 Scenario 1</li>
@@ -285,8 +310,15 @@ Talk about how the task related to aviation
 <li>Each engine consumes fuel at 20 kg/min</li>
 <li>Follow the trip cost equation and material cost list</li>
 </ul>
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
 
+
+| Airplane Capacity& Model |    $\Delta F$  |$T_{best}$ |  $C_{C}$ |  $C_{T}$   |  $C_{F}$ | Number of trip required  |   Total cost  |
+| :--------         | :------- | :------- |:---------  | :--------- |:--------   | :--------| :--------|
+| (Model 1) 250 | 40kg/min        | 77.1837664107356 /min  | 2000  $/flight   |  22  $/min        | 0.8823  $/kg         | 12   | $77064 |
+| (Model 2) 300|  80kg/min        | 77.1837664107356    min| 2500   $/flight       |  24  $/min        | 0.8823 $/kg          | 10   | $98003 |                
+| (Model 3) 450|  80kg/min        | 77.1837664107356   min  | 2500  $/flight    |  30  $/min        | 0.8823  $/kg | 7    | $71844 |              
+
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Trip cost equation</h3>
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 <br>
 
@@ -295,6 +327,8 @@ $\Delta F$: consumed fuel<br>
 $T_{best}$: traveling time (mins)<br>
 $C_{Time}$: time cost<br>
 $C_{Fixed}$: fixed cost <br><br>
+
+
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Fuel cost </h3>
 
@@ -321,19 +355,19 @@ $C_{Fixed}$: fixed cost <br><br>
 <p align='center'>
 explain how to achive and what skills we used
 
-For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacity for comparison.250,300 and 450.Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.
+For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacities for comparison.250,300 and 450. Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.For what skills we used,we calculated the total cost on our own.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.(THIS IS PIE CHART)
 </p>
 </ol>
 
 ## b. Results
 
 <p align='center'>
-show our result and explain what does the result repersent
+show our result and explain what does the result represent
 
-As you can see from the table,The model with 450 passengers as the maximum capacity require $71064 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98044 and $78064.The model 3 has the lowest total in 3 model.This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Therefore,the nember of total trips are the most important element to lower the total cost instead of the cost each flight.    
+As you can see from the table,The model with 450 passengers as the maximum capacity require $71844 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98003 and $78064.The model 3 has the lowest total in 3 model.(THIS IS BAR CHART)This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Therefore,the nember of total trips are the most important element to lower the total cost instead of the cost each flight in this situation.For further informations,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)    
 </p>
 
-## c. Descussion
+## c. Discussion
 
 <p align='center'>
 Talk about how the task related to aviation
