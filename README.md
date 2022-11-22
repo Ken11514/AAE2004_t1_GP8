@@ -205,7 +205,7 @@ The blue star represents the start node while the green star represents the end 
 
 ## c. Discussion
 
-<p >
+<p align='center'>
 Talk about how the task related to aviation
  
   As mentioned above,one of the main goal of finding the shortest route for the aircraft is saving the travel time.Aircraft has a uncompetitive speed advantage to the another kind of transportation method.This is the reason why do the aviation activity are so important to the transportation system of the world.Besides improving the convience and the efficency of the aviation activity,finding the shorest route has the meaning on fulfilling the special requirements of the passengers Expectally for the passengers or cargo which need to travel internationally as fast as possible,it include animals like horse,rhino and other kind of big animals.As you can see,this is one of the related point between this task and the aviation. 
