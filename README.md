@@ -127,7 +127,7 @@ flowchart LR;
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost. In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
 <br><br></dd>
 
-<h3><li>Data for task 1</li></h3><dd>
+<h3><li>Data for task 1</li></h3>
 <table align='center'>
   <tr>
     <td>Our map</td>
@@ -138,7 +138,7 @@ flowchart LR;
     <td><image src='images/Map_in_grid.png'width=1500></td>
   </tr>
 </table>
-
+<dd>
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Cost Speciffication</h3>
 &nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when travelling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
 
@@ -253,8 +253,9 @@ Talk about how the task related to aviation
 <ol type='1'>
 <h3><li>Jet Stream Area</h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;We have discovered that the flight route passes most in the region between y&nbsp;=&nbsp;9 to y&nbsp;=&nbsp;14. As a result, we decided to set the jet stream area this region and therefore the flight route is the most cost-effective.
-<br><image src='images/Prove_jetSteam_area.png' align='centre' width=70%>
-</dd>
+<br>
+<image src='images/Prove_jetSteam_area.png' align='centre' width=70%>
+
 
 <h3><li>Cost Calcution</h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;A330-900neo has the lowest Trip Cost among the 3 airplanes. Base on Trip Cost Equation, data is collected as follows.
@@ -355,7 +356,9 @@ $C_{Fixed}$: fixed cost <br><br>
 <td>...</td><td>...</td><td>...</td><td>...</td>
 </tr>
 </table>
+<p>
 [1]:<a href='https;//www.iata.org/en/publications/economics/fuel-monitor'>https;//www.iata.org/en/publications/economics/fuel-monitor</a>
+</p>
 
 <h3><li>Procedure</h3><dd>    
 <p align='center'>
