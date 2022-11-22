@@ -447,6 +447,7 @@ def main(scenario):
         plt.pause(0.001) # pause 0.001 seconds
         plt.show() # show the plot
 
+
         with imageio.get_writer('images/Task_A1(1).gif',mode='I') as writer:
             for filename in frameName:
                 image = imageio.imread(filename)
