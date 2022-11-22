@@ -127,7 +127,7 @@ flowchart LR;
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost. In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
 <br><br></dd>
 
-<h3><li>Data for task 1</li></h3>
+<h3><li>Data for task 1</li></h3></ol><dd>
 <table align='center'>
   <tr>
     <td>Our map</td>
@@ -180,7 +180,9 @@ $C_{Fixed}$: fixed cost <br>
 2. 25 flights maximum per week
 3. Time cost = low and Fuel cost = 0.95$/kg
 
+</dd>
 <br>
+<ol type='I' start=3>
 <h3><li>Procedure</li></h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircraft in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
@@ -253,8 +255,8 @@ Talk about how the task related to aviation
 <ol type='1'>
 <h3><li>Jet Stream Area</h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;We have discovered that the flight route passes most in the region between y&nbsp;=&nbsp;9 to y&nbsp;=&nbsp;14. As a result, we decided to set the jet stream area this region and therefore the flight route is the most cost-effective.
-<br>
-<image src='images/Prove_jetSteam_area.png' align='centre' width=70%>
+<br><p>
+<image src='images/Prove_jetSteam_area.png' align='centre' width=70%></p>
 
 
 <h3><li>Cost Calcution</h3><dd>
