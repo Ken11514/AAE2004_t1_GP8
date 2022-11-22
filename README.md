@@ -125,10 +125,13 @@ flowchart LR;
 <ol type='I'>
 <h3><li>Information</li></h3>
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost. In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
-<br><br></dd></li>
-<h3><li>Data for task 1</h3><dd>
+<br><br></dd>
+<h3><li>Data for task 1</li></h3><dd>
 <table align='center'>
-  <tr><th>Our map</th><th>Our map in grid format</th></tr>
+  <tr>
+    <td>Our map</td>
+    <td>Our map in grid format</td>
+  </tr>
   <tr>
     <td><image src='images/map.png'width=100%></td>
     <td><image src='images/Map_in_grid.png'width=1500></td>
@@ -176,14 +179,14 @@ $C_{Fixed}$: fixed cost <br>
 2. 25 flights maximum per week
 3. Time cost = low and Fuel cost = 0.95$/kg
 
-</dd>&nbsp;</li>
-<h3><li>Procedure</h3><dd>
+</dd>&nbsp;
+<h3><li>Procedure</li></h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircraft in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest travelling cost is collected.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriao, calculate the total cost for 3 different aircrafts.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travelling cost while satisfying the scenriao.<br>
-</dd></li>
+</dd>
 </ol>
 
 ## b. Results
