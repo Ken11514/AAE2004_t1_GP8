@@ -130,8 +130,8 @@ flowchart LR;
 <table align='center'>
   <tr><th>Our map</th><th>Our map in grid format</th></tr>
   <tr>
-    <td><image src='images/map.png' width=100%></td>
-    <td><image src='images/Map_in_grid.png' width=1500></td>
+    <td><image src='images/map.png'width=100%></td>
+    <td><image src='images/Map_in_grid.png'width=1500></td>
   </tr>
 </table>
 
@@ -229,8 +229,8 @@ Talk about how the task related to aviation
 <table align='center'>
   <tr><th>Our original map</th><th>Our map with Jet Steam area</th></tr>
   <tr>
-    <td><image src='images/map.png' width=100%></td>
-    <td><image src='images/Task_2_map.png' width=100%></td>
+    <td><image src='images/map.png'width=100%></td>
+    <td><image src='images/Task_2_map.png'width=100%></td>
   </tr>
 </table>
 </li>
