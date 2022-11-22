@@ -456,27 +456,8 @@ show our result and explain what does the result repersent
 Talk about how the task related to aviation
 </p>
 
-# **9 | Additional task 3**
-## a. Methodology
 
-<p align='center'>
-explain how to achive and what skills we used
-</p>
-
-## b. Results
-
-<p align='center'>
-show our result and explain what does the result repersent
-</p>
-
-## c. Descussion
-
-<p align='center'>
-Talk about how the task related to aviation
-</p>
-
-
-# **10 | Reflective Essay**
+# **9 | Reflective Essay**
 <h2>Shek Ho Ching Ken (22075211D)</h2>
 
 ```
@@ -487,7 +468,7 @@ Talk about how the task related to aviation
   Type your essay Here!!!
 ```
 
-# **11 | References**
+# **10 | References**
 -  hi
 
 
