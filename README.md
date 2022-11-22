@@ -125,8 +125,8 @@ flowchart LR;
 <ol type='I'>
 <h3><li>Information</li></h3>
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Although most of the fights do not always follow the same route, it is important for airlines to find the shortest route to reach their destination as it not only saves time but also saves money by decreasing fuel consumption. Additionally, the most efficient aircraft model is selected based on the route that helps minimize the flight cost. In this task, we are going to find the best aircraft models with minimum cost for the shortest route found for the given challenge keeping the needs of passsengers in mind.
-<br><br></li>
-<h3><li>Data for task 1</h3>
+<br><br></dd></li>
+<h3><li>Data for task 1</h3><dd>
 <table align='center'>
   <tr><th>Our map</th><th>Our map in grid format</th></tr>
   <tr>
@@ -152,6 +152,7 @@ flowchart LR;
 $Cost=C_{Fuel} \cdot \Delta F \cdot T_{best} +C_{Time}\cdot T_{best}+C_{Fixed}$
 
 <br>
+
 $C_{fuel}$: fuel cost<br>
 $\Delta F$: consumed fuel<br>
 $T_{best}$: traveling time (mins)<br>
@@ -183,6 +184,7 @@ $C_{Fixed}$: fixed cost <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriao, calculate the total cost for 3 different aircrafts.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travelling cost while satisfying the scenriao.<br>
 </dd></li>
+</ol>
 
 ## b. Results
 
@@ -227,7 +229,7 @@ Talk about how the task related to aviation
   <li>The area of the Jet Steam must span across the map laterally and span 5-unit length vertically
 </ul>
 <table align='center'>
-  <tr><th>Our original map</th><th>Our map with Jet Steam area</th></tr>
+  <tr><td>Our original map</td><td>Our map with Jet Steam area</td></tr>
   <tr>
     <td><image src='images/map.png'width=100%></td>
     <td><image src='images/Task_2_map.png'width=100%></td>
