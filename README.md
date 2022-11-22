@@ -61,7 +61,7 @@
 </p>
 
 # **2 | Theory of Path Planning Algorithm**
-- [ ] show how its work
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;Converting a maze problem into a grid format, A-Star algorithm will assign a weight value which repersent the traveling cost on each coordinates. By calculating the lowest traveling cost between start point and end point, a shortest path can be collected.
 <br>
@@ -138,7 +138,7 @@ flowchart LR;
     <td><image src='images/Map_in_grid.png'width=1500></td>
   </tr>
 </table>
-<dd>
+
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;Cost Speciffication</h3>
 &nbsp;&nbsp;&nbsp;&nbsp;More cost will be calculated when travelling in the cost intensive area. Extra 20% in Fuel cost intensive area and 40% for Time cost intsnsive area.
 
@@ -180,7 +180,7 @@ $C_{Fixed}$: fixed cost <br>
 2. 25 flights maximum per week
 3. Time cost = low and Fuel cost = 0.95$/kg
 
-</dd>&nbsp;
+<br>
 <h3><li>Procedure</li></h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircraft in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
@@ -232,13 +232,13 @@ Talk about how the task related to aviation
   <li>Cost along the Jet Steam Area is reduced by 5%</li>
   <li>The area of the Jet Steam must span across the map laterally and span 5-unit length vertically
 </ul>
-<table align='center'>
+  <table align='center'>
   <tr><td>Our original map</td><td>Our map with Jet Steam area</td></tr>
   <tr>
     <td><image src='images/map.png'width=100%></td>
     <td><image src='images/Task_2_map.png'width=100%></td>
   </tr>
-</table>
+  </table>
 </li>
 <h3><li>Procedure</h3>
 &nbsp;&nbsp;&nbsp;&nbsp;There are 2 major part in our apporach, 'Finding the best place of jet steam area' and 'Cost calculation' .
@@ -438,9 +438,9 @@ As shown in the examples above, the locations for both checkpoints of both examp
 
 ```mermaid
 flowchart LR;
-A((Start point))-->B((checkpoint of yellow zone))-->C((checkpoint of red zone));
-A((Start point))-->E((checkpoint of red zone))-->F((checkpoint of yellow zone));
-C((checkpoint of yellow zone)) & F((checkpoint of red zone))-->D((Destination));
+    A((Start point))-->B((checkpoint of yellow zone))-->C((checkpoint of red zone));
+    A((Start point))-->E((checkpoint of red zone))-->F((checkpoint of yellow zone));
+    C((checkpoint of yellow zone)) & F((checkpoint of red zone))-->D((Destination));
 ```
 
 </ol>
