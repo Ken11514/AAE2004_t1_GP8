@@ -261,7 +261,7 @@ Talk about how the task related to aviation
 
 <h3><li>Cost Calcution</h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;A330-900neo has the lowest Trip Cost among the 3 airplanes. Base on Trip Cost Equation, data is collected as follows.
-<br>
+<br></ol>
 
 | Airplane Model |    $\Delta F$  |$T_{best}$ |  $C_{C}$ |  $C_{T}$   |  $C_{F}$ | Number of trip required  |   Total Trip Cost  |
 | :--------         | :------- | :------- |:---------  | :--------- |:--------   | :--------| :--------|
