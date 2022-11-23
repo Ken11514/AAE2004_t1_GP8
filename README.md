@@ -28,11 +28,9 @@
     </li>
     <li><a href='#8--additional-task-2'>Additional Task 2</a>
     </li>
-    <li><a href='#9--additional-task-3'>Additional Task 3</a>
+    <li><a href='#9--reflective-essay'>Reflective Essay</a>
     </li>
-    <li><a href='#10--reflective-essay'>Reflective Essay</a>
-    </li>
-    <li><a href='#11--references'>References</a></li>
+    <li><a href='#10--references'>References</a></li>
     <li>
       <a href='#useful-source'>Useful source</a>
     </li>
