@@ -384,16 +384,6 @@ Talk about how the task related to aviation
 Compare to another type of transportation method,the manufacture and the operating cost of an aircraft are in a extremely high level.Besides gaining the profit from the commerical flight,airlines are required to surver the gigantic operating cost from different areas.The operating cost of aircraft in each flight are the biggest outcome of the airlines besides owning a aircraft. There is a significant differences of operating cost to fulfill the requirement between in different mode of maximum passengers capacity to meet the requirement of senerio 1.If the airlines doesn't choose the most efficency mode,there will be planty of unnesscary economic resources are wasted. Therefore,finding the best model to fulfill the requirment in the lowest operating cost to prevent the unnesscary waste are extremely important to the aviation.
 </p>
 
-## Introduction
-- [ ] : How the task related to daily aviation
-- [ ] : Task objective
-## Content
-- [ ] : Thhings to do
-- [ ] : How and What we have done (explain with result)
-
-## Conclusion
-- [ ] : result (1 line to cover it)
-- [ ] : How to improve
 <!-- updates -->
 
 # **7 | Additional Task 1**
