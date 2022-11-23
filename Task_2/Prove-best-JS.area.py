@@ -366,10 +366,10 @@ def main():
     rx, ry, Tbest = a_star.planning(sx, sy, gx, gy)
     #print(Tbest)
     plt.hist(ry,range(-10,61), rwidth= 1, align='mid')#'range(-10,61)' as 61 is excluded
-    plt.title("The route in terms of y-coordinate")
+    plt.title("The coverage of Jet-Steam area")
     plt.xlabel('y-coordinate')
-    plt.ylabel('The amount of x-coordinate')
-    #plt.savefig('images/Prove_jetSteam_area.png')
+    plt.ylabel('The amount of path covered ( steps )')
+    plt.savefig('images/Prove_jetSteam_area.png')
     plt.show()
     #calc for the input scenario
     
