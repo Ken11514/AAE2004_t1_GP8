@@ -375,6 +375,13 @@ show our result and explain what does the result represent
 
 As you can see from the table,The model with 450 passengers as the maximum capacity require $71844 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98003 and $78064.The model 3 has the lowest total in 3 model.(THIS IS BAR CHART)This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Therefore,the nember of total trips are the most important element to lower the total cost instead of the cost each flight in this situation.For further informations,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)    
 </p>
+<table align='center'>
+<tr>
+  <td><image src='images/Flight cost for each Model (per flight).png' ></td>
+  <td><image src='images/Flight cost for each Model .png'></td>
+</tr>
+</table>
+
 
 ## c. Discussion
 
