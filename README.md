@@ -420,9 +420,18 @@ flowchart LR;
 # **8 | Additional Task 2**
 ## a. Methodology
 
-<p align='center'>
-explain how to achive and what skills we used
-</p>
+<ol type='I'>
+<h3><li>Information</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In flight operation enviroment could be different form previou flight. In this task, a keep changeing mission and enviroment are created to simulate the flight operation in real life.</p>
+</li>
+<h3><li>Data for additional task 2</h3>
+
+</li>
+<h3><li>Procedure<h3>
+
+
+
+
 
 ## b. Results
 
