@@ -501,7 +501,11 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 <h2>Shek Ho Ching Ken (22075211D)</h2>
 
 ```
-  This project is my first GitHub project in my life ,also ......
+  This project is my first GitHub project in my life. Althrough using a Python, HTML, Markdown to do this project is challenging for me, it is a great experience for me to learn, try and overcome.
+     From this project, I can enhance my skills,for example,  Problem solving skill which help me to break down a large problem into small easy tasks, Leadership which help me to collect groupmate ideas with a efficent way.
+    Recalling the first day, I asked my groupmates what strength they have, and found that i was the only one who good at program. In that moment I knew I need to pay more effort in the code explaining, therefore i had made a document that detaily break explain the A-Star Algorithm. Up to now I think I can to it better that i should use more daily example instead of difficlt term in the document.
+    Beside the document, i had also create a Workflow list for us to catch up and it will be better if we can more frequently share what task have been done. So that we can more like to help eachother and more easy to catch up the progress.
+    In conclusion, I satisfied my performance, I have room to improve the skills of commulation and atmosphere constructing.
 ```
 ## Put your Name here (student ID)
 ```
