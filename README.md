@@ -192,11 +192,8 @@ $C_{Fixed}$: fixed cost <br>
 
 ## b. Results
 
-<p >
-
-
-![gif 1](https://user-images.githubusercontent.com/116112237/201840666-8766631c-eff7-4abc-b0d4-581570b0b910.gif)
-
+<p>
+<image src='images/Task_1_Scenario_1.gif'>
 &nbsp;&nbsp;&nbsp;&nbsp;By using the given formula, the cost of the trip can be calculated without any difficulty and according to it, A330-900neo has the lowest trip cost for scenario 1. Additionally, for both scenario 2 and 3, the aircraft model with the lowest trip cost is A350-900.
 
 The blue star represents the start node while the green star represents the end node or the goal node. An aircraft travelling from the start node to the goal node might follow a more convenient route keeping the fuel and time-consuming area in mind to lower the total trip cost. And this route for the given challenge is presented by the red line starting from the start node and ending at the goal node.
@@ -253,8 +250,8 @@ Talk about how the task related to aviation
 <ol type='1'>
 <h3><li>Jet Stream Area</h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;We have discovered that the flight route passes most in the region between y&nbsp;=&nbsp;9 to y&nbsp;=&nbsp;14. As a result, we decided to set the jet stream area this region and therefore the flight route is the most cost-effective.
-<br><p>
-<image src='images/Prove_jetSteam_area.png' align='centre' width=70%></p>
+<br><p align='centre'>
+<image src='images/Prove_jetSteam_area.png'></p>
 
 
 <h3><li>Cost Calcution</h3><dd>
@@ -274,31 +271,8 @@ Talk about how the task related to aviation
 Talk about how the task related to aviation
 </p>
 
-## Introduction
-- [x] : How the task related to daily aviation
-
-        The area designed in task 2 represents jet-stream area where aircrafts could consume relatively less fuel
-        -> reduce the cost of flights
-        
-- [x] : Task objective
-
-        Recreate a jet-steam area in the map that could most benefit our flight route. 
-        
-## Content
-- [x] : Things to do
-
-        Design a new cost area -> reduce the cost of the route of scenario 1 in task 1
-         
-- [x] : How and what we have done (explain with result)
-
-        1 Base on the scenario 1 in Task 1
-        2 Create a reduce-cost area in the map (size: vertical lengths:5 , horizontal length:infinity [cyan in colour])
-        3 Finding the lowest Trip Cost in pothntial.
 
 
-## Conclusion
-- [ ] : result (1 line to cover it)
-- [ ] : How to improve
 <!-- Task 3 -->
 
 # **6 | Task 3**
@@ -306,7 +280,7 @@ Talk about how the task related to aviation
  
 <ol type='I'>
 <h3><li>Information</h3>
-<dd>&nbsp;&nbsp;&nbsp;&nbsp;Humun invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Human invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
 <h3><li>Data for task 3</h3>
 <ul> Ruel and Restrictions:
 <li>design a new aircraft to best fit Task 1 Scenario 1</li>
@@ -357,7 +331,7 @@ $C_{Fixed}$: fixed cost <br><br>
 </tr>
 </table>
 <p>
-[1]:<a href='https;//www.iata.org/en/publications/economics/fuel-monitor'>https;//www.iata.org/en/publications/economics/fuel-monitor</a>
+[1]:<a href='https://www.iata.org/en/publications/economics/fuel-monitor' target='_blank'>https://www.iata.org/en/publications/economics/fuel-monitor</a>
 </p>
 
 <h3><li>Procedure</h3><dd>    
