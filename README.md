@@ -424,20 +424,67 @@ flowchart LR;
 <h3><li>Information</h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;In flight operation enviroment could be different form previou flight. In this task, a keep changeing mission and enviroment are created to simulate the flight operation in real life.</p>
 </li>
-<h3><li>Data for additional task 2</h3>
+<h3><li>Requirements for additional task 2</h3>
+<ol type='1'>
+<li>Only the fule-cost-intensive area remains and generate it randomly with a fixed area of (30x30)</li>
+<li>Diagonal movement is disabled, change parameter so that the object could travel with in one grid size</li>
+<li>Obstacles are generated randomly with reasonable density and should not generate at/near the start and end point</li>
+<li>Destination and starting points are generated randomly with at least a 50-Unit distance in-between</li>
+<li>Plotting of fuel-cost-intensive area would not cover the obstacles</li>
 
+</ol>
 </li>
-<h3><li>Procedure<h3>
+<h3><li>Procedure</h3>
+<ol type='1' start='0'>
+<li>Set up the basic frame:<br> By reusing the previous code, obstacle set are need to be rearanged</li>
+<li>Set up fuel-cost-intensive area:<br>
+ First assume the area is a random point in the map, its coordinates can be generate inside the frame by <pre>random.randint(-9,60)  #60 is excluded</pre>
+Then, assume the point have a width and height of 30 unit. As the area can not generat outside the frame, the range of coordinates of the point should be [-9 , 30]<br>
+Thus, the Fule-cost-intensive area can be ploted with the coordinates</li>
+<li>Disable diagonal movement:<br>
+ Rearange the code <pre>def get_motion_model():</pre>
+  object could travel with in one grid size:<br>
+  Rearange the code <pre>def calc_obstacle_map(self, ox, oy):</pre>
+<li>Random obstacles:<br>
+First, get all possible coordinates for obstacle<br>
+Then, set a generation rate, and check for the overlaping<br>
+After that, plot the obstalces whic meet the condiction
+</li>
+<li>Random start and end point:<br>
+First generate a random satrt point,<br>
+Then, by using the forumal of the locus of circle, take coordinates of start point as center of circle and the radious as larger than or equal to 50, while x:[-9,59] and y:[-9,59], all possable coordinates can be obtained,<br>
+Finally, choose a random coordinates as the end point coordinate </li>
+<li>Ploting:<br>
+plot the fuel-cost-intensive area first to meet the requriment</li>
+</ol>
+</li>
 
 
-
-
+</ol>
 
 ## b. Results
 
-<p align='center'>
-show our result and explain what does the result repersent
-</p>
+&nbsp;&nbsp;&nbsp;&nbsp;After running the code 2 kind of result can be obtained<br>
+<table align='center'>
+<h3>result with possable route:</h3>
+<tr>
+<td><image src='images/Task_A2(1).gif'></td>
+<td><image src='images/Task_A2(2).gif'></td>
+</tr>
+<tr>
+<td><image src='images/Task_A2(3).gif'></td>
+<td><image src='images/Task_A2(4).gif'></td>
+</tr>
+</table>
+
+<table align='center'>
+<h3>route with no possable route</h3>
+<tr>
+<td><image src='images/Task_A2(5).gif'></td>
+<td><image src='images/Task_A2(6).gif'></td>
+</tr>
+</table>
+
 
 ## c. Descussion
 

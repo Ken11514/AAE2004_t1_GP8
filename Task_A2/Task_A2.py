@@ -255,7 +255,7 @@ class AStarPlanner:
                 y = self.calc_grid_position(iy, self.min_y)
                 for iox, ioy in zip(ox, oy): # Python’s zip() function creates an iterator that will aggregate elements from two or more iterables. 
                     d = math.hypot(iox - x, ioy - y) # The math. hypot() method finds the Euclidean norm
-                    if d <= self.rr:
+                    if d < self.rr:
                         self.obstacle_map[ix][iy] = True # the griid is is occupied by the obstacle
                         break
 
@@ -283,8 +283,8 @@ def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
 
     # random start and goal position
-    sx = rd.randint(-8, 59)  # [m]
-    sy = rd.randint(-8, 59)  # [m]
+    sx = rd.randint(-9, 60)  # [m]
+    sy = rd.randint(-9, 60)  # [m]
     possible_gx = []  # [m]
     possible_gy = [] # [m] 
     for i in range(-8, 59):
@@ -315,7 +315,7 @@ def main():
         oy.append(i)
     for i in range(-10, 61):
         for j in range(-10, 61):
-            if rd.randint(0,100)>=90 and no_overlap(i, j, sx, sy, gx, gy):
+            if rd.randint(0,100)>=65 and no_overlap(i, j, sx, sy, gx, gy):
                 ox.append(i)
                 oy.append(j)
     

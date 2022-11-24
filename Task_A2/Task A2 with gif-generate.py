@@ -255,7 +255,7 @@ class AStarPlanner:
                 y = self.calc_grid_position(iy, self.min_y)
                 for iox, ioy in zip(ox, oy): # Python’s zip() function creates an iterator that will aggregate elements from two or more iterables. 
                     d = math.hypot(iox - x, ioy - y) # The math. hypot() method finds the Euclidean norm
-                    if d <= self.rr:
+                    if d < self.rr:
                         self.obstacle_map[ix][iy] = True # the griid is is occupied by the obstacle
                         break
 
@@ -269,7 +269,7 @@ class AStarPlanner:
         return motion
 
 def get_goal_coordinate(sx,sy) :
-    possable_location = [(i, j)for i in range(-8,58) for j in range(-8,58) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
+    possable_location = [(i, j)for i in range(-9,60) for j in range(-9,60) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
     final_coordinate = random.choice(possable_location)
     return final_coordinate
 def no_overlap(i, j, sx, sy, gx, gy):
@@ -315,14 +315,14 @@ def main():
         oy.append(i)
     for i in range(-10,60):
         for j in range(-10,60):
-            if random.randint(0,100)>= 94 and no_overlap(i,j,sx,sy,gx,gy) :
+            if random.randint(0,100)>= 65 and no_overlap(i,j,sx,sy,gx,gy) :
                 ox.append(i)
                 oy.append(j)
     
     # set cost intesive area 2 yellow in colour
     fc_x, fc_y = [], []
-    x_coordinate = random.randint(-10,30)
-    y_coordinate = random.randint(-10,30)
+    x_coordinate = random.randint(-9,30)
+    y_coordinate = random.randint(-9,30)
     for i in range(x_coordinate, x_coordinate+30):
         for j in range(y_coordinate, y_coordinate+30):
             fc_x.append(i)
@@ -332,7 +332,7 @@ def main():
     if show_animation:  # pragma: no cover
         plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 2(fule) yellow
 
-        plt.plot(ox, oy, "sk") # plot the obstacle
+        plt.plot(ox, oy, ".k") # plot the obstacle
         plt.plot(sx, sy, "*b") # plot the start position 
         plt.plot(gx, gy, "*g") # plot the end position
 
@@ -355,7 +355,7 @@ def main():
         plt.pause(0.001) # pause 0.001 seconds
         plt.show() # show the plot
 
-        with imageio.get_writer('images/Task_A2(2).gif', mode='I') as writer:
+        with imageio.get_writer('images/Task_A2(6).gif', mode='I') as writer:
             for filename in frameName:
                 image = imageio.imread(filename)
                 writer.append_data(image)
