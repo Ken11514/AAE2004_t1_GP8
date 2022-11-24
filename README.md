@@ -332,7 +332,7 @@ $C_{Fixed}$: fixed cost <br><br>
 </table>
 <p>
 [1]:<a href='https://www.iata.org/en/publications/economics/fuel-monitor' target='_blank'>https://www.iata.org/en/publications/economics/fuel-monitor</a>
-</p>
+</p></ol>
 <ol type='I' start='3'>
 <h3><li>Procedure</h3><dd>    
 <p align='center'>
