@@ -338,7 +338,7 @@ $C_{Fixed}$: fixed cost <br><br>
 <p align='center'>
 explain how to achive and what skills we used
 
-For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacities for comparison.250,300 and 450. Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.(THIS IS PIE CHART)
+For the way how will achive the goal,we have decsided 3 different model of aircraft with different maximum passenger capacities for comparison.250,300 and 450. Since of the requirement of senerio 1 are transporting 3000 passengers in one week and the maximum number of flight per week is 12,the lowest possible passengers capacity of the aircraft is 250.Therefore,although the requirment mentioned in task 3 is the lowest capacity of a aircraft is 100,we don't use it as our minimum capacity of the aircraft.According to the equation,we put different data into the equation and we got different outcomes.For example,we use $882.3/mt into the fuel cost and 77.18376541764 minutes as the time in all different models.
 </p></li>
 </ol>
 
@@ -507,9 +507,10 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
     Beside the document, i had also create a Workflow list for us to catch up and it will be better if we can more frequently share what task have been done. So that we can more like to help eachother and more easy to catch up the progress.
     In conclusion, I satisfied my performance, I have room to improve the skills of commulation and atmosphere constructing.
 ```
-## Put your Name here (student ID)
+<h2>Suen Ho Hin Thomas(22080474D)</h2>
+
 ```
-  Type your essay Here!!!
+  I have a lot of deficiencies on progamming and coding.I need to practice and learn more knowledge on programming to help my teammates more on coding instead of just preparing the report.
 ```
 
 # **10 | References**
