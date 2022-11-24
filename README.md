@@ -183,10 +183,10 @@ $C_{Fixed}$: fixed cost <br>
 <ol type='I' start=3>
 <h3><li>Procedure</li></h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;The task objective is to find the flight cost for each aircraft in our <b>Map</b>. Then, compare and select the best aircraft models which has minimum cost and with in the limitation.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;First, create a coresponding obstacle and cost intensive area map in grid format.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;First, create a corresponding obstacle and cost intensive area map in grid format.<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Second, by applying the map in to A-Star algorithm and starting path planning, a best route with the lowest travelling cost is collected.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenriao, calculate the total cost for 3 different aircrafts.<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travelling cost while satisfying the scenriao.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Third, according to each scenario, calculate the total cost for 3 different aircrafts.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finally, compare and select an aircraft model that has the lowest travelling cost while satisfying the scenario.<br>
 </dd>
 </ol>
 
