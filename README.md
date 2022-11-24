@@ -203,13 +203,12 @@ The blue star represents the start node while the green star represents the end 
 ## c. Discussion
 
 <p align='center'>
-Talk about how the task related to aviation
  
-  As mentioned above,one of the main goal of finding the shortest route for the aircraft is saving the travel time.Aircraft has a uncompetitive speed advantage to the another kind of transportation method.This is the reason why do the aviation activity are so important to the transportation system of the world.Besides improving the convience and the efficency of the aviation activity,finding the shorest route has the meaning on fulfilling the special requirements of the passengers Expectally for the passengers or cargo which need to travel internationally as fast as possible,it include animals like horse,rhino and other kind of big animals.As you can see,this is one of the related point between this task and the aviation. 
+  &nbsp;&nbsp;&nbsp;&nbsp;As mentioned above,one of the main goal of finding the shortest route for the aircraft is saving the travel time.Aircraft has a uncompetitive speed advantage to the another kind of transportation method.This is the reason why do the aviation activity are so important to the transportation system of the world.Besides improving the convience and the efficency of the aviation activity,finding the shorest route has the meaning on fulfilling the special requirements of the passengers Expectally for the passengers or cargo which need to travel internationally as fast as possible,it include animals like horse,rhino and other kind of big animals.As you can see,this is one of the related point between this task and the aviation. 
   
-  For another,taking the shorest route means it take the shorest travel time.It means the aircraft will provide lesser pollutant to the environment.Because taking the aircraft is the most carbon emission activity in the world,the offical and private aviation organisations like ICAO and IATA always demand the airline to lower the amount of carbon emission.And this is the way to acheive that goal.As you can see,this is the another related point between the task and aviation.
+  &nbsp;&nbsp;&nbsp;&nbsp;For another,taking the shorest route means it take the shorest travel time.It means the aircraft will provide lesser pollutant to the environment.Because taking the aircraft is the most carbon emission activity in the world,the offical and private aviation organisations like ICAO and IATA always demand the airline to lower the amount of carbon emission.And this is the way to acheive that goal.As you can see,this is the another related point between the task and aviation.
   
-  In conclusion, task 1 is able to achieve both passengers’ needs and environment protection. For passengers, they will have different kinds of requirements while choosing air flight for travelling such as price, duration and coziness etc. Besides, passengers will be more likely to choose airline with a higher reputation. Therefore, task 1 can help passengers of selecting the most suitable travelling route as well as meet their needs. Moreover, fuels which are use in aviation industry cause harm to our environment. Since carbon dioxide emitted in the aircrafts may enhance the greenhouse effect. However, different type of aircraft have their unique design while the consumption of fuel and time in the same route will be different too. As a result, the results of task 1 are needed to maintain a high quality level of environment.
+  &nbsp;&nbsp;&nbsp;&nbsp;In conclusion, task 1 is able to achieve both passengers’ needs and environment protection. For passengers, they will have different kinds of requirements while choosing air flight for travelling such as price, duration and coziness etc. Besides, passengers will be more likely to choose airline with a higher reputation. Therefore, task 1 can help passengers of selecting the most suitable travelling route as well as meet their needs. Moreover, fuels which are use in aviation industry cause harm to our environment. Since carbon dioxide emitted in the aircrafts may enhance the greenhouse effect. However, different type of aircraft have their unique design while the consumption of fuel and time in the same route will be different too. As a result, the results of task 1 are needed to maintain a high quality level of environment.
 </p>
 
 
@@ -283,13 +282,13 @@ Talk about how the task related to aviation
 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Human invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
 <h3><li>Data for task 3</h3>
 <ul> Ruel and Restrictions:
-<li>design a new aircraft to best fit Task 1 Scenario 1</li>
-<li>Onlr consider cruise time of flight </li>
-<li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
-<li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
-<li>C<sub>c</sub> = 2000 for twin-engine, 2500 for 4-engine aircrafts</li>
-<li>Each engine consumes fuel at 20 kg/min</li>
-<li>Follow the trip cost equation and material cost list</li>
+  <li>design a new aircraft to best fit Task 1 Scenario 1</li>
+  <li>Onlr consider cruise time of flight </li>
+  <li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
+  <li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
+  <li>C<sub>c</sub> = 2000 for twin-engine, 2500 for 4-engine aircrafts</li>
+  <li>Each engine consumes fuel at 20 kg/min</li>
+  <li>Follow the trip cost equation and material cost list</li>
 </ul>
 
 
@@ -333,7 +332,7 @@ $C_{Fixed}$: fixed cost <br><br>
 <p>
 [1]:<a href='https://www.iata.org/en/publications/economics/fuel-monitor' target='_blank'>https://www.iata.org/en/publications/economics/fuel-monitor</a>
 </p>
-
+<ol type='I' start='3'>
 <h3><li>Procedure</h3><dd>    
 <p align='center'>
 explain how to achive and what skills we used
@@ -344,10 +343,8 @@ For the way how will achive the goal,we have decsided 3 different model of aircr
 
 ## b. Results
 
-<p align='center'>
-show our result and explain what does the result represent
-
-As you can see from the table,The model with 450 passengers as the maximum capacity require $71844 to fulfill the requirment of senerio 1,and the model with 300 and 250 passengers as their maximum capacithy require $98003 and $78064.The model 3 has the lowest total in 3 model.(THIS IS BAR CHART)This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest.Therefore,the nember of total trips are the most important element to lower the total cost instead of the cost each flight in this situation.For further informations,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)    
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;As you can see from the table, the model with 450 passengers as the maximum capacity require $71844 to fulfill the requirment of senerio 1, and the model with 300 and 250 passengers as their maximum capacithy require $98003 and $78064.The model 3 has the lowest total in 3 model. This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.<br>&nbsp;&nbsp;&nbsp;&nbsp;Although the operating cost of model 3 each flight is the highest in 3 models,the total trips are the lowest. Therefore, the nember of total trips are the most important element to lower the total cost instead of the cost each flight in this situation. <br>&nbsp;&nbsp;&nbsp;&nbsp;For further informations,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with the highest efficiency and takeing the lowest cost and requirment are the meanings of (01)    
 </p>
 <table align='center'>
 <tr>
@@ -360,9 +357,8 @@ As you can see from the table,The model with 450 passengers as the maximum capac
 ## c. Discussion
 
 <p align='center'>
-Talk about how the task related to aviation
 
-Compare to another type of transportation method,the manufacture and the operating cost of an aircraft are in a extremely high level.Besides gaining the profit from the commerical flight,airlines are required to surver the gigantic operating cost from different areas.The operating cost of aircraft in each flight are the biggest outcome of the airlines besides owning a aircraft. There is a significant differences of operating cost to fulfill the requirement between in different mode of maximum passengers capacity to meet the requirement of senerio 1.If the airlines doesn't choose the most efficency mode,there will be planty of unnesscary economic resources are wasted. Therefore,finding the best model to fulfill the requirment in the lowest operating cost to prevent the unnesscary waste are extremely important to the aviation.
+&nbsp;&nbsp;&nbsp;&nbsp;Compare to another type of transportation method, the manufacture and the operating cost of an aircraft are in a extremely high level. Besides gaining the profit from the commerical flight,airlines are required to surver the gigantic operating cost from different areas.The operating cost of aircraft in each flight are the biggest outcome of the airlines besides owning a aircraft. There is a significant differences of operating cost to fulfill the requirement between in different mode of maximum passengers capacity to meet the requirement of senerio 1. If the airlines doesn't choose the most efficency mode,there will be planty of unnesscary economic resources are wasted. Therefore,finding the best model to fulfill the requirment in the lowest operating cost to prevent the unnesscary waste are extremely important to the aviation.
 </p>
 
 <!-- updates -->
