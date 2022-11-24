@@ -192,8 +192,8 @@ $C_{Fixed}$: fixed cost <br>
 
 ## b. Results
 
-<p>
-<image src='images/Task_1_Scenario_1.gif'>
+<p align='center'>
+<image src='images/Task_1_Scenario_1.gif'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;By using the given formula, the cost of the trip can be calculated without any difficulty and according to it, A330-900neo has the lowest trip cost for scenario 1. Additionally, for both scenario 2 and 3, the aircraft model with the lowest trip cost is A350-900.
 
 The blue star represents the start node while the green star represents the end node or the goal node. An aircraft travelling from the start node to the goal node might follow a more convenient route keeping the fuel and time-consuming area in mind to lower the total trip cost. And this route for the given challenge is presented by the red line starting from the start node and ending at the goal node.
@@ -466,7 +466,7 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 
 &nbsp;&nbsp;&nbsp;&nbsp;After running the code 2 kind of result can be obtained<br>
 <table align='center'>
-<h3>result with possable route:</h3>
+<h3>Result with possable route:</h3>
 <tr>
 <td><image src='images/Task_A2(1).gif'></td>
 <td><image src='images/Task_A2(2).gif'></td>
@@ -478,7 +478,7 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 </table>
 
 <table align='center'>
-<h3>route with no possable route</h3>
+<h3>Result with no possable route:</h3>
 <tr>
 <td><image src='images/Task_A2(5).gif'></td>
 <td><image src='images/Task_A2(6).gif'></td>
@@ -486,10 +486,14 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 </table>
 
 
-## c. Descussion
+## c. Discussion
 
-<p align='center'>
-Talk about how the task related to aviation
+<p >
+<h3>1. Result discussion</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;For the results that there is no possable route, since there are obstacles forming a loop and isolating the start and end point, path cant not be formed. Althrough there are chances of no route can formed, the rate can be reduce by lower the amount of obstacle.
+<br>
+<h3>2. Task in real life</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;In the task ramdomly generated obstacles are represent the danger environment in a flight operation, but in real life the danger zone could be in 3 dimention. Instead of planning in 2D matrix, algorithm must consider in 3D, moreover the rate of forming loop in the map will be much lower in a 3D path planing
 </p>
 
 
