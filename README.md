@@ -513,6 +513,15 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
   In this Github project,my job is mainly focus on calculating and the report.However,for the coding,since I am lack of knowledge in computer science in programming,all of the coding and programming are passes to my teemates and I can't help them even a little bit.I feel that I have a lot of deficiencies on progamming and coding.Therefore,I need to practice my skills and learn more knowledge on programming to help my teammates more on coding for separating their workload instead of just preparing the report.
 </p>
 
+<h2>Namira Sultana(22104453D)</h2>
+
+<p>
+  This project was my first foray into utilizing GitHub, and I've learned a lot from it. The tasks provided helped me better understand aviation as I learned about path planning and how an airline may reduce travel costs by using a shorter route while keeping in mind the cost-intensive areas. Additionally, using GitHub for coding and code sharing made it simpler for us to collaborate on our project. In addition to creating a repository, editing it, and merging my changes, GitHub improved my teamworking skills. My communication skills improved as a result of getting to know the other team members and discussing ideas with them. If a team member was unable to solve a problem, it would not be a cause for concern because the other team members would assist and through combined efforts, produce a superior solution. Since it was challenging for me to find the answers to the problems through coding, I focused more on the report writing and presentation. Working on the repository also taught me about the syntaxes for readme report and inserting gifs, producing the report, and a variety of other things. In conclusion, working with my team members and finishing the project successfully has been a wonderful experience.
+</p>
+  
+
+
+
 # **10 | References**
 -  hi
 
