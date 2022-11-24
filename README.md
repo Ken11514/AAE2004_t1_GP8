@@ -453,7 +453,10 @@ After that, plot the obstalces whic meet the condiction
 <li>Random start and end point:<br>
 First generate a random satrt point,<br>
 Then, by using the forumal of the locus of circle, take coordinates of start point as center of circle and the radious as larger than or equal to 50, while x:[-9,59] and y:[-9,59], all possable coordinates can be obtained,<br>
-Finally, choose a random coordinates as the end point coordinate </li>
+Finally, choose a random coordinates as the end point coordinate.<pre>def get_goal_coordinate(sx,sy) :
+    possable_location = [(i, j)for i in range(-9,60) for j in range(-9,60) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
+    final_coordinate = random.choice(possable_location)
+    return final_coordinate</pre> </li>
 <li>Ploting:<br>
 plot the fuel-cost-intensive area first to meet the requriment</li>
 </ol>

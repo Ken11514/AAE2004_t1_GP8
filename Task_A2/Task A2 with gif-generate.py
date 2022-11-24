@@ -18,7 +18,7 @@ import math
 import random
 import matplotlib.pyplot as plt
 
-show_animation = True
+show_animation_get_gif = True
 
 
 class AStarPlanner:
@@ -101,7 +101,7 @@ class AStarPlanner:
             current = open_set[c_id]
 
             # show graph
-            if show_animation:  # pragma: no cover
+            if show_animation_get_gif:  # pragma: no cover
                 plt.plot(self.calc_grid_position(current.x, self.min_x),
                          self.calc_grid_position(current.y, self.min_y), "xc")
                 # for stopping simulation with the esc key.
@@ -272,6 +272,7 @@ def get_goal_coordinate(sx,sy) :
     possable_location = [(i, j)for i in range(-9,60) for j in range(-9,60) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
     final_coordinate = random.choice(possable_location)
     return final_coordinate
+    
 def no_overlap(i, j, sx, sy, gx, gy):
     for px in [sx-2,sx-1,sx,sx+1,sx+2]:
         for py in [sy-2,sy-1,sy,sy+1,sy+2]:
@@ -329,7 +330,7 @@ def main():
             fc_y.append(j)
 
 
-    if show_animation:  # pragma: no cover
+    if show_animation_get_gif:  # pragma: no cover
         plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 2(fule) yellow
 
         plt.plot(ox, oy, ".k") # plot the obstacle
@@ -345,7 +346,7 @@ def main():
     
 
 
-    if show_animation:  # pragma: no cover
+    if show_animation_get_gif:  # pragma: no cover
         for pic in range(1,30):
             frame += 1
             path_name = 'images/f{}.png'.format(frame)
