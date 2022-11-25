@@ -280,7 +280,7 @@ Sometimes we can borrow thw power from the environment to help us to achieve our
  
 <ol type='I'>
 <h3><li>Information</h3>
-<dd>&nbsp;&nbsp;&nbsp;&nbsp;Human invent tools to help them overcome obsticals, as same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
+<dd>&nbsp;&nbsp;&nbsp;&nbsp;Human invent tools to help them overcome obsticals, the same as aviation industry. In real life, aircraft are designed based on industry needs. In the task, we are going to deesign a new air craft by finding out its parameters based on the restrictions.</dd>&nbsp;</li>
 <h3><li>Data for task 3</h3>
 <ul> Ruel and Restrictions:
   <li>design a new aircraft to best fit Task 1 Scenario 1</li>
