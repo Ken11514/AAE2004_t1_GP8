@@ -510,7 +510,7 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 <h2>Suen Ho Hin Thomas(22080474D)</h2>
 
 <p>
-  In this Github project,my job is mainly focus on calculating and the report.However,for the coding,since I am lack of knowledge in computer science in programming,all of the coding and programming are passes to my teemates and I can't help them even a little bit.I feel that I have a lot of deficiencies on progamming and coding.Therefore,I need to practice my skills and learn more knowledge on programming to help my teammates more on coding for separating their workload instead of just preparing the report.
+  In this Github project, my job is mainly focus on calculating and the report. However,for the coding, since I am lack of knowledge in computer science in programming, all of the coding and programming are passes to my teemates and I am not be able to help them even a little bit. I feel that I have a lot of deficiencies on progamming and coding. Therefore, I need to practice my skills and learn more knowledge on programming to help my teammates more on coding for separating their workload instead of just preparing the report.
 </p>
 
 <h2>Namira Sultana(22104453D)</h2>
