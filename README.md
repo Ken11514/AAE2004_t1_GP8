@@ -81,10 +81,10 @@ Example for a maze problem is fitted into a grid format.
 </table>
 &nbsp;&nbsp;&nbsp;&nbsp;In grid format, all possabale path position are recognized as node, and can be assigned a weight to show the traveling cost, which show as follows.
 <br><br>
-<b>Step 1</b>, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted.The data are stored in a list of possable step.<br><br>
+<b>Step 1</b>, calculate the traveling cost form start point to its adjacent and diagonal notes. Then base on each node, calculate heuristic estimated cost, the displacement, between itself and end point. After combine the traveling cost and heuristic estimated cost, a weight of the node can be obtainted. The data are stored in a list of possable step.<br><br>
 <b>Step 2</b>, select the lowest weight node from the list as repersenting the position of the <b>first</b> step apporaching to the End Point. Then append it to a list which recorded evey step it moved to.
 <br><br>
-<b>Step 3</b>, repeat Step 1 and Step 2 untill it reaches the End point, A list of the movement can be obtained.
+<b>Step 3</b>, repeat Step 1 and Step 2 until it reaches the End point, A list of the movement can be obtained.
 <br><br>
 <b>Step 4</b>, Track back from the list of movement, a route of shortest path can be viewed.<br><br>
 <table align='center'>
