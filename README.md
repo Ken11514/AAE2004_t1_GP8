@@ -111,7 +111,7 @@ flowchart LR;
 # **3 | Introduction of the Engineering Tools**
 
 ## **A. Python & Html**
-&nbsp;&nbsp;&nbsp;&nbsp;Both Python and Html are computer langue which is easy to learn and having a large flexibility. Moreover, Python has diverse of modpack, In this project we uesd Matplotlib and Imageio for graphing and photo operating. 
+&nbsp;&nbsp;&nbsp;&nbsp;Both Python and Html are computer langue which is easy to learn and having a large flexibility. Python has diverse of modpack, In this project we uesd Matplotlib and Imageio for graphing and photo operating. 
 ## **B. Visual Studio Code**
 &nbsp;&nbsp;&nbsp;&nbsp;Visual Studio Code(VS Code), is a platform fo source code editing, it covers many useful features, such as debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Ferthermore, estension can be install for  additional functionality
 ## **C. GitHub**
