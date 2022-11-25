@@ -268,7 +268,7 @@ The blue star represents the start node while the green star represents the end 
 
 <p align='center'>
 
-Sometimes we can borrow thw power from the environment to help us to acheive our goal or even finish it in a higher efficency which includes the aviation activity.For example,using the wind power brings a higher speed than manpower for a ship in the past.Those kind od advantage can be seen more clearly in the jet stream area,If the aircraft fly through those area,it brings a clear effect on lower the operatiing cost .For example,there is a stronger wind power inside the jet stream area which provide a stronger lifting force for the aircraft,and the aircraft will be able to lower it's thrust and reducing it's fuel cost.As you can see,this is one of the related point between this task and he aviation.
+Sometimes we can borrow thw power from the environment to help us to acheive our goal or even finish it in a higher efficency which includes the aviation activity. For example,using the wind power brings a higher speed than manpower for a ship in the past.Those kind od advantage can be seen more clearly in the jet stream area, If the aircraft fly through those area, it brings a clear effect on lower the operatiing cost . For example,there is a stronger wind power inside the jet stream area which provide a stronger lifting force for the aircraft, and the aircraft will be able to lower it's thrust and reducing it's fuel cost. As it mentioned, this is one of the related point between this task and he aviation.
 </p>
 
 
