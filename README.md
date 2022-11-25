@@ -493,7 +493,7 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 &nbsp;&nbsp;&nbsp;&nbsp;For the results that there is no possable route, since there are obstacles forming a loop and isolating the start and end point, path cant not be formed. Althrough there are chances of no route can formed, the rate can be reduce by lower the amount of obstacle.
 <br>
 <h3>2. Task in real life</h3>
-&nbsp;&nbsp;&nbsp;&nbsp;In the task ramdomly generated obstacles are represent the danger environment in a flight operation, but in real life the danger zone could be in 3 dimention. Instead of planning in 2D matrix, algorithm must consider in 3D, moreover the rate of forming loop in the map will be much lower in a 3D path planing
+&nbsp;&nbsp;&nbsp;&nbsp;In the task ramdomly generated obstacles are represent the danger environment in a flight operation, but in real life the danger zone could be in 3 dimention. Instead of planning in 2D matrix, algorithm must consider in 3D, in addition the rate of forming loop in the map will be much lower in a 3D path planing
 </p>
 
 
