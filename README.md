@@ -32,9 +32,6 @@
     </li>
     <li><a href='#10--references'>References</a></li>
     <li>
-      <a href='#useful-source'>Useful source</a>
-    </li>
-    <li>
       <a href='#progess'>Task on progess</a>
     </li>
   </ol>
@@ -538,7 +535,17 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 
 
 # **10 | References**
--  hi
+### YouTube video:
+[How To Create Beautiful and Useful ReadMe Documents For GitHub](https://youtu.be/a8CwpGARAsQ)
+
+### Web Site
+[AAE GitHub Page](https://github.com/IPNL-POLYU/PolyU_AAE2004_Github_Project)
+
+[basic syntax](https://www.markdownguide.org/basic-syntax)
+
+[How to write Methodology](https://www.scribbr.com/dissertation/methodology/)
+
+[A-Star Breakdown](AStar%20Breakdown.docx)
 
 
 
@@ -556,18 +563,3 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 ### week 11
 - [ ] [MSWord]("https://connectpolyu-my.sharepoint.com/:w:/g/personal/22075211d_connect_polyu_hk/ESFi3BeMMBBJv2-l2V8ch4wBDD6baR5c8cD08VUSOuKRZA?e=avXK26") report 
 - [ ] GitHub report
-<!-- REFERCE -->
-------
-## Useful source
-
-### YouTube video:
-[How To Create Beautiful and Useful ReadMe Documents For GitHub](https://youtu.be/a8CwpGARAsQ)
-
-### Web Site
-[AAE GitHub Page](https://github.com/IPNL-POLYU/PolyU_AAE2004_Github_Project)
-
-[basic syntax](https://www.markdownguide.org/basic-syntax)
-
-[How to write Methodology](https://www.scribbr.com/dissertation/methodology/)
-
-[A-Star Breakdown](AStar%20Breakdown.docx)

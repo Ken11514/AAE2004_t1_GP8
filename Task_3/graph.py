@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-# pie for 
+# Bar chart
+'''
 fuel_cost = [2724,5448,5448]
 time_cost = [1698,1852,2316]
 fixed_cost = [2000,2500,2500]
@@ -20,3 +21,14 @@ plt.xticks(index,['Model 1','Model 2','Model 3'])
 plt.title('Total flight cost for each Model')
 plt.savefig('images/Flight cost for each Model .png')
 plt.show()
+
+ox, oy = [], []
+for i in range(-10, 60): # draw the buttom border 
+    ox.append(i)
+    oy.append(0)
+    ox.append(i)
+    oy.append(30)
+
+plt.plot(ox, oy, "sk") # plot the obstacle
+plt.show()
+'''
