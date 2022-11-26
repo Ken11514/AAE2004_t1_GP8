@@ -348,19 +348,27 @@ For the way how will achieve the goal, we have decsided 3 different model of air
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;As the table mentioned, the model with 450 passengers as the maximum capacity require $71844 to fulfill the requirment of senerio 1, and the model with 300 and 250 passengers as their maximum capacithy require $98003 and $78064.The model 3 has the lowest total in 3 model. This model reuire 7 trips to transport all 3000 passengers from start point to goal point and model 2 and 1 require 10 and 12 total trips.<br>&nbsp;&nbsp;&nbsp;&nbsp;Although the operating cost of model 3 each flight is the highest in 3 models, the total trips are the lowest. Therefore, the nember of total trips are the most important element to lower the total cost instead of the cost each flight in this situation. 
 </p>
+<!-- Graphs-->
 <table align='center'>
 <tr>
   <td><image src='images/Flight cost for each Model (per flight).png' ></td>
   <td><image src='images/Flight cost for each Model .png'></td>
 </tr>
 </table>
-
+<!-- Model design-->
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Based on the result, the design of our aircrafft will have following attribute:</p>
+<ul>
+<li>450 capacity</li>
+<li>4-engine aircraft</li>
+<li>Global flight route</li>
+</ul>
+<image src='images/Task3ModelDesing.jpeg' align='center'>
 
 ## c. Discussion
 
 <p align='center'>
 
-&nbsp;&nbsp;&nbsp;&nbsp;For further information of our aircraft,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with highest efficency and taking the lowest cost and requirement are the meanings of (01). Compare to another type of transportation method, the manufacture and the operating cost of an aircraft are in an extremely high level. Not only gaining the profit from the commerical flight, airlines are required to surver the gigantic operating cost from different areas. The operating cost of aircraft in each flight are the biggest outcome of the airlines which is second only to owning an aircraft. There is a significant differences of operating cost to fulfill the requirement between in different mode of maximum passengers capacity to meet the requirement of senerio 1. If the airlines doesn't choose the most efficency mode, there will be planty of unnesscary economic resources are wasted. Therefore, finding the best model to fulfill the requirment in the lowest operating cost to prevent the unnesscary waste are extremely important to the aviation.
+&nbsp;&nbsp;&nbsp;&nbsp;For further information of our aircraft,the name of our 4 enginee aircraft will be P801. P stands for Polyu,(8) stands for our group number and finish the mission with highest efficency and taking the lowest cost and requirement are the meanings of (01). <br><br>&nbsp;&nbsp;&nbsp;&nbsp;Compare to another type of transportation method, the manufacture and the operating cost of an aircraft are in an extremely high level. Not only gaining the profit from the commerical flight, airlines are required to surver the gigantic operating cost from different areas. The operating cost of aircraft in each flight are the biggest outcome of the airlines which is second only to owning an aircraft. There is a significant differences of operating cost to fulfill the requirement between in different mode of maximum passengers capacity to meet the requirement of senerio 1. If the airlines doesn't choose the most efficency mode, there will be planty of unnesscary economic resources are wasted. Therefore, finding the best model to fulfill the requirment in the lowest operating cost to prevent the unnesscary waste are extremely important to the aviation.
 </p>
 
 <!-- updates -->
