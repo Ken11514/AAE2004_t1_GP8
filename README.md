@@ -530,8 +530,13 @@ This is my first Github project I have ever did and it also is one of the few gr
 <p>
   This is the first time that I use GitHub for a group project and I have experienced a lot, from coding or understanding the codes to making the report, and I have learned a lot from that. Through participating in the project, I have the chance to code, though it's not much as I am bad at coding, I also have the chance to make a report by using html syntax, which I've never done that before in high school. I've learned a lot about the logic flow of a piece of codes as well as a proper thinking process to code when we have literally nothing that can take reference on. I've also learned a lot about the basics of html syntax by making part of the report on GitHub, which I believe will be useful in future, no matter other projects in the university or even in future workplace. I also learned a lot from the difficulties I faced during the project. As I've just mentioned, I am bad at coding. Therefore when I was trying to do the additional task 2 by myself, which I failed and ended up reading other's code, I had huge difficulties for accomplishing the requirement of making the distance between the start and the destination at least 50 units. Then our group leader Ken helped me solve the problem by introducing the method of "locus", which really blew my mind. Then I understand that sometimes, not only in coding, we really have to think outside the box to approach problems in an innovative way. In short, I've really learned a lot from this GitHub project and I wish more simillar experience in the future.
 </p>
-  
 
+<h2>Tam Cheuk Yi(22086529D)</h2>
+
+<p>
+   After studying in university, this is the first group project I had. In this project, we were taught in order to complete different type of tasks using a various of engineering tools such as Python, VS Code and GitHub etc. During the whole project, GitHub acts as an important role between us. We are able to type in what we have found out into this online platform anywhere and anytime as well as ask for requests before commit changes directly which helps me to ask for all groupmates’ agreement. However, as I am not familiar with programming, I have participated in writing the report of the tasks (ReadMe) instead. I was assigned to type out the results and reflections in our project’s report. During this group project, I have learned a lot which helps me improve in not only communication skills but also problem-solving skills. It is because I need to communicate with my groupmates to enhance my understanding of the whole program they have written. Finishing this a big project with my teammates, I am glad that I have met some groupmates who are nice and easy-going. In conclusion, l have learned many skills and I wish to have more chances to have such project.
+</p>
+  
 
 
 # **10 | References**
