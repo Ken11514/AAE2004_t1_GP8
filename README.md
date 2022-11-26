@@ -99,13 +99,14 @@ Example for a maze problem is fitted into a grid format.
 
 Flowchart for A-Star algorithm:<br> 
 ```mermaid
-flowchart LR;
+flowchart TD;
     A([Star Path Planning])-->B{If curren node reach End point};
     B-->|Yes|F([End and Show the list of movement])
     B-->|No|C[Serch node near by]
-    C-->D[Calculate weight]
+    C-->D[Calculate weight of each serched node]
     D-->E[Select and Move to the lowest weighted node]
-    E-->B
+    E-->G[Record the movement]
+    G-->B
 ```
 
 # **3 | Introduction of the Engineering Tools**
