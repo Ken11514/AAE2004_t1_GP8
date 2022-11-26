@@ -282,7 +282,7 @@ Sometimes we can borrow thw power from the environment to help us to achieve our
 <h3><li>Data for task 3</h3>
 <ul> Ruel and Restrictions:
   <li>design a new aircraft to best fit Task 1 Scenario 1</li>
-  <li>Onlr consider cruise time of flight </li>
+  <li>Only consider cruise time of flight </li>
   <li>Also design the passenger capacity of the aircraft<br>(for each 50 passenger (min 100, max 450) increase time cost by 2 $/min (base time cost is 12 $/min))</li>
   <li>The base design is a twin-engine aircraft, if capacity>=300, you must switch to a 4-engine aircraft</li>
   <li>C<sub>c</sub> = 2000 for twin-engine, 2500 for 4-engine aircrafts</li>
