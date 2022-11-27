@@ -188,7 +188,7 @@ $C_{Fixed}$: fixed cost <br>
 </dd>
 </ol>
 
-<details open='close'>
+<details open='open'>
   <summary><h2 style='display: inline-block'>Code description</h2></summary>
   <p>To combine all scenario into one program, a input value is needed to indecate the scenario. So in <strong>line 416-418</strong> a input function is added and
   in <strong>line 376-407</strong> the will based on the input value to show different result.<br><br>
@@ -251,7 +251,7 @@ The blue star represents the start node while the green star represents the end 
 </li>
 </ol>
 
-<details open='close'>
+<details open='open'>
 <summary><h2 style='display: inline-block'>Code description</h2></summary>
 <p>
 This task is a extend from task 1, and share the same technique.<br><br>
@@ -409,7 +409,7 @@ For the way how will achieve the goal, we have decsided 3 different model of air
 &nbsp;&nbsp;&nbsp;&nbsp;Finally, execute the program and visualise the final path.</dd>
 </ol>
 
-<details>
+<details opem='open'>
 <summary><h2 style='display: inline-block'>Code description</h2></summary>
 <p>This code is a build-up form task2.<br>
 For the 2 extra checkpoints, is created by<pre>    cptx = random.randint(10,30)
@@ -503,7 +503,7 @@ plot the fuel-cost-intensive area first to meet the requriment</li>
 </li>
 </ol>
 
-<details>
+<details open='open'>
 <summary><h2 style='display: inline-block'>Code description</h2></summary>
 <p>For 1: the cost intensive area can be generate by <pre>    fc_x, fc_y = [], []
     x_coordinate = random.randint(-9,30)
