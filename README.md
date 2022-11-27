@@ -385,7 +385,7 @@ For the way how will achieve the goal, we have decsided 3 different model of air
 <li>4-engine aircraft</li>
 <li>Global flight route</li>
 </ul>
-<image src='images/Task3ModelDesing.jpeg' align='center'>
+<image src='images/Task3model_v2.jpeg' align='center'>
 
 ## c. Discussion
 
