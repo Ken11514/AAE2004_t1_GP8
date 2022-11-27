@@ -2,9 +2,10 @@
 <p align='center'>
 <image src=images/Group_8_Banner.gif alt="Group 8 Banner">
 <br></p>
+<a href='https://connectpolyu-my.sharepoint.com/:v:/g/personal/22075211d_connect_polyu_hk/EQz8Oi7KQB9LjbAZ1ojz-28B6A9BIU4UzJZ7ApKisZ-qBg?e=IDXQft'  target="_blank" rel="noopener noreferrer"><image src='images/Presentation_coverpage.jpeg'></a>
 <h2>Presentation Video</h2>
 <p align='center'>
-<a href='https://connectpolyu-my.sharepoint.com/:v:/g/personal/22075211d_connect_polyu_hk/EQz8Oi7KQB9LjbAZ1ojz-28B6A9BIU4UzJZ7ApKisZ-qBg?e=IDXQft' target="_blank" rel="noopener noreferrer"><image src='images/Presentation_coverpage.jpeg'></a>
+<a href='https://connectpolyu-my.sharepoint.com/:v:/g/personal/22075211d_connect_polyu_hk/EQz8Oi7KQB9LjbAZ1ojz-28B6A9BIU4UzJZ7ApKisZ-qBg?e=IDXQft'  target="_blank" rel="noopener noreferrer"><image src='images/Presentation_coverpage.jpeg'></a>
 <br><br></p>
 
 <!-- TABLE OF CONTenT-->
