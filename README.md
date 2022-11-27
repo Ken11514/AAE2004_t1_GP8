@@ -270,7 +270,7 @@ For finding the jet-steam area, we first study the original path and simplely co
 <ol type='1'>
 <h3><li>Jet Stream Area</h3><dd>
 &nbsp;&nbsp;&nbsp;&nbsp;We have discovered that the flight route passes most in the region between y&nbsp;=&nbsp;9 to y&nbsp;=&nbsp;14. As a result, we decided to set the jet stream area this region and therefore the flight route is the most cost-effective.
-<br><p align='centre'>
+<br><p align='center'>
 <image src='images/Prove_jetSteam_area.png'></p>
 
 
@@ -652,8 +652,8 @@ The Github project is the first project I have ever done by using python and Vis
 ### Week 9
 - [x] finish task 1 by week 11
 ### Week 10
-- [ ] report for Task_1 & Task_2
-- [ ] [PowerPoint slide](https://connectpolyu-my.sharepoint.com/:p:/g/personal/22075211d_connect_polyu_hk/Ecv7NPHGFGtBt5Jk1Ql2RFoBYP0CGmmuKWjzxvsIqG_WnA?e=OU8kzx) for video
+- [x] report for Task_1 & Task_2
+- [x] [PowerPoint slide](https://connectpolyu-my.sharepoint.com/:p:/g/personal/22075211d_connect_polyu_hk/Ecv7NPHGFGtBt5Jk1Ql2RFoBYP0CGmmuKWjzxvsIqG_WnA?e=OU8kzx) for video
 ### week 11
 - [ ] [MSWord]("https://connectpolyu-my.sharepoint.com/:w:/g/personal/22075211d_connect_polyu_hk/ESFi3BeMMBBJv2-l2V8ch4wBDD6baR5c8cD08VUSOuKRZA?e=avXK26") report 
-- [ ] GitHub report
+- [x] GitHub report
