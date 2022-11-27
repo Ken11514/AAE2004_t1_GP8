@@ -188,6 +188,14 @@ $C_{Fixed}$: fixed cost <br>
 </dd>
 </ol>
 
+<details open='close'>
+  <summary><h2 style='display: inline-block'>Code description</h2></summary>
+  <p>To combine all scenario into one program, a input value is needed to indecate the scenario. So in <strong>line 416-418</strong> a input function is added and
+  in <strong>line 376-407</strong> the will based on the input value to show different result.<br><br>
+  Since 2 cost intensive area are requored in this task, so <strong>line 346-357 , 365-366 , 371</strong> is used to plot the area, in <strong>line 44-51 , 137-147</strong> added the effect of the area
+  </p>
+</details>
+
 ## b. Results
 
 <p align='center'>
@@ -242,6 +250,18 @@ The blue star represents the start node while the green star represents the end 
 
 </li>
 </ol>
+
+<details open='close'>
+<summary><h2 style='display: inline-block'>Code description</h2></summary>
+<p>
+This task is a extend from task 1, and share the same technique.<br><br>
+For finding the jet-steam area, we first study the original path and simplely counting the y-coordinate of the route by folling code:<pre>    plt.hist(ry,range(-10,61), rwidth= 1, align='mid')#'range(-10,61)' as 61 is excluded
+    plt.title("The coverage of Jet-Steam area")
+    plt.xlabel('y-coordinate')
+    plt.ylabel('The amount of path covered ( steps )')
+    plt.savefig('images/Prove_jetSteam_area.png')
+    plt.show()</pre><small><a href='Task_2/Prove-best-JS.area.py'>line 368-373</a></small></p>
+</details>
 
 ## b. Results
 <ol type='1'>
@@ -355,6 +375,7 @@ For the way how will achieve the goal, we have decsided 3 different model of air
 <!-- Model design-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Based on the result, the design of our aircrafft will have following attribute:</p>
 <ul>
+<li>Name : P801</li>
 <li>450 capacity</li>
 <li>4-engine aircraft</li>
 <li>Global flight route</li>
@@ -387,6 +408,22 @@ For the way how will achieve the goal, we have decsided 3 different model of air
 &nbsp;&nbsp;&nbsp;&nbsp;Afterwards, certain modifications are made to ensure the resulting path passes through both checkpoints. <br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;Finally, execute the program and visualise the final path.</dd>
 </ol>
+
+<details>
+<summary><h2 style='display: inline-block'>Code description</h2></summary>
+<p>This code is a build-up form task2.<br>
+For the 2 extra checkpoints, is created by<pre>    cptx = random.randint(10,30)
+    cpty = random.randint(10,40)
+    cpfx = random.randint(35,50)
+    cpfy = random.randint(0,10)</pre>
+For the path planning <pre>    if scenario == "A1":
+        a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y, jc_x, jc_y)
+        rx1, ry1, Tbest1 = a_star.planning(sx, sy, cpfx, cpfy)
+        rx2, ry2, Tbest2 = a_star.planning(cpfx, cpfy, cptx, cpty)
+        rx3, ry3, Tbest3 = a_star.planning(cptx, cpty, gx, gy)
+</pre>
+</p>
+</details>
 
 ## b. Results
 
@@ -464,9 +501,56 @@ Finally, choose a random coordinates as the end point coordinate.<pre>def get_go
 plot the fuel-cost-intensive area first to meet the requriment</li>
 </ol>
 </li>
-
-
 </ol>
+
+<details>
+<summary><h2 style='display: inline-block'>Code description</h2></summary>
+<p>For 1: the cost intensive area can be generate by <pre>    fc_x, fc_y = [], []
+    x_coordinate = random.randint(-9,30)
+    y_coordinate = random.randint(-9,30)
+    for i in range(x_coordinate, x_coordinate+30):
+        for j in range(y_coordinate, y_coordinate+30):
+            fc_x.append(i)
+            fc_y.append(j)</pre><br><br>
+For 2: by adjuesting the code <pre>    def get_motion_model(): # the cost of the surrounding 8 points
+        # dx, dy, cost
+        motion = [[1, 0, 1],
+                  [0, 1, 1],
+                  [-1, 0, 1],
+                  [0, -1, 1]]
+        return motion</pre>
+<pre>    def calc_obstacle_map(self, ox, oy):
+...
+        for ix in range(self.x_width):
+            x = self.calc_grid_position(ix, self.min_x) # grid position calculation (x,y)
+            for iy in range(self.y_width):
+                y = self.calc_grid_position(iy, self.min_y)
+                for iox, ioy in zip(ox, oy): # Python’s zip() function creates an iterator that will aggregate elements from two or more iterables. 
+                    d = math.hypot(iox - x, ioy - y) # The math. hypot() method finds the Euclidean norm
+                    if d < self.rr:
+                        self.obstacle_map[ix][iy] = True # the griid is is occupied by the obstacle
+                        break</pre><br><br>
+For 3: The obstacles can be generate if it meet this condition <pre>    for i in range(-10,60):
+        for j in range(-10,60):
+            if random.randint(0,100)>= 65 and no_overlap(i,j,sx,sy,gx,gy) :
+                ox.append(i)
+                oy.append(j)</pre>
+the 'random.randint(0,100)>= 65' act as a generation rate while <pre>def no_overlap(i, j, sx, sy, gx, gy):
+    for px in [sx-2,sx-1,sx,sx+1,sx+2]:
+        for py in [sy-2,sy-1,sy,sy+1,sy+2]:
+            if (i==px and j==py ):
+                return False
+    for px in [gx-2,gx-1,gx,gx+1,gx+2]:
+        for py in [gy-2,gy-1,gy,gy+1,gy+2]:
+            if i==px and j==py :
+                return False
+    return True</pre>it  can prevent the situation of overlaping with start&end point.<br><br>
+For 4: The minimum distance can be know as a minimum radius of 50 unit form the start<s> or end</s> point, thus the relationship of start point and end point can be repersented by <strong>locus of circle</strong>. Therefore, by using the fomular of locus of circle , all possable coordinates of the start and end point can be obtained. Furthermore, to simplifi the process, the start point is treated as the center of circle and end point can be collected by <pre>def get_goal_coordinate(sx,sy) :
+    possable_location = [(i, j)for i in range(-9,60) for j in range(-9,60) if math.sqrt((i-sx)**2+(j-sy)**2)>= 50]
+    final_coordinate = random.choice(possable_location)
+    return final_coordinate</pre>
+</p>
+</details>
 
 ## b. Results
 
