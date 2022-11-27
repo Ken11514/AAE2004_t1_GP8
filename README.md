@@ -47,15 +47,15 @@
 
 
 <p>
-  &nbsp;&nbsp;&nbsp;&nbsp;In Aviation Industry, Path Planning has an importance place in Air Traffic Control, Airline Companies and Airports. ...
+  &nbsp;&nbsp;&nbsp;&nbsp;In Aviation Industry, Path Planning has an importance place in Air Traffic Control, Airline Companies and Airports. Without path planning, the whole industry is not able to operate smoothly, safely and accurately.
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;For Air Traffic Control,by calculating obstical and danger zone, Path Planning help operater adjust the flight route of aircrafts, in order to provide a safety flying experience. ...
+  &nbsp;&nbsp;&nbsp;&nbsp;For Air Traffic Control,by calculating obstical and danger zone, Path Planning help operater adjust the flight route of aircrafts, in order to provide a safety flying experience. 
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;For Airline Companies, by calculating the shortest route for airlines, Path Planning help companies reduce filght cost, in order to enhance their profit. ...
+  &nbsp;&nbsp;&nbsp;&nbsp;For Airline Companies, by calculating the shortest route for airlines, Path Planning help companies reduce filght cost, in order to enhance their profit. 
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;For Airports, by planning the take off and landing timing, Path Planning help Airports maximize the aircraft flow, in order to increase passenger flow. ...
-
+  &nbsp;&nbsp;&nbsp;&nbsp;For Airports, by planning the take off and landing timing, Path Planning help Airports maximize the aircraft flow, in order to increase passenger flow. 
   <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;Therefore, we can understand that path planning acts an vital role in connecting different parts of air transportation in order to provide a satisfying route with the fulfillment of safety and enviromentally-friendly.
 </p>
 
 # **2 | Theory of Path Planning Algorithm**
