@@ -628,6 +628,10 @@ This is my first Github project I have ever did and it also is one of the few gr
 The Github project is the first project I have ever done by using python and Visual Studio Code. The project is challenging that it required high problem-solving and python skills. After using Github, I realized that it is a good platform for me to learn more about high level coding as people can share their programs and ideas wherever they are. In the project, my role is to do the report and the reflection ince I am not good at python.Although my tasks are comparatively easy, I find some difficulties in presenting the ideas and read my teammates's codes. My leader helped me a lot in explaining the codes and we discussed to use histogram and chart to show and explain the data. By doing the project, I learn the importance to have a good team thst good communication can make the work better. I would like to learn more about coding in the future. In conclusion, it is nice to have my teammates work together and I hope I can have more experience in doing group projects like this time.
 
 
+<h2> Qian Xingrui (22101324D)</h2>
+This is an excellent opportunity for me to get in touch with GitHub, which is very useful for our future life and career. I'm happy that I get in touch with different friends in my project group; it's a tremendous experience for me, whether in social or study. Doing this project helped me go to the upper level in programming and do the actual samples related to real situations associated with the air industry. All of my teammates are very helpful and kind to each other. I can still remember that when I had some problems with the project, everyone in this group was willing to share their perspectives and point out the solutions. I feel lucky to have had a chance to do such a great group project, especially in my first year of university, which helps me learn how to cooperate and communicate.
+
+
 # **10 | References**
 ### YouTube video:
 [How To Create Beautiful and Useful ReadMe Documents For GitHub](https://youtu.be/a8CwpGARAsQ)
