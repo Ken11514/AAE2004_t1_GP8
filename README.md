@@ -92,6 +92,8 @@ Example for a maze problem is fitted into a grid format.
   <tr>
     <td><image src='images/2_step1.png'></td>
     <td><image src='images/2_step2.png'></td>
+  </tr>
+  <tr>
     <td><image src='images/2_step_3&4.png'></td>
     <td><image src='images/Theory_example.gif'></td>
   </tr>
@@ -289,7 +291,7 @@ For finding the jet-steam area, we first study the original path and simplely co
 
 <p align='center'>
 
-Sometimes we can borrow thw power from the environment to help us to achieve our goal or even finish it in a higher efficency which includes the aviation activity. For example,using the wind power brings a higher speed than manpower for a ship in the past. Those kind od advantage can be seen more clearly in the jet stream area, If the aircraft fly through those area, it brings a clear effect on lower the operatiing cost . For example, there is a stronger wind power inside the jet stream area which provide a stronger lifting force for the aircraft, and the aircraft will be able to lower it's thrust and reducing it's fuel cost. As it mentioned, this is one of the related point between this task and he aviation.
+&nbsp;&nbsp;&nbsp;Sometimes we can borrow thw power from the environment to help us to achieve our goal or even finish it in a higher efficency which includes the aviation activity. For example,using the wind power brings a higher speed than manpower for a ship in the past. Those kind od advantage can be seen more clearly in the jet stream area, If the aircraft fly through those area, it brings a clear effect on lower the operatiing cost . For example, there is a stronger wind power inside the jet stream area which provide a stronger lifting force for the aircraft, and the aircraft will be able to lower it's thrust and reducing it's fuel cost. As it mentioned, this is one of the related point between this task and he aviation.
 </p>
 
 
@@ -659,5 +661,5 @@ This is an excellent opportunity for me to get in touch with GitHub, which is ve
 - [x] report for Task_1 & Task_2
 - [x] [PowerPoint slide](https://connectpolyu-my.sharepoint.com/:p:/g/personal/22075211d_connect_polyu_hk/Ecv7NPHGFGtBt5Jk1Ql2RFoBYP0CGmmuKWjzxvsIqG_WnA?e=OU8kzx) for video
 ### week 11
-- [ ] [MSWord]("https://connectpolyu-my.sharepoint.com/:w:/g/personal/22075211d_connect_polyu_hk/ESFi3BeMMBBJv2-l2V8ch4wBDD6baR5c8cD08VUSOuKRZA?e=avXK26") report 
+- [ ] [MSWord](https://connectpolyu-my.sharepoint.com/:w:/g/personal/22075211d_connect_polyu_hk/ESFi3BeMMBBJv2-l2V8ch4wBDD6baR5c8cD08VUSOuKRZA?e=avXK26) report 
 - [x] GitHub report
